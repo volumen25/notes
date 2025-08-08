@@ -23,7 +23,7 @@ This repository contains my notes written in Markdown, which are compiled into a
 +---.venv-win # Windows virtual environment
 +---content # Markdown source files
 |       2024-10-11-example.md     
-\---fragments # Generated HTML fragments
++---fragments # Generated HTML fragments
 |       2024-10-11-example.html  
 ```
 
@@ -46,6 +46,8 @@ pip install -r requirements.txt
 ```
 
 ## Useful Aliases
+
+`venv` toogles between activating and deactivating the virtual environment.
 
 Add this to your shell config on macOS (`~/.zshrc` or `~/.bashrc`):
 
