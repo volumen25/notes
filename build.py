@@ -164,4 +164,4 @@ with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
         index.write(f'<li><a href="#{anchor}">{html.escape(title)}</a></li>\n')
     index.write("</ul>\n</body>\n</html>\n")
 
-print(f"Final site created → {CONFIG['final_html']}")
+print(f"Page generated → {CONFIG['final_html']}")

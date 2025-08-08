@@ -16,18 +16,16 @@ python -m venv .venv-win
 pip install -r requirements.txt
 ```
 
-## Optional: Tiny Launcher scripts
+## Short Aliases
 
-Create a .activate file or Makefile on macOS:
+macOS shell config (.zshrc or .bashrc):
 
-```md
-# activate-mac.sh
-source .venv-mac/bin/activate
+```sh
+alias venv='if [ -n "$VIRTUAL_ENV" ]; then deactivate; else source .venv-mac/bin/activate; fi'
 ```
 
-And a .bat file on Windows:
+Windows PowerShell profile ($PROFILE):
 
-```md
-:: activate-win.bat
-.venv-win\Scripts\activate
+```ps1
+Set-Alias venv 'if ($env:VIRTUAL_ENV) { deactivate } else { .\.venv-win\Scripts\Activate.ps1 }'
 ```
