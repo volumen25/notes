@@ -74,7 +74,7 @@ hr {
 }
 
 hr::before {
-    content: "----------------------------------------";
+    content: "----------------------";
     letter-spacing: 0.1em;
     color: #d0d0d0;
 }
