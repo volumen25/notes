@@ -4,6 +4,7 @@ import subprocess
 import yaml
 import re
 import html
+import sys
 
 # Configuration
 CONFIG = {
@@ -25,7 +26,7 @@ for file in [CONFIG["css_file"], CONFIG["bib_file"], CONFIG["csl_file"]]:
         print(f"Error: {file} not found.")
         exit(1)
 if not os.path.isdir(CONFIG["content_dir"]):
-    print(f"Error: '{CONFIG["content_dir"]}' directory not found.")
+    print(f"Error: '{CONFIG['content_dir']}' directory not found.")
     exit(1)
 os.makedirs(CONFIG["frag_dir"], exist_ok=True)
 
@@ -73,7 +74,21 @@ md_files = sorted(
 )
 
 fragment_paths, toc_entries = [], []
-for md_file in md_files:
+
+# --- Progress bar settings ---
+total_files = len(md_files)
+bar_length = 30
+
+for i, md_file in enumerate(md_files, start=1):
+    # Calculate and display progress bar
+    percent = i / total_files
+    filled = int(bar_length * percent)
+    bar = "#" * filled + "-" * (bar_length - filled)
+    sys.stdout.write(
+        f"\r[{bar}] {percent:>5.1%} ({i}/{total_files}) Processing {os.path.basename(md_file)}"
+    )
+    sys.stdout.flush()
+
     with open(md_file, "r", encoding="utf-8") as infile:
         content = infile.read()
     title, date, body = "Untitled", "", content.strip()
@@ -119,6 +134,9 @@ for md_file in md_files:
         os.remove(temp_md)
     except subprocess.CalledProcessError:
         continue
+
+# Ensure progress bar line is cleared
+print()
 
 # Assemble HTML
 with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
