@@ -49,10 +49,28 @@ pip install -r requirements.txt
 
 `venv` toogles between activating and deactivating the virtual environment.
 
-Add this to your shell config on macOS (`~/.zshrc` or `~/.bashrc`):
+Add this to your shell config on macOS (`~/.zshrc`):
 
-```sh
-alias venv='if [ -n "$VIRTUAL_ENV" ]; then deactivate; else source .venv-mac/bin/activate; fi'
+```bash
+venv() {
+  if [ -n "$VIRTUAL_ENV" ]; then
+    deactivate
+    echo "Virtual environment deactivated"
+    return
+  fi
+
+  dir="$PWD"
+  while [ "$dir" != "/" ]; do
+    if [ -f "$dir/.venv-mac/bin/activate" ]; then
+      source "$dir/.venv-mac/bin/activate"
+      echo "Virtual environment activated from $dir/.venv-mac"
+      return
+    fi
+    dir=$(dirname "$dir")
+  done
+
+  echo "No .venv-mac found in this directory or any parent directories."
+}
 ```
 
 Add this to your PowerShell profile (`$PROFILE`) on Windows:
