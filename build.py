@@ -148,6 +148,7 @@ with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
     <meta name="generator" content="{CONFIG['generator']}">
     <meta name="viewport" content="{CONFIG['viewport']}">
     <title>{CONFIG['title']}</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="stylesheet" href="{CONFIG['css_file']}">
 </head>
 <body>
