@@ -14,7 +14,9 @@ __pycache__/
 .venv/
 .env
 
-# Editor settings
-.vscode/
-.idea/
-*.code-workspace
+
+# Ignore everything in .vscode
+.vscode/*
+
+# Allow shared workspace settings
+!.vscode/settings.json
