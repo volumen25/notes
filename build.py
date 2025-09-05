@@ -6,7 +6,7 @@ import yaml
 import re
 import html
 import sys
-import datetime
+from datetime import datetime, timezone
 from email.utils import format_datetime
 
 # === Configuration ===
@@ -21,7 +21,7 @@ CONFIG = {
     "title": "Volūmen",
     "generator": "pandoc 3.7.0.2",
     "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
-    "site_url": "https://notes.volumen.ca/"
+    "site_url": "https://example.com/",  # <-- change to your site URL
 }
 
 # === Verify required files/directories ===
@@ -149,21 +149,23 @@ print(f"Page generated → {CONFIG['final_html']}")
 
 # === Generate RSS feed (10 most recent) ===
 rss_file = "rss.xml"
-now = datetime.datetime.utcnow()
+now = datetime.now(timezone.utc)  # timezone-aware UTC datetime
 last_build = format_datetime(now)
 
 with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
-    rss.write("<rss version=\"2.0\">\n<channel>\n")
-    rss.write(f"<title>{CONFIG['title']}</title>\n")
-    rss.write(f"<link>{CONFIG['site_url']}</link>\n")
+    rss.write('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n')
+    rss.write(f'<title>{CONFIG["title"]}</title>\n')
+    rss.write(f'<link>{CONFIG["site_url"]}</link>\n')
     rss.write("<description>Updates from my site</description>\n")
     rss.write(f"<lastBuildDate>{last_build}</lastBuildDate>\n")
+    # Add Atom self-link
+    rss.write(f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n')
 
     # Take 10 most recent posts
     for title, anchor, date_str in metadata_list[:10]:
         try:
-            pub_date = datetime.datetime.strptime(date_str, "%Y-%m-%d")
+            pub_date = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
         except Exception:
             pub_date = now
         pub_date_str = format_datetime(pub_date)
