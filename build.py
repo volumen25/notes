@@ -21,7 +21,7 @@ CONFIG = {
     "title": "Volūmen",
     "generator": "pandoc 3.7.0.2",
     "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
-    "site_url": "https://example.com/",  # <-- change to your site URL
+    "site_url": "https://notes.volumen.ca/", 
 }
 
 # === Verify required files/directories ===

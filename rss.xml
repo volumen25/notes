@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Volūmen</title>
-<link>https://example.com/</link>
+<link>https://notes.volumen.ca/</link>
 <description>Updates from my site</description>
-<lastBuildDate>Fri, 05 Sep 2025 04:24:05 +0000</lastBuildDate>
-<atom:link href="https://example.com/rss.xml" rel="self" type="application/rss+xml" />
+<lastBuildDate>Fri, 05 Sep 2025 04:31:09 +0000</lastBuildDate>
+<atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Uses</title>
-<link>https://example.com/index.html#uses</link>
-<guid>https://example.com/index.html#uses</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#uses</link>
+<guid>https://notes.volumen.ca/index.html#uses</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Durability</title>
-<link>https://example.com/index.html#durability</link>
-<guid>https://example.com/index.html#durability</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#durability</link>
+<guid>https://notes.volumen.ca/index.html#durability</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Practice as Performance</title>
-<link>https://example.com/index.html#practice-as-performance</link>
-<guid>https://example.com/index.html#practice-as-performance</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#practice-as-performance</link>
+<guid>https://notes.volumen.ca/index.html#practice-as-performance</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Asymmetries</title>
-<link>https://example.com/index.html#asymmetries</link>
-<guid>https://example.com/index.html#asymmetries</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#asymmetries</link>
+<guid>https://notes.volumen.ca/index.html#asymmetries</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Practice</title>
-<link>https://example.com/index.html#practice</link>
-<guid>https://example.com/index.html#practice</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#practice</link>
+<guid>https://notes.volumen.ca/index.html#practice</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Short-termism</title>
-<link>https://example.com/index.html#short-termism</link>
-<guid>https://example.com/index.html#short-termism</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#short-termism</link>
+<guid>https://notes.volumen.ca/index.html#short-termism</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Ordinary Sights</title>
-<link>https://example.com/index.html#ordinary-sights</link>
-<guid>https://example.com/index.html#ordinary-sights</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#ordinary-sights</link>
+<guid>https://notes.volumen.ca/index.html#ordinary-sights</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>Experiments vs. Exercises</title>
-<link>https://example.com/index.html#experiments-vs-exercises</link>
-<guid>https://example.com/index.html#experiments-vs-exercises</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#experiments-vs-exercises</link>
+<guid>https://notes.volumen.ca/index.html#experiments-vs-exercises</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>80 Percent Limit</title>
-<link>https://example.com/index.html#80-percent-limit</link>
-<guid>https://example.com/index.html#80-percent-limit</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#80-percent-limit</link>
+<guid>https://notes.volumen.ca/index.html#80-percent-limit</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 <item>
 <title>The Power of Small Rituals</title>
-<link>https://example.com/index.html#the-power-of-small-rituals</link>
-<guid>https://example.com/index.html#the-power-of-small-rituals</guid>
-<pubDate>Fri, 05 Sep 2025 04:24:05 +0000</pubDate>
+<link>https://notes.volumen.ca/index.html#the-power-of-small-rituals</link>
+<guid>https://notes.volumen.ca/index.html#the-power-of-small-rituals</guid>
+<pubDate>Fri, 05 Sep 2025 04:31:09 +0000</pubDate>
 </item>
 </channel>
 </rss>
