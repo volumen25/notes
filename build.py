@@ -64,10 +64,11 @@ md_files = sorted(
 
 fragment_paths = []
 toc_entries = []
-metadata_list = []  # store (title, anchor, date) for RSS
+metadata_list = []  # store (title, anchor, date_obj, date_str)
 
 total_files = len(md_files)
 bar_length = 30
+now = datetime.now(timezone.utc)
 
 for i, md_file in enumerate(md_files, start=1):
     # Progress bar
@@ -79,20 +80,26 @@ for i, md_file in enumerate(md_files, start=1):
 
     with open(md_file, "r", encoding="utf-8") as infile:
         content = infile.read()
-    title, date, body = "Untitled", "", content.strip()
+    title, date_str, body = "Untitled", "", content.strip()
+    date_obj = None
     if content.startswith("---"):
         try:
             metadata, body = content.split("---", 2)[1:3]
             metadata = yaml.safe_load(metadata)
             title = metadata.get("title", title)
-            date = metadata.get("date", "")
+            date_str = metadata.get("date", "")
+            if date_str:
+                try:
+                    date_obj = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
+                except ValueError:
+                    date_obj = None
             body = body.strip()
         except Exception:
             pass
 
     anchor = re.sub(r"[^\w\-]", "", title.lower().replace(" ", "-"))
     toc_entries.append((title, anchor))
-    metadata_list.append((title, anchor, date))
+    metadata_list.append((title, anchor, date_obj, date_str))
 
     stem = os.path.splitext(os.path.basename(md_file))[0]
     temp_md = os.path.join(CONFIG["frag_dir"], f"{stem}.tmp.md")
@@ -100,7 +107,7 @@ for i, md_file in enumerate(md_files, start=1):
     fragment_paths.append(frag_html)
 
     with open(temp_md, "w", encoding="utf-8") as tmp:
-        tmp.write(f"# {title} {{#{anchor}}}\n{date}\n\n{body}\n\n::: {{#refs}}\n:::\n")
+        tmp.write(f"# {title} {{#{anchor}}}\n{date_str}\n\n{body}\n\n::: {{#refs}}\n:::\n")
     try:
         subprocess.run(
             [
@@ -147,9 +154,8 @@ with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
 
 print(f"Page generated → {CONFIG['final_html']}")
 
-# === Generate RSS feed (10 most recent) ===
+# === Generate RSS feed (10 most recent, newest first) ===
 rss_file = "rss.xml"
-now = datetime.now(timezone.utc)  # timezone-aware UTC datetime
 last_build = format_datetime(now)
 
 with open(rss_file, "w", encoding="utf-8") as rss:
@@ -162,12 +168,16 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     # Add Atom self-link
     rss.write(f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n')
 
+    # Sort metadata by date_obj (newest first)
+    sorted_metadata = sorted(
+        metadata_list,
+        key=lambda x: x[2] if x[2] else now,
+        reverse=True
+    )
+
     # Take 10 most recent posts
-    for title, anchor, date_str in metadata_list[:10]:
-        try:
-            pub_date = datetime.strptime(date_str, "%Y-%m-%d").replace(tzinfo=timezone.utc)
-        except Exception:
-            pub_date = now
+    for title, anchor, date_obj, date_str in sorted_metadata[:10]:
+        pub_date = date_obj if date_obj else now
         pub_date_str = format_datetime(pub_date)
         rss.write("<item>\n")
         rss.write(f"<title>{html.escape(title)}</title>\n")
