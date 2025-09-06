@@ -21,11 +21,36 @@ CONFIG = {
     "title": "Volūmen",
     "generator": "pandoc 3.7.0.2",
     "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
-    "site_url": "https://notes.volumen.ca/",
-    "rss_description": "Updates and notes from Volūmen",  # New field
+    "site_url": "https://notes.volumen.ca/", 
 }
 
-# [Previous sections unchanged: File/Directory Validation, Process intro.md]
+# === Verify required files/directories ===
+for file in [CONFIG["css_file"], CONFIG["bib_file"], CONFIG["csl_file"]]:
+    if not os.path.exists(file):
+        print(f"Error: {file} not found.")
+        exit(1)
+if not os.path.isdir(CONFIG["content_dir"]):
+    print(f"Error: '{CONFIG['content_dir']}' directory not found.")
+    exit(1)
+os.makedirs(CONFIG["frag_dir"], exist_ok=True)
+
+# === Process intro.md ===
+intro_html = ""
+if os.path.exists(CONFIG["intro_md"]):
+    temp_md = os.path.join(CONFIG["frag_dir"], "intro.tmp.md")
+    output_html = os.path.join(CONFIG["frag_dir"], "intro.html")
+    with open(CONFIG["intro_md"], "r", encoding="utf-8") as src, open(temp_md, "w", encoding="utf-8") as dst:
+        dst.write(src.read())
+    try:
+        subprocess.run(
+            ["pandoc", temp_md, "-o", output_html, "--css", CONFIG["css_file"], "--no-highlight", "--file-scope"],
+            check=True, capture_output=True, text=True
+        )
+        with open(output_html, "r", encoding="utf-8") as f:
+            intro_html = f.read()
+        os.remove(temp_md)
+    except subprocess.CalledProcessError:
+        pass
 
 # === Process Markdown files ===
 md_files = sorted(
@@ -39,7 +64,7 @@ md_files = sorted(
 
 fragment_paths = []
 toc_entries = []
-metadata_list = []  # store (title, anchor, date_obj, date_str, description)
+metadata_list = []  # store (title, anchor, date_obj, date_str)
 
 total_files = len(md_files)
 bar_length = 30
@@ -57,7 +82,6 @@ for i, md_file in enumerate(md_files, start=1):
         content = infile.read()
     title, date_str, body = "Untitled", "", content.strip()
     date_obj = None
-    description = ""  # Initialize description
     if content.startswith("---"):
         try:
             metadata, body = content.split("---", 2)[1:3]
@@ -70,17 +94,12 @@ for i, md_file in enumerate(md_files, start=1):
                 except ValueError:
                     date_obj = None
             body = body.strip()
-            # Extract first 200 characters of body for RSS description
-            description = body[:200].replace("\n", " ").strip() + "..." if body else ""
         except Exception:
             pass
 
-    if not date_obj:  # Use file modification time as fallback
-        date_obj = datetime.fromtimestamp(os.path.getmtime(md_file), tz=timezone.utc)
-
     anchor = re.sub(r"[^\w\-]", "", title.lower().replace(" ", "-"))
     toc_entries.append((title, anchor))
-    metadata_list.append((title, anchor, date_obj, date_str, description))
+    metadata_list.append((title, anchor, date_obj, date_str))
 
     stem = os.path.splitext(os.path.basename(md_file))[0]
     temp_md = os.path.join(CONFIG["frag_dir"], f"{stem}.tmp.md")
@@ -107,7 +126,33 @@ for i, md_file in enumerate(md_files, start=1):
 # Clear progress bar line
 print()
 
-# [HTML Generation section unchanged]
+# === Assemble index.html ===
+with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
+    index.write(f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="generator" content="{CONFIG['generator']}">
+    <meta name="viewport" content="{CONFIG['viewport']}">
+    <title>{CONFIG['title']}</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="{CONFIG['css_file']}">
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
+</head>
+<body>
+    <h1>{CONFIG['title']}</h1>
+    {intro_html + '\n<hr>\n' if intro_html else ''}
+""")
+    for frag_path in fragment_paths:
+        if os.path.exists(frag_path):
+            with open(frag_path, "r", encoding="utf-8") as frag:
+                index.write(frag.read() + "\n<hr>\n")
+    index.write("<h1>Index</h1>\n<ul>\n")
+    for title, anchor in toc_entries:
+        index.write(f'<li><a href="#{anchor}">{html.escape(title)}</a></li>\n')
+    index.write("</ul>\n</body>\n</html>\n")
+
+print(f"Page generated → {CONFIG['final_html']}")
 
 # === Generate RSS feed (10 most recent, newest first) ===
 rss_file = "rss.xml"
@@ -118,7 +163,7 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n')
     rss.write(f'<title>{CONFIG["title"]}</title>\n')
     rss.write(f'<link>{CONFIG["site_url"]}</link>\n')
-    rss.write(f'<description>{CONFIG["rss_description"]}</description>\n')
+    rss.write("<description>Updates from my site</description>\n")
     rss.write(f"<lastBuildDate>{last_build}</lastBuildDate>\n")
     # Add Atom self-link
     rss.write(f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n')
@@ -132,8 +177,9 @@ with open(rss_file, "w", encoding="utf-8") as rss:
 
     # Ensure unique pubDate for each item
     used_dates = set()
-    for title, anchor, date_obj, date_str, description in sorted_metadata[:10]:
-        pub_date = date_obj
+    for title, anchor, date_obj, date_str in sorted_metadata[:10]:
+        pub_date = date_obj if date_obj else now
+
         # Increment by 1 second if duplicate timestamp
         while pub_date in used_dates:
             pub_date += timedelta(seconds=1)
@@ -144,7 +190,6 @@ with open(rss_file, "w", encoding="utf-8") as rss:
         rss.write(f"<title>{html.escape(title)}</title>\n")
         rss.write(f"<link>{CONFIG['site_url']}index.html#{anchor}</link>\n")
         rss.write(f"<guid>{CONFIG['site_url']}index.html#{anchor}</guid>\n")
-        rss.write(f"<description>{html.escape(description)}</description>\n")
         rss.write(f"<pubDate>{pub_date_str}</pubDate>\n")
         rss.write("</item>\n")
 
