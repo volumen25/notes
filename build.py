@@ -99,7 +99,7 @@ for i, md_file in enumerate(md_files, start=1):
 
     anchor = re.sub(r"[^\w\-]", "", title.lower().replace(" ", "-"))
     toc_entries.append((title, anchor))
-    metadata_list.append((title, anchor, date_obj, date_str, md_file))
+    metadata_list.append((title, anchor, date_obj, date_str))
 
     stem = os.path.splitext(os.path.basename(md_file))[0]
     temp_md = os.path.join(CONFIG["frag_dir"], f"{stem}.tmp.md")
@@ -154,7 +154,7 @@ with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
 
 print(f"Page generated → {CONFIG['final_html']}")
 
-# === Generate RSS feed (10 most recent, newest first, unique times) ===
+# === Generate RSS feed (10 most recent, newest first) ===
 rss_file = "rss.xml"
 last_build = format_datetime(now)
 
@@ -165,6 +165,7 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write(f'<link>{CONFIG["site_url"]}</link>\n')
     rss.write("<description>Updates from my site</description>\n")
     rss.write(f"<lastBuildDate>{last_build}</lastBuildDate>\n")
+    # Add Atom self-link
     rss.write(f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n')
 
     # Sort metadata by date_obj (newest first)
@@ -174,11 +175,16 @@ with open(rss_file, "w", encoding="utf-8") as rss:
         reverse=True
     )
 
-    # Take 10 most recent posts, adding 1s offsets for uniqueness
-    for i, (title, anchor, date_obj, date_str, filepath) in enumerate(sorted_metadata[:10]):
+    # Ensure unique pubDate for each item
+    used_dates = set()
+    for title, anchor, date_obj, date_str in sorted_metadata[:10]:
         pub_date = date_obj if date_obj else now
-        # Add small offset per post to ensure unique timestamps
-        pub_date += timedelta(seconds=i)
+
+        # Increment by 1 second if duplicate timestamp
+        while pub_date in used_dates:
+            pub_date += timedelta(seconds=1)
+        used_dates.add(pub_date)
+
         pub_date_str = format_datetime(pub_date)
         rss.write("<item>\n")
         rss.write(f"<title>{html.escape(title)}</title>\n")
