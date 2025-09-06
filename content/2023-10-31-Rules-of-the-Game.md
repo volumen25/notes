@@ -1,6 +1,5 @@
 ---
 title: Rules of the Game
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2023-10-31
 tags:
   - notes

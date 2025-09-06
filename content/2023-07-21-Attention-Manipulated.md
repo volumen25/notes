@@ -1,6 +1,5 @@
 ---
 title: Attention Manipulated
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2023-07-21
 tags:
   - life

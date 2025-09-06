@@ -1,6 +1,5 @@
 ---
 title: Good Over Perfect
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2023-09-05
 tags:
   - notes

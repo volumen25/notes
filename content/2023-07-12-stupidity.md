@@ -1,6 +1,5 @@
 ---
 title: On Stupidity
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-05-04
 tags:
   - notes

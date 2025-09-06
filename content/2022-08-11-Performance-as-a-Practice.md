@@ -1,6 +1,5 @@
 ---
 title: Performance as a Practice
-subtitle: "[no hurry, no pause.](index.html)"
 tags:
   - anxiety
   - self-consciousness

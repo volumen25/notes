@@ -1,6 +1,5 @@
 ---
 title: Negative Utility
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-04-22
 tags:
   - notes

@@ -1,6 +1,5 @@
 ---
 title: Effort vs Results
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2022-12-19
 tags:
   - volumen

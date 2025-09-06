@@ -1,6 +1,5 @@
 ---
 title: Bullshit Jobs
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2023-August-11
 tags:
   - non-fiction

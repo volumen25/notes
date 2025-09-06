@@ -1,6 +1,5 @@
 ---
 title: The Art of Practicing
-subtitle: "[no hurry, no pause.](index.html)"
 tags:
   - literature-notes
   - music

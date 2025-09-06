@@ -1,6 +1,5 @@
 ---
 title: Mono no aware
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-05-19
 tags:
   - notes

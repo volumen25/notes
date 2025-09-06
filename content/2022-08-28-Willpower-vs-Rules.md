@@ -1,6 +1,5 @@
 ---
 title: Willpower vs Rules
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-02-17
 tags:
   - discipline

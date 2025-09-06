@@ -1,6 +1,5 @@
 ---
 title: Truth vs BS
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-05-26
 tags:
   - bullshit

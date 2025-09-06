@@ -1,6 +1,5 @@
 ---
 title: On Constrains
-subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-04-21
 tags:
   - notes

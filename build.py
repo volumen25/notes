@@ -139,7 +139,7 @@ try:
                     except ValueError:
                         date_obj = None
                 body = body.strip()
-                description = body[:200].replace("\n", " ").strip() + "..." if body else ""
+                description = body[:300].replace("\n", " ").strip() + "..." if body else ""
             except yaml.YAMLError as e:
                 logging.warning(f"Invalid YAML in {md_file}: {e}")
             except Exception as e:
