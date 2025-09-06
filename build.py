@@ -93,6 +93,9 @@ metadata_list = []  # store (title, anchor, date_obj, date_str, description)
 anchor_counts = {}  # Track anchor usage for uniqueness
 now = datetime.now(timezone.utc)
 bar_length = 30
+# Calculate maximum line length for progress bar clearing
+max_filename_length = max(len(os.path.basename(f)) for f in md_files) if md_files else 0
+max_line_length = bar_length + len("[] 100.0% (XX/XX) Processing ") + max_filename_length
 
 try:
     for i, md_file in enumerate(md_files, start=1):
@@ -180,7 +183,7 @@ try:
             continue
 
     # Clear progress bar line
-    sys.stdout.write("\r" + " " * (bar_length + 20) + "\r")
+    sys.stdout.write("\r" + " " * max_line_length + "\r")
     sys.stdout.flush()
 
 except KeyboardInterrupt:
