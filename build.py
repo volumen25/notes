@@ -224,7 +224,7 @@ with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
 
 logging.info(f"Page generated → {CONFIG['final_html']}")
 
-# === Generate RSS feed (10 most recent, newest first) ===
+# === Generate RSS feed (20 most recent, newest first) ===
 rss_file = "rss.xml"
 last_build = format_datetime(now)
 
@@ -244,7 +244,7 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     )
 
     used_dates = set()
-    for title, anchor, date_obj, date_str, description in sorted_metadata[:10]:
+    for title, anchor, date_obj, date_str, description in sorted_metadata[:20]:
         pub_date = date_obj
         while pub_date in used_dates:
             pub_date += timedelta(seconds=1)
