@@ -80,7 +80,6 @@ class TextExtractor(HTMLParser):
 
     def get_text(self, max_length):
         text = " ".join(self.text).strip()
-        text = re.sub(r'\s+([.,;])', r'\1', text)  # Remove extra spaces before punctuation
         if not text:
             return "No description available."
         if len(text) > max_length:
