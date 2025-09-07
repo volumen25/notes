@@ -6,13 +6,16 @@ import re
 import html
 import sys
 import logging
+import time
 from datetime import datetime, timezone, timedelta, date
 from email.utils import format_datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from html.parser import HTMLParser
 
 # === Configure logging ===
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logging.info("Starting script execution.")
+start_time = time.time()
 
 # === Configuration ===
 CONFIG = {
@@ -29,12 +32,13 @@ CONFIG = {
     "site_url": "https://notes.volumen.ca/",
     "rss_description": "Updates and notes from Volūmen",
     "favicon": "favicon.ico",
+    "rss_description_length": 300,
 }
 
 # === Verify Pandoc installation ===
 try:
     result = subprocess.run(["pandoc", "--version"], capture_output=True, text=True, check=True)
-    CONFIG["generator"] = result.stdout.split('\n')[0]
+    CONFIG["generator"] = result.stdout.splitlines()[0]
 except (subprocess.CalledProcessError, FileNotFoundError):
     logging.error("Pandoc is not installed or not found in PATH.")
     sys.exit(1)
@@ -52,19 +56,35 @@ if not os.path.isdir(CONFIG["content_dir"]):
     sys.exit(1)
 os.makedirs(CONFIG["frag_dir"], exist_ok=True)
 
-# === Helper functions ===
-def get_plain_text(body):
-    if not body.strip():
-        return ""
-    try:
-        result = subprocess.run(
-            ["pandoc", "-f", "markdown", "-t", "plain"],
-            input=body,
-            text=True, capture_output=True, encoding="utf-8", check=True
-        )
-        return result.stdout.strip().replace("\n", " ")
-    except subprocess.CalledProcessError:
-        return body[:300].replace("\n", " ")
+# === HTML Parser to extract plain text from the second <p> tag ===
+class TextExtractor(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.text = []
+        self.p_count = 0
+        self.in_target_p = False
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "p":
+            self.p_count += 1
+            if self.p_count == 2:  # Target the second <p> tag
+                self.in_target_p = True
+
+    def handle_endtag(self, tag):
+        if tag == "p":
+            self.in_target_p = False
+
+    def handle_data(self, data):
+        if self.in_target_p:
+            self.text.append(data.strip())
+
+    def get_text(self, max_length):
+        text = " ".join(self.text).strip()
+        if not text:
+            return "No description available."
+        if len(text) > max_length:
+            text = text[:max_length - 3].rsplit(" ", 1)[0] + "..."
+        return text
 
 # === Process intro.md ===
 intro_html = ""
@@ -75,7 +95,7 @@ if os.path.exists(CONFIG["intro_md"]):
         with open(CONFIG["intro_md"], "r", encoding="utf-8") as src, open(temp_md, "w", encoding="utf-8") as dst:
             dst.write(src.read())
         subprocess.run(
-            ["pandoc", temp_md, "-o", output_html, "--css", CONFIG["css_file"], "--no-highlight", "--file-scope"],
+            ["pandoc", temp_md, "-t", "html", "-o", output_html, "--no-highlight", "--file-scope"],
             check=True, capture_output=True, text=True
         )
         with open(output_html, "r", encoding="utf-8") as f:
@@ -97,8 +117,6 @@ if not md_files:
 anchor_counts = {}
 bar_length = 30
 now = datetime.now(timezone.utc)
-max_filename_length = max(len(os.path.basename(f)) for f in md_files) if md_files else 0
-max_line_length = bar_length + len("[] 100.0% (XX/XX) processed ") + max_filename_length
 
 # === Function to process a single Markdown file ===
 def process_file(md_file):
@@ -114,14 +132,14 @@ def process_file(md_file):
 
     title, date_str, body = "Untitled", "", content
     date_obj = datetime.fromtimestamp(os.path.getmtime(md_file), tz=timezone.utc)
-    description = get_plain_text(body)[:300] + "..." if body else ""
 
-    if content.startswith("---"):
+    # --- Parse YAML front matter if present ---
+    parts = content.split("---", 2)
+    if len(parts) >= 3:
         try:
-            metadata, body = content.split("---", 2)[1:3]
-            metadata_lines = metadata.splitlines()
-            metadata = "\n".join(line for line in metadata_lines if not line.strip().startswith("subtitle:"))
-            metadata = yaml.safe_load(metadata) or {}
+            metadata, body = parts[1], parts[2]
+            metadata_lines = [line for line in metadata.splitlines() if not line.strip().startswith("subtitle:")]
+            metadata = yaml.safe_load("\n".join(metadata_lines)) or {}
             title = metadata.get("title", title)
             date_str = metadata.get("date", "")
             if date_str:
@@ -133,10 +151,10 @@ def process_file(md_file):
                 except Exception:
                     pass
             body = body.strip()
-            description = get_plain_text(body)[:300] + "..." if body else description
         except Exception:
             pass  # keep defaults
 
+    # --- Generate unique anchor ---
     anchor_base = re.sub(r"[^\w\-]", "", title.lower().replace(" ", "-"))
     anchor = anchor_base
     if anchor in anchor_counts:
@@ -145,32 +163,40 @@ def process_file(md_file):
     else:
         anchor_counts[anchor] = 0
 
+    # --- Run Pandoc ---
     pandoc_input = f"# {title} {{#{anchor}}}\n{date_str}\n\n{body}\n\n::: {{#refs}}\n:::\n"
     try:
         result = subprocess.run(
             ["pandoc", "-f", "markdown", "-t", "html",
-             "--css", CONFIG["css_file"], "--no-highlight", "--citeproc",
-             "--file-scope",
+             "--no-highlight", "--citeproc", "--file-scope",
              f"--bibliography={CONFIG['bib_file']}",
              f"--csl={CONFIG['csl_file']}"],
-            input=pandoc_input, text=True, capture_output=True, encoding="utf-8", check=True
+            input=pandoc_input, text=True, capture_output=True, check=True
         )
         with open(frag_html, "w", encoding="utf-8") as f:
             f.write(result.stdout)
+        # --- Extract description from HTML fragment (second <p> tag) ---
+        parser = TextExtractor()
+        parser.feed(result.stdout)
+        description = parser.get_text(CONFIG["rss_description_length"])
     except subprocess.CalledProcessError as e:
         logging.warning(f"Pandoc failed for {md_file}: {e.stderr}")
+        description = "No description available."
 
     return frag_html, (title, anchor, date_obj, date_str, description)
 
 # === Process all Markdown files in parallel ===
 fragment_meta_pairs = []
-with ThreadPoolExecutor(max_workers=4) as executor:
+max_filename_length = max((len(os.path.basename(f)) for f in md_files), default=0)
+max_line_length = bar_length + len("[] 100.0% (XX/XX) processed ") + max_filename_length
+
+with ThreadPoolExecutor(max_workers=os.cpu_count() or 4) as executor:
     futures = {executor.submit(process_file, f): f for f in md_files}
     for completed, future in enumerate(as_completed(futures), start=1):
         frag, meta = future.result()
         if meta:
             fragment_meta_pairs.append((frag, meta))
-        percent = completed / len(md_files)
+        percent = completed / len(md_files) if md_files else 1
         filled = int(bar_length * percent)
         bar = "#" * filled + "-" * (bar_length - filled)
         sys.stdout.write(f"\r[{bar}] {percent:>5.1%} ({completed}/{len(md_files)}) processed")
@@ -218,6 +244,7 @@ logging.info(f"Page generated → {CONFIG['final_html']}")
 # === Generate RSS feed ===
 rss_file = "rss.xml"
 last_build = format_datetime(now)
+pub_dates_used = set()
 
 with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
@@ -231,7 +258,6 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     for _, meta in fragment_meta_pairs[:20]:
         title, anchor, date_obj, date_str, description = meta
         pub_date = date_obj
-        pub_dates_used = set()
         while pub_date in pub_dates_used:
             pub_date += timedelta(seconds=1)
         pub_dates_used.add(pub_date)
@@ -247,3 +273,4 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write("</channel>\n</rss>\n")
 
 logging.info(f"RSS feed generated → {rss_file}")
+logging.info(f"Completed in {time.time() - start_time:.2f}s")
