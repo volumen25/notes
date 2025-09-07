@@ -66,11 +66,6 @@ def get_plain_text(body):
     except subprocess.CalledProcessError:
         return body[:300].replace("\n", " ")
 
-def needs_conversion(md_file, frag_file):
-    if not os.path.exists(frag_file):
-        return True
-    return os.path.getmtime(md_file) > os.path.getmtime(frag_file)
-
 # === Process intro.md ===
 intro_html = ""
 if os.path.exists(CONFIG["intro_md"]):
@@ -92,15 +87,10 @@ if os.path.exists(CONFIG["intro_md"]):
             os.remove(temp_md)
 
 # === Collect Markdown files ===
-md_files = sorted(
-    [
-        f for f in glob.glob(os.path.join(CONFIG["content_dir"], "*.md"))
-        if not os.path.basename(f).startswith("README")
-        and os.path.abspath(f) != os.path.abspath(CONFIG["intro_md"])
-    ],
-    reverse=True
-)
-
+md_files = [
+    f for f in glob.glob(os.path.join(CONFIG["content_dir"], "*.md"))
+    if not os.path.basename(f).startswith("README") and os.path.abspath(f) != os.path.abspath(CONFIG["intro_md"])
+]
 if not md_files:
     logging.warning("No Markdown files found in content directory.")
 
@@ -108,9 +98,9 @@ anchor_counts = {}
 bar_length = 30
 now = datetime.now(timezone.utc)
 max_filename_length = max(len(os.path.basename(f)) for f in md_files) if md_files else 0
-max_line_length = bar_length + len("[] 100.0% (XX/XX) Processing ") + max_filename_length
+max_line_length = bar_length + len("[] 100.0% (XX/XX) processed ") + max_filename_length
 
-# === Process Markdown files in parallel ===
+# === Function to process a single Markdown file ===
 def process_file(md_file):
     stem = os.path.splitext(os.path.basename(md_file))[0]
     frag_html = os.path.join(CONFIG["frag_dir"], f"{stem}.html")
@@ -172,31 +162,27 @@ def process_file(md_file):
 
     return frag_html, (title, anchor, date_obj, date_str, description)
 
-# Run in parallel with progress bar
-total = len(md_files)
-completed = 0
-fragment_paths = []
-metadata_list = []
-
+# === Process all Markdown files in parallel ===
+fragment_meta_pairs = []
 with ThreadPoolExecutor(max_workers=4) as executor:
-    future_to_file = {executor.submit(process_file, f): f for f in md_files}
-    for future in as_completed(future_to_file):
+    futures = {executor.submit(process_file, f): f for f in md_files}
+    for completed, future in enumerate(as_completed(futures), start=1):
         frag, meta = future.result()
-        fragment_paths.append(frag)
         if meta:
-            metadata_list.append(meta)
-        completed += 1
-        percent = completed / total
+            fragment_meta_pairs.append((frag, meta))
+        percent = completed / len(md_files)
         filled = int(bar_length * percent)
         bar = "#" * filled + "-" * (bar_length - filled)
-        sys.stdout.write(f"\r[{bar}] {percent:>5.1%} ({completed}/{total}) processed")
+        sys.stdout.write(f"\r[{bar}] {percent:>5.1%} ({completed}/{len(md_files)}) processed")
         sys.stdout.flush()
 
 sys.stdout.write("\r" + " " * max_line_length + "\r")
 sys.stdout.flush()
 
+# === Sort fragments by newest first ===
+fragment_meta_pairs.sort(key=lambda x: x[1][2], reverse=True)
+
 # === Assemble index.html ===
-toc_entries = [(m[0], m[1]) for m in metadata_list]
 with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
     favicon_tag = f'<link rel="icon" type="image/x-icon" href="{CONFIG["favicon"]}">' if os.path.exists(CONFIG["favicon"]) else ""
     index.write(f"""<!DOCTYPE html>
@@ -214,12 +200,14 @@ with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
     <h1>{CONFIG['title']}</h1>
     {intro_html + '\n<hr>\n' if intro_html else ''}
 """)
-    for frag_path in fragment_paths:
+    for frag_path, _ in fragment_meta_pairs:
         if os.path.exists(frag_path):
             with open(frag_path, "r", encoding="utf-8") as frag:
                 index.write(frag.read() + "\n<hr>\n")
         else:
             logging.warning(f"Fragment {frag_path} not found. Skipping.")
+
+    toc_entries = [(m[0], m[1]) for _, m in fragment_meta_pairs]
     index.write("<h1>Index</h1>\n<ul>\n")
     for title, anchor in toc_entries:
         index.write(f'<li><a href="#{anchor}">{html.escape(title)}</a></li>\n')
@@ -231,8 +219,6 @@ logging.info(f"Page generated → {CONFIG['final_html']}")
 rss_file = "rss.xml"
 last_build = format_datetime(now)
 
-valid_metadata = [m for m in metadata_list if m is not None]
-
 with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
     rss.write('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n')
@@ -242,13 +228,13 @@ with open(rss_file, "w", encoding="utf-8") as rss:
     rss.write(f"<lastBuildDate>{last_build}</lastBuildDate>\n")
     rss.write(f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n')
 
-    sorted_metadata = sorted(valid_metadata, key=lambda x: x[2], reverse=True)
-    used_dates = set()
-    for title, anchor, date_obj, date_str, description in sorted_metadata[:20]:
+    for _, meta in fragment_meta_pairs[:20]:
+        title, anchor, date_obj, date_str, description = meta
         pub_date = date_obj
-        while pub_date in used_dates:
+        pub_dates_used = set()
+        while pub_date in pub_dates_used:
             pub_date += timedelta(seconds=1)
-        used_dates.add(pub_date)
+        pub_dates_used.add(pub_date)
         pub_date_str = format_datetime(pub_date)
         rss.write("<item>\n")
         rss.write(f"<title>{html.escape(title)}</title>\n")

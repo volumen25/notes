@@ -4,21 +4,14 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 07 Sep 2025 06:49:19 +0000</lastBuildDate>
+<lastBuildDate>Sun, 07 Sep 2025 07:58:17 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
-<title>Bullshit Jobs</title>
-<link>https://notes.volumen.ca/index.html#bullshit-jobs</link>
-<guid>https://notes.volumen.ca/index.html#bullshit-jobs</guid>
-<description>Lessons from the Book  Many jobs are pointless or most jobs have elements of pointless activities. Pay attention to the people and the positions they hold. If you identify any of the five types, do not waste your precious time. Most importantly if you discover your job is nothing but bs, you must fi...</description>
-<pubDate>Sat, 06 Sep 2025 20:55:51 +0000</pubDate>
-</item>
-<item>
-<title>Colophon</title>
-<link>https://notes.volumen.ca/index.html#colophon</link>
-<guid>https://notes.volumen.ca/index.html#colophon</guid>
-<description>Volūmen is built with Pandoc, Python, and the Courier monospace typeface....</description>
-<pubDate>Sat, 06 Sep 2025 20:46:12 +0000</pubDate>
+<title>Seneca Effect</title>
+<link>https://notes.volumen.ca/index.html#seneca-effect</link>
+<guid>https://notes.volumen.ca/index.html#seneca-effect</guid>
+<description>The Seneca Effect [@bardiSenecaEffectWhy2017], as explained by Ugo Bardi, views complex systems through a systems-thinking lens. Drawing on Seneca’s observation that ”increases are of sluggish growth, but the way to ruin is rapid,” the book suggests that systems grow gradually but collapse swiftly d...</description>
+<pubDate>Sun, 07 Sep 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Imperfection</title>
@@ -32,7 +25,7 @@
 <link>https://notes.volumen.ca/index.html#uses</link>
 <guid>https://notes.volumen.ca/index.html#uses</guid>
 <description>When I seek guidance, I turn to books. Classical philosophy and strategy teach leadership and discipline, especially during workplace challenges [@musashiBookFiveRings2005; @tzuArtWar2005; @tzuTaoTeChing1989; @machiavelliPrince1998]. The Stoics highlight life’s fragility [@senecaShortnessLifeOther19...</description>
-<pubDate>Sat, 06 Sep 2025 00:00:01 +0000</pubDate>
+<pubDate>Sat, 06 Sep 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Nuances</title>
@@ -56,18 +49,18 @@
 <pubDate>Tue, 26 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
+<title>One and Done</title>
+<link>https://notes.volumen.ca/index.html#one-and-done</link>
+<guid>https://notes.volumen.ca/index.html#one-and-done</guid>
+<description>I find myself increasingly drawn to a “one-and-done” philosophy when it comes to worldly possessions. There’s a quiet realization that I don’t have enough time to truly experience or make good use of the things I have, like pens, guitars, and other tools. It seems that to understand something deeply...</description>
+<pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>Asymmetries</title>
 <link>https://notes.volumen.ca/index.html#asymmetries</link>
 <guid>https://notes.volumen.ca/index.html#asymmetries</guid>
 <description>I noticed certain asymmetries that govern the relationship between positive and negative outcomes—for example effort versus gain; especially once a critical point has been passed, such as the point of diminishing returns.  The Pareto distribution provides another example of this kind of asymmetry (r...</description>
 <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>One and Done</title>
-<link>https://notes.volumen.ca/index.html#one-and-done</link>
-<guid>https://notes.volumen.ca/index.html#one-and-done</guid>
-<description>I find myself increasingly drawn to a “one-and-done” philosophy when it comes to worldly possessions. There’s a quiet realization that I don’t have enough time to truly experience or make good use of the things I have, like pens, guitars, and other tools. It seems that to understand something deeply...</description>
-<pubDate>Mon, 25 Aug 2025 00:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Short-termism</title>
@@ -102,7 +95,7 @@
 <link>https://notes.volumen.ca/index.html#reflection-cultivates-intuition</link>
 <guid>https://notes.volumen.ca/index.html#reflection-cultivates-intuition</guid>
 <description>Reflect on what you’ve read and written. Information becomes knowledge by reflection. Reflection cultivates intuition. Abundant intuition makes up for the lack of information, thereby enabling you to operate where your knowledge is limited.  This principle aligns with learning theory, cognitive scie...</description>
-<pubDate>Thu, 14 Aug 2025 00:00:01 +0000</pubDate>
+<pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Experiments vs. Exercises</title>
@@ -116,7 +109,7 @@
 <link>https://notes.volumen.ca/index.html#80-percent-limit</link>
 <guid>https://notes.volumen.ca/index.html#80-percent-limit</guid>
 <description>Learn to stop at 80% mark in eating, talking, and working to stay sharp, leave space for others, and keep your energy for what matters. The idea of stopping at 80% comes from the Japanese concept hara hachi bu, which means eating until you’re about 80% full. This idea can also be applied to other ar...</description>
-<pubDate>Fri, 08 Aug 2025 00:00:01 +0000</pubDate>
+<pubDate>Fri, 08 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>The Power of Small Rituals</title>
@@ -145,6 +138,13 @@
 <guid>https://notes.volumen.ca/index.html#the-art-of-translation</guid>
 <description>Borges wrote and lectured extensively on the art of translation, holding that a translation may improve upon the original, may even be unfaithful to it, and that alternative and potentially contradictory renderings of the same work can be equally valid....</description>
 <pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>On Problem-solving</title>
+<link>https://notes.volumen.ca/index.html#on-problem-solving</link>
+<guid>https://notes.volumen.ca/index.html#on-problem-solving</guid>
+<description>Some problems come from life itself—they shape us, test us, make us stronger. Struggling with them gives the soul weight and meaning. But other problems are man-made—born of fear, control, and small minds. They do not lift us up; they drain us. In places ruled by politics and pretense, effort leads ...</description>
+<pubDate>Sat, 31 May 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>

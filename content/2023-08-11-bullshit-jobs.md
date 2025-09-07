@@ -1,6 +1,6 @@
 ---
 title: Bullshit Jobs
-date: 2023-August-11
+date: 2023-08-11
 tags:
   - non-fiction
   - philosophy
