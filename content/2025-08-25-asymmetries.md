@@ -5,6 +5,7 @@ tags:
   - volumen
 description: A few things worth noting.
 ---
+
 I noticed certain asymmetries that govern the relationship between positive and negative outcomes—for example effort versus gain; especially once a critical point has been passed, such as the point of diminishing returns.
 
 The Pareto distribution provides another example of this kind of asymmetry (roughly 80% of outcomes stem from 20% of causes).
