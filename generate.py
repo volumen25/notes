@@ -15,18 +15,17 @@ from email.utils import format_datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
 
+# Base directory is the directory containing this script (/Users/user1/Documents/notes)
+BASE_DIR = Path(__file__).parent
+
 # ----------------------------
-# Step 1. Copy .md files (copymd.py)
+# Step 1. Copy .md files
 # ----------------------------
 def run_copymd():
-    def clear_screen():
-        """Clear the terminal screen (cross-platform)."""
-        os.system("cls" if os.name == "nt" else "clear")
 
-    clear_screen()
-
+    # Define source and target directories
     SOURCE_DIR = Path.home() / "Documents/codeberg/content"
-    TARGET_DIR = Path.home() / "Documents/notes/content"
+    TARGET_DIR = BASE_DIR / "content"
 
     TARGET_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -67,37 +66,35 @@ def run_copymd():
             if not dest_file.exists() or file.stat().st_mtime > dest_file.stat().st_mtime:
                 shutil.copy2(file, dest_file)
                 copied += 1
-                print(f"Copied: {rel_path}")
             else:
                 skipped += 1
 
     print(f"{copied} copied, {skipped} skipped.")
-
+    return copied, skipped
 
 # ----------------------------
-# Step 2. Build HTML + RSS (build.py)
+# Step 2. Build HTML + RSS
 # ----------------------------
 def run_build():
     # === Configure logging ===
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
-    logging.info("Starting script execution.")
-    start_time = time.time()
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+    logging.info("Starting build process.")
 
     # === Configuration ===
     CONFIG = {
-        "content_dir": "content",
-        "intro_md": os.path.join("content", "intro.md"),
-        "css_file": "typewriter.css",
-        "bib_file": "refs.json",
-        "csl_file": "apa.csl",
-        "frag_dir": "fragments",
-        "final_html": "index.html",
+        "content_dir": str(BASE_DIR / "content"),
+        "intro_md": str(BASE_DIR / "content" / "intro.md"),
+        "css_file": str(BASE_DIR / "typewriter.css"),
+        "bib_file": str(BASE_DIR / "refs.json"),
+        "csl_file": str(BASE_DIR / "apa.csl"),
+        "frag_dir": str(BASE_DIR / "fragments"),
+        "final_html": str(BASE_DIR / "index.html"),
         "title": "Volūmen",
         "generator": "Pandoc",
         "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
         "site_url": "https://notes.volumen.ca/",
         "rss_description": "Updates and notes from Volūmen",
-        "favicon": "favicon.ico",
+        "favicon": str(BASE_DIR / "favicon.ico"),
         "rss_description_length": 300,
     }
 
@@ -305,10 +302,10 @@ def run_build():
             index.write(f'<li><a href="#{anchor}">{html.escape(title)}</a></li>\n')
         index.write("</ul>\n</body>\n</html>\n")
 
-    logging.info(f"Page generated → {CONFIG['final_html']}")
+    logging.info(f"Page generated → {Path(CONFIG['final_html']).name}")
 
     # === Generate RSS feed ===
-    rss_file = "rss.xml"
+    rss_file = str(BASE_DIR / "rss.xml")
     last_build = format_datetime(now)
     pub_dates_used = set()
 
@@ -338,13 +335,13 @@ def run_build():
 
         rss.write("</channel>\n</rss>\n")
 
-    logging.info(f"RSS feed generated → {rss_file}")
-    logging.info(f"Completed in {time.time() - start_time:.2f}s")
-
+    logging.info(f"RSS feed generated → {Path(rss_file).name}")
 
 # ----------------------------
 # Run in order
 # ----------------------------
 if __name__ == "__main__":
+    total_start_time = time.time()
     run_copymd()
     run_build()
+    logging.info(f"Total process completed in {time.time() - total_start_time:.2f}s")
