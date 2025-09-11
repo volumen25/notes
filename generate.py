@@ -84,7 +84,8 @@ def run_build():
     CONFIG = {
         "content_dir": str(BASE_DIR / "content"),
         "intro_md": str(BASE_DIR / "content" / "intro.md"),
-        "css_file": str(BASE_DIR / "typewriter.css"),
+        "css_file": "/typewriter.css",  # Relative path for HTML output
+        "css_file_local": str(BASE_DIR / "typewriter.css"),  # Local path for existence check
         "bib_file": str(BASE_DIR / "refs.json"),
         "csl_file": str(BASE_DIR / "apa.csl"),
         "frag_dir": str(BASE_DIR / "fragments"),
@@ -94,7 +95,8 @@ def run_build():
         "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
         "site_url": "https://notes.volumen.ca/",
         "rss_description": "Updates and notes from Volūmen",
-        "favicon": str(BASE_DIR / "favicon.ico"),
+        "favicon": "/favicon.ico",  # Relative path for HTML output
+        "favicon_local": str(BASE_DIR / "favicon.ico"),  # Local path for existence check
         "rss_description_length": 300,
     }
 
@@ -111,7 +113,7 @@ def run_build():
         if not os.path.exists(file):
             logging.error(f"Required file {file} not found.")
             sys.exit(1)
-    for file in [CONFIG["css_file"], CONFIG["favicon"]]:
+    for file in [CONFIG["css_file_local"], CONFIG["favicon_local"]]:
         if not os.path.exists(file):
             logging.warning(f"Optional file {file} not found. Proceeding without it.")
     if not os.path.isdir(CONFIG["content_dir"]):
@@ -273,7 +275,7 @@ def run_build():
 
     # === Assemble index.html ===
     with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
-        favicon_tag = f'<link rel="icon" type="image/x-icon" href="{CONFIG["favicon"]}">' if os.path.exists(CONFIG["favicon"]) else ""
+        favicon_tag = f'<link rel="icon" type="image/x-icon" href="{CONFIG["favicon"]}">' if os.path.exists(CONFIG["favicon_local"]) else ""
         index.write(f"""<!DOCTYPE html>
 <html lang="en">
 <head>
