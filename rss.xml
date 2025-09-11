@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 08 Sep 2025 07:20:49 +0000</lastBuildDate>
+<lastBuildDate>Thu, 11 Sep 2025 00:11:24 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Italian Food</title>
+<link>https://notes.volumen.ca/index.html#italian-food</link>
+<guid>https://notes.volumen.ca/index.html#italian-food</guid>
+<description>Italian cuisine varies by region and season, using local ingredients
+and traditions. This results in distinct flavours for the same pasta or
+cheese, making it a delightful journey to explore Italy’s diverse
+tastes.</description>
+<pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Italy&#x27;s Notable People</title>
 <link>https://notes.volumen.ca/index.html#italys-notable-people</link>
@@ -210,17 +220,6 @@ optimizing too early; “premature optimization is the root of all evil
 sentiment applies beyond code. We often fall into the trap of
 optimization too early, whether in...</description>
 <pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Tools</title>
-<link>https://notes.volumen.ca/index.html#tools</link>
-<guid>https://notes.volumen.ca/index.html#tools</guid>
-<description>We build tools to create objects, ideas, and dreams. These tools and
-their creations slip quietly into our souls, remaking us into strangers
-to our former selves. As they can do good or harm, we must carefully
-design them. This can be a vicious cycle; thus, we must strive for a
-virtuous one.</description>
-<pubDate>Sun, 27 Jul 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
