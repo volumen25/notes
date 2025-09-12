@@ -22,7 +22,6 @@ BASE_DIR = Path(__file__).parent
 # Step 1. Copy .md files
 # ----------------------------
 def run_copymd():
-
     # Define source and target directories
     SOURCE_DIR = Path.home() / "Documents/codeberg/content"
     TARGET_DIR = BASE_DIR / "content"
@@ -85,41 +84,19 @@ def run_build():
         "content_dir": str(BASE_DIR / "content"),
         "intro_md": str(BASE_DIR / "content" / "intro.md"),
         "css_file": "./typewriter.css",  # Relative path for HTML output
-        "css_file_local": str(BASE_DIR / "typewriter.css"),  # Local path for existence check
+        "css_file_local": str(BASE_DIR / "typewriter.css"),  # Local path for favicon tag condition
         "bib_file": str(BASE_DIR / "refs.json"),
         "csl_file": str(BASE_DIR / "apa.csl"),
         "frag_dir": str(BASE_DIR / "fragments"),
         "final_html": str(BASE_DIR / "index.html"),
         "title": "Volūmen",
-        "generator": "Pandoc",
+        "generator": subprocess.run(["pandoc", "--version"], capture_output=True, text=True).stdout.splitlines()[0],
         "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
         "site_url": "https://notes.volumen.ca/",
         "rss_description": "Updates and notes from Volūmen",
         "favicon": "./favicon.ico",  # Relative path for HTML output
-        "favicon_local": str(BASE_DIR / "favicon.ico"),  # Local path for existence check
         "rss_description_length": 300,
     }
-
-    # === Verify Pandoc installation ===
-    try:
-        result = subprocess.run(["pandoc", "--version"], capture_output=True, text=True, check=True)
-        CONFIG["generator"] = result.stdout.splitlines()[0]
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        logging.error("Pandoc is not installed or not found in PATH.")
-        sys.exit(1)
-
-    # === Verify files/directories ===
-    for file in [CONFIG["bib_file"], CONFIG["csl_file"]]:
-        if not os.path.exists(file):
-            logging.error(f"Required file {file} not found.")
-            sys.exit(1)
-    for file in [CONFIG["css_file_local"], CONFIG["favicon_local"]]:
-        if not os.path.exists(file):
-            logging.warning(f"Optional file {file} not found. Proceeding without it.")
-    if not os.path.isdir(CONFIG["content_dir"]):
-        logging.error(f"'{CONFIG['content_dir']}' directory not found.")
-        sys.exit(1)
-    os.makedirs(CONFIG["frag_dir"], exist_ok=True)
 
     # === HTML Parser to extract plain text from the second <p> tag ===
     class TextExtractor(HTMLParser):
@@ -275,7 +252,6 @@ def run_build():
 
     # === Assemble index.html ===
     with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
-        favicon_tag = f'<link rel="icon" type="image/x-icon" href="{CONFIG["favicon"]}">' if os.path.exists(CONFIG["favicon_local"]) else ""
         index.write(f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -283,7 +259,7 @@ def run_build():
     <meta name="generator" content="{CONFIG['generator']}">
     <meta name="viewport" content="{CONFIG['viewport']}">
     <title>{CONFIG['title']}</title>
-    {favicon_tag}
+    <link rel="icon" type="image/x-icon" href="{CONFIG['favicon']}">
     <link rel="stylesheet" href="{CONFIG['css_file']}">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="rss.xml">
 </head>
