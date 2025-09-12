@@ -19,13 +19,34 @@ from html.parser import HTMLParser
 BASE_DIR = Path(__file__).parent
 
 # ----------------------------
-# Step 1. Copy .md files
+# Generate HTML and RSS
 # ----------------------------
-def run_copymd():
-    # Define source and target directories
+def generate():
+    # === Configure logging ===
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+    logging.info("Starting build process.")
+
+    # === Configuration ===
+    CONFIG = {
+        "content_dir": str(BASE_DIR / "content"),
+        "intro_md": str(BASE_DIR / "content" / "intro.md"),
+        "css_file": "./typewriter.css",  # Relative path for HTML output
+        "bib_file": str(BASE_DIR / "refs.json"),
+        "csl_file": str(BASE_DIR / "apa.csl"),
+        "frag_dir": str(BASE_DIR / "fragments"),
+        "final_html": str(BASE_DIR / "index.html"),
+        "title": "Volūmen",
+        "generator": subprocess.run(["pandoc", "--version"], capture_output=True, text=True).stdout.splitlines()[0],
+        "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
+        "site_url": "https://notes.volumen.ca/",
+        "rss_description": "Updates and notes from Volūmen",
+        "favicon": "./favicon.ico",  # Relative path for HTML output
+        "rss_description_length": 300,
+    }
+
+    # === Copy .md files ===
     SOURCE_DIR = Path.home() / "Documents/codeberg/content"
     TARGET_DIR = BASE_DIR / "content"
-
     TARGET_DIR.mkdir(parents=True, exist_ok=True)
 
     copied = 0
@@ -69,34 +90,6 @@ def run_copymd():
                 skipped += 1
 
     print(f"{copied} copied, {skipped} skipped.")
-    return copied, skipped
-
-# ----------------------------
-# Step 2. Build HTML + RSS
-# ----------------------------
-def run_build():
-    # === Configure logging ===
-    logging.basicConfig(level=logging.INFO, format="%(message)s")
-    logging.info("Starting build process.")
-
-    # === Configuration ===
-    CONFIG = {
-        "content_dir": str(BASE_DIR / "content"),
-        "intro_md": str(BASE_DIR / "content" / "intro.md"),
-        "css_file": "./typewriter.css",  # Relative path for HTML output
-        "css_file_local": str(BASE_DIR / "typewriter.css"),  # Local path for favicon tag condition
-        "bib_file": str(BASE_DIR / "refs.json"),
-        "csl_file": str(BASE_DIR / "apa.csl"),
-        "frag_dir": str(BASE_DIR / "fragments"),
-        "final_html": str(BASE_DIR / "index.html"),
-        "title": "Volūmen",
-        "generator": subprocess.run(["pandoc", "--version"], capture_output=True, text=True).stdout.splitlines()[0],
-        "viewport": "width=device-width, initial-scale=1.0, user-scalable=yes",
-        "site_url": "https://notes.volumen.ca/",
-        "rss_description": "Updates and notes from Volūmen",
-        "favicon": "./favicon.ico",  # Relative path for HTML output
-        "rss_description_length": 300,
-    }
 
     # === HTML Parser to extract plain text from the second <p> tag ===
     class TextExtractor(HTMLParser):
@@ -316,10 +309,9 @@ def run_build():
     logging.info(f"RSS feed generated → {Path(rss_file).name}")
 
 # ----------------------------
-# Run in order
+# Run
 # ----------------------------
 if __name__ == "__main__":
     total_start_time = time.time()
-    run_copymd()
-    run_build()
+    generate()
     logging.info(f"Total process completed in {time.time() - total_start_time:.2f}s")
