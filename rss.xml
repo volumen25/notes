@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 11 Sep 2025 01:45:05 +0000</lastBuildDate>
+<lastBuildDate>Fri, 12 Sep 2025 03:25:49 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>The Compound Effect</title>
+<link>https://notes.volumen.ca/index.html#the-compound-effect</link>
+<guid>https://notes.volumen.ca/index.html#the-compound-effect</guid>
+<description>I came across this interesting thought on the internet: Consistent
+daily writing yields a book in a year, while sporadic efforts result in
+scattered fragments. The impact is profound. The initial effort feels
+heavy, the first page slow, and the first video awkward, but each effort
+lays...</description>
+<pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Italian Food</title>
 <link>https://notes.volumen.ca/index.html#italian-food</link>
@@ -209,17 +220,6 @@ Mogi (Mogi,
 engage in daily. Practice for the sake of practice, following Suzuki’s (Suzuki,
 2020)...</description>
 <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Premature Optimization</title>
-<link>https://notes.volumen.ca/index.html#premature-optimization</link>
-<guid>https://notes.volumen.ca/index.html#premature-optimization</guid>
-<description>As Donald Knuth wrote in 1974, programmers often waste effort
-optimizing too early; “premature optimization is the root of all evil
-(or at least most of it) in programming” (Knuth, 1974). This
-sentiment applies beyond code. We often fall into the trap of
-optimization too early, whether in...</description>
-<pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
