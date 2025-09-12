@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 12 Sep 2025 03:43:33 +0000</lastBuildDate>
+<lastBuildDate>Fri, 12 Sep 2025 03:50:51 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>The Compound Effect</title>
@@ -16,16 +16,6 @@ scattered fragments. The impact is profound. The initial effort feels
 heavy, the first page slow, and the first video awkward, but each effort
 lays...</description>
 <pubDate>Thu, 11 Sep 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Italian Food</title>
-<link>https://notes.volumen.ca/index.html#italian-food</link>
-<guid>https://notes.volumen.ca/index.html#italian-food</guid>
-<description>Italian cuisine varies by region and season, using local ingredients
-and traditions. This results in distinct flavours for the same pasta or
-cheese, making it a delightful journey to explore Italy’s diverse
-tastes.</description>
-<pubDate>Wed, 10 Sep 2025 00:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Italy&#x27;s Notable People</title>
@@ -220,6 +210,17 @@ Mogi (Mogi,
 engage in daily. Practice for the sake of practice, following Suzuki’s (Suzuki,
 2020)...</description>
 <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Premature Optimization</title>
+<link>https://notes.volumen.ca/index.html#premature-optimization</link>
+<guid>https://notes.volumen.ca/index.html#premature-optimization</guid>
+<description>As Donald Knuth wrote in 1974, programmers often waste effort
+optimizing too early; “premature optimization is the root of all evil
+(or at least most of it) in programming” (Knuth, 1974). This
+sentiment applies beyond code. We often fall into the trap of
+optimization too early, whether in...</description>
+<pubDate>Sun, 03 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
