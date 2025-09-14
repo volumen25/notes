@@ -14,3 +14,4 @@ People frequently disregard or bend rules and conventions. Therefore, one should
 Competent chess players often find it challenging to compete against complete novices, as they are frequently surprised by the unconventional moves novices make.
 
 This principle extends beyond chess to any rule-based interaction, where mutual understanding of conventions is critical.
+
