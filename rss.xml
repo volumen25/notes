@@ -4,8 +4,16 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 14 Sep 2025 20:52:04 +0000</lastBuildDate>
+<lastBuildDate>Tue, 16 Sep 2025 15:14:37 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Fake News</title>
+<link>https://notes.volumen.ca/index.html#fake-news</link>
+<guid>https://notes.volumen.ca/index.html#fake-news</guid>
+<description>The greatest worry about the idea of fake news isn’t actually that
+people believe false news - it’s that they stop believing real news. Phillips (2020)</description>
+<pubDate>Tue, 16 Sep 2025 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>The Compound Effect</title>
 <link>https://notes.volumen.ca/index.html#the-compound-effect</link>
@@ -167,6 +175,16 @@ operate where your knowledge is limited.</description>
 <pubDate>Thu, 14 Aug 2025 00:00:01 +0000</pubDate>
 </item>
 <item>
+<title>The Art of Translation</title>
+<link>https://notes.volumen.ca/index.html#the-art-of-translation</link>
+<guid>https://notes.volumen.ca/index.html#the-art-of-translation</guid>
+<description>Borges wrote and lectured extensively on the art of translation,
+holding that a translation may improve upon the original, may even be
+unfaithful to it, and that alternative and potentially contradictory
+renderings of the same work can be equally valid.</description>
+<pubDate>Thu, 24 Jul 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
 <title>Sustain or cycle</title>
 <link>https://notes.volumen.ca/index.html#sustain-or-cycle</link>
 <guid>https://notes.volumen.ca/index.html#sustain-or-cycle</guid>
@@ -189,35 +207,15 @@ They...</description>
 <pubDate>Sat, 31 May 2025 00:00:01 +0000</pubDate>
 </item>
 <item>
-<title>Truth vs BS</title>
-<link>https://notes.volumen.ca/index.html#truth-vs-bs</link>
-<guid>https://notes.volumen.ca/index.html#truth-vs-bs</guid>
-<description>Considering current times, the number of books and mass media, the
-situation is a lot worse today. Also, no country has fallen as Roman
-Empire did… So it’s a lot worse but global dynamics also evolved.
-Untruth existed for a long time and there’s nothing new about mind
-boggling nonsense that...</description>
-<pubDate>Mon, 26 May 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Mono no aware</title>
-<link>https://notes.volumen.ca/index.html#mono-no-aware</link>
-<guid>https://notes.volumen.ca/index.html#mono-no-aware</guid>
-<description>In Japanese
-esthetics pathos of things played a major role in the world’s first
-novel, Murasaki Shikibu’s Genji monogatari (The Tale of Genji), going
-back to the early eleventh century.</description>
-<pubDate>Mon, 19 May 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Negative Utility</title>
-<link>https://notes.volumen.ca/index.html#negative-utility</link>
-<guid>https://notes.volumen.ca/index.html#negative-utility</guid>
-<description>To begin, you require only a book, a pen, and time. While additional
-tools may appear beneficial, they can be counterproductive, resulting in
-negative utility. These tools do not accelerate your work; rather, they
-consume as much time as you are willing to expend on them.</description>
-<pubDate>Tue, 22 Apr 2025 00:00:00 +0000</pubDate>
+<title>Clarity, Ease &amp; Refinement</title>
+<link>https://notes.volumen.ca/index.html#clarity-ease--refinement</link>
+<guid>https://notes.volumen.ca/index.html#clarity-ease--refinement</guid>
+<description>Concision is to mind what cleanliness is to the body. Concision, like
+cleanliness, plays a crucial role in personal and professional life.
+Just as cleanliness eliminates dirt and clutter from the body, concision
+eliminates unnecessary words and ideas from communication, leaving
+behind clear,...</description>
+<pubDate>Sat, 31 May 2025 00:00:02 +0000</pubDate>
 </item>
 </channel>
 </rss>
