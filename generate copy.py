@@ -206,8 +206,7 @@ def generate():
                 ["pandoc", "-f", "markdown", "-t", "html",
                  "--no-highlight", "--citeproc", "--file-scope",
                  f"--bibliography={CONFIG['bib_file']}",
-                 f"--csl={CONFIG['csl_file']}",
-                 "--lua-filter", str(BASE_DIR / "md-to-html-links.lua")],
+                 f"--csl={CONFIG['csl_file']}"],
                 input=pandoc_input, text=True, capture_output=True, check=True
             )
             with open(frag_html, "w", encoding="utf-8") as f:
