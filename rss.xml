@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Wed, 15 Oct 2025 01:24:17 +0000</lastBuildDate>
+<lastBuildDate>Sun, 19 Oct 2025 04:34:05 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Too Much of Everything</title>
+<link>https://notes.volumen.ca/index.html#too-much-of-everything</link>
+<guid>https://notes.volumen.ca/index.html#too-much-of-everything</guid>
+<description>The more plugins you have, the more distracted you become in your
+text editor, defeating the purpose of having it in the first place.
+Similarly, the more pedals you collect, the farther you drift from
+focusing on your playing. Ironically, the very tools meant to help you
+make music end up...</description>
+<pubDate>Sat, 18 Oct 2025 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Uses</title>
 <link>https://notes.volumen.ca/index.html#uses</link>
@@ -205,17 +216,6 @@ hundred wise men cannot pull out.” Inspired by this, one observation is,
 careless act can have severe consequences, even with effort and truth.
 They...</description>
 <pubDate>Sat, 31 May 2025 00:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Clarity, Ease &amp; Refinement</title>
-<link>https://notes.volumen.ca/index.html#clarity-ease--refinement</link>
-<guid>https://notes.volumen.ca/index.html#clarity-ease--refinement</guid>
-<description>Concision is to mind what cleanliness is to the body. Concision, like
-cleanliness, plays a crucial role in personal and professional life.
-Just as cleanliness eliminates dirt and clutter from the body, concision
-eliminates unnecessary words and ideas from communication, leaving
-behind clear,...</description>
-<pubDate>Sat, 31 May 2025 00:00:02 +0000</pubDate>
 </item>
 </channel>
 </rss>
