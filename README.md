@@ -6,21 +6,19 @@ This repository contains my notes written in Markdown, which are compiled into a
 
 - Notes authored in Markdown with YAML front matter metadata.
 - Single-page HTML output generated via a Python script.
-- Cross-platform virtual environment setup for macOS and Windows.
 - Git workflow guidelines for managing script development and backups.
 
 ## Directory Structure
 
 ```plaintext
 |   apa.csl # Optional citation style file
-|   build.py 
+|   generate.py 
 |   index.html 
 |   README.md 
 |   refs.json # Optional references file
 |   requirements.txt # Python dependencies
 |   typewriter.css 
-+---.venv-mac # macOS virtual environment
-+---.venv-win # Windows virtual environment
++---.venv # macOS virtual environment
 +---content # Markdown source files
 |       2024-10-11-example.md     
 +---fragments # Generated HTML fragments
@@ -32,51 +30,9 @@ This repository contains my notes written in Markdown, which are compiled into a
 ### macOS
 
 ```sh
-python3 -m venv .venv-mac
-source .venv-mac/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-```
-
-### Windows
-
-```powershell
-python -m venv .venv-win
-.venv-win\Scripts\activate
-pip install -r requirements.txt
-```
-
-## Useful Aliases
-
-`venv` toogles between activating and deactivating the virtual environment.
-
-Add this to your shell config on macOS (`~/.zshrc`):
-
-```bash
-venv() {
-  if [ -n "$VIRTUAL_ENV" ]; then
-    deactivate
-    echo "Virtual environment deactivated"
-    return
-  fi
-
-  dir="$PWD"
-  while [ "$dir" != "/" ]; do
-    if [ -f "$dir/.venv-mac/bin/activate" ]; then
-      source "$dir/.venv-mac/bin/activate"
-      echo "Virtual environment activated from $dir/.venv-mac"
-      return
-    fi
-    dir=$(dirname "$dir")
-  done
-
-  echo "No .venv-mac found in this directory or any parent directories."
-}
-```
-
-Add this to your PowerShell profile (`$PROFILE`) on Windows:
-
-```powershell
-Set-Alias venv 'if ($env:VIRTUAL_ENV) { deactivate } else { .\.venv-win\Scripts\Activate.ps1 }'
 ```
 
 ## Build
@@ -84,7 +40,7 @@ Set-Alias venv 'if ($env:VIRTUAL_ENV) { deactivate } else { .\.venv-win\Scripts\
 Generate the HTML page by running:
 
 ```sh
-python .\build.py
+python3 ./generate.py
 ```
 
 This will produce `index.html` in the project directory.
@@ -100,14 +56,14 @@ This will produce `index.html` in the project directory.
 2. Commit a working script:
 
    ```sh
-   git add build.py
+   git add generate.py
    git commit -m "Working: generates single-page index.html"
    ```
 
-3. Edit and test `build.py`. Commit changes if successful:
+3. Edit and test `generate.py`. Commit changes if successful:
 
    ```sh
-   git add build.py
+   git add generate.py
    git commit -m "Describe your changes here"
    ```
 
@@ -117,10 +73,10 @@ This will produce `index.html` in the project directory.
    git log --oneline
    ```
 
-5. Restore `build.py` from a good commit:
+5. Restore `generate.py` from a good commit:
 
    ```sh
-   git checkout <commit-hash> -- build.py
+   git checkout <commit-hash> -- generate.py
    ```
 
 6. Or reset the entire project to a previous state:
@@ -158,7 +114,7 @@ This will produce `index.html` in the project directory.
    ---
    ```
 
-4. Run the build script to update `index.html`.
+4. Run the generate.py script to update `index.html`.
 5. Open the generated `index.html` in a browser to verify your changes.
 6. Commit your changes to the repository:
 
