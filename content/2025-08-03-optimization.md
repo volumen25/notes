@@ -1,9 +1,11 @@
 ---
 title: Premature Optimization
+subtitle: "[no hurry, no pause.](index.html)"
 date: 2025-08-03
 tags:
   - cultivate
   - discipline
+  - volumen
 description: A few things worth noting.
 ---
 
