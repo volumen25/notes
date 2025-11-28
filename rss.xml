@@ -4,8 +4,15 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 28 Nov 2025 03:48:49 +0000</lastBuildDate>
+<lastBuildDate>Fri, 28 Nov 2025 07:29:27 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Unknown</title>
+<link>https://notes.volumen.ca/index.html#unknown</link>
+<guid>https://notes.volumen.ca/index.html#unknown</guid>
+<description>No description available.</description>
+<pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Telecaster</title>
 <link>https://notes.volumen.ca/index.html#telecaster</link>
@@ -15,7 +22,7 @@ caught my eye. I recognized this fine instrument instantly; it was the
 same Telecaster we had seen during our visit to Tokyo last year. And
 now, here I was, holding it in my hands, this time at the Fender
 Flagship Store in...</description>
-<pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+<pubDate>Thu, 27 Nov 2025 00:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Quiet Mornings</title>
@@ -209,15 +216,6 @@ nature, and culture often leaves us in overwhelming awe, yet these
 moments tend to slip away with time, leaving only fragments in our
 long-term memory. What is...</description>
 <pubDate>Sat, 16 Aug 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Intuition</title>
-<link>https://notes.volumen.ca/index.html#intuition</link>
-<guid>https://notes.volumen.ca/index.html#intuition</guid>
-<description>Daniel Kahneman said most people make quick judgments and then try to
-prove themselves right. The wisest wait, gather facts, and trust their
-intuition last.</description>
-<pubDate>Thu, 14 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
