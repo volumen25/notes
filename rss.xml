@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 25 Dec 2025 14:23:33 +0000</lastBuildDate>
+<lastBuildDate>Thu, 01 Jan 2026 00:49:37 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>2025</title>
+<link>https://notes.volumen.ca/index.html#2025</link>
+<guid>https://notes.volumen.ca/index.html#2025</guid>
+<description>Another year is about to conclude. It passed like we inhaled a breath
+of fresh air yesterday, and we are exhaling it a little tired but filled
+with hopes and excitement today. Looking back, the year has been,
+despite its tiring aspects, also full of joyful periods, growth, and
+satisfaction.</description>
+<pubDate>Wed, 31 Dec 2025 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Emptiness</title>
 <link>https://notes.volumen.ca/index.html#emptiness</link>
@@ -205,16 +216,6 @@ positive and negative outcomes—for example effort versus gain;
 especially once a critical point has been passed, such as the point of
 diminishing returns.</description>
 <pubDate>Mon, 25 Aug 2025 00:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Short-termism</title>
-<link>https://notes.volumen.ca/index.html#short-termism</link>
-<guid>https://notes.volumen.ca/index.html#short-termism</guid>
-<description>Darwin (Darwin, 2003) documented any information that contradicted his evolving theories and
-conclusions. He recognized confirmation bias long before it had a name
-and developed a practical system to counteract it. I try to do the same
-when reading or listening to podcasts. Here’s an idea that...</description>
-<pubDate>Thu, 21 Aug 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
