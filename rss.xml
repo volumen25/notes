@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 02 Jan 2026 06:24:34 +0000</lastBuildDate>
+<lastBuildDate>Sun, 04 Jan 2026 21:47:46 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Rick Rubin</title>
+<link>https://notes.volumen.ca/index.html#rick-rubin</link>
+<guid>https://notes.volumen.ca/index.html#rick-rubin</guid>
+<description>Rick Rubin is a remarkable man who has produced such notable artists
+as Johnny Cash and Jake Bugg. I recently came across The Way of Code (Anthropic,
+n.d.), in which he notes, “Each encounter I’ve had with Lao Tzu
+has pointed to something new. Almost as if the book changes with every
+reading. I...</description>
+<pubDate>Sun, 04 Jan 2026 00:00:00 +0000</pubDate>
+</item>
 <item>
 <title>2025</title>
 <link>https://notes.volumen.ca/index.html#2025</link>
@@ -206,16 +217,6 @@ don’t have enough time to truly experience or make good use of the
 things I have, like pens, guitars, and other tools. It seems that to
 understand something...</description>
 <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Asymmetries</title>
-<link>https://notes.volumen.ca/index.html#asymmetries</link>
-<guid>https://notes.volumen.ca/index.html#asymmetries</guid>
-<description>I noticed certain asymmetries that govern the relationship between
-positive and negative outcomes—for example effort versus gain;
-especially once a critical point has been passed, such as the point of
-diminishing returns.</description>
-<pubDate>Mon, 25 Aug 2025 00:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
