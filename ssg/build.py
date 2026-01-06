@@ -42,14 +42,14 @@ def generate():
     CONFIG = {
         "content_dir": str(CONTENT_DIR),
         "intro_md": str(CONTENT_DIR / "intro.md"),
-        "css_file": str(ASSETS_DIR / "typewriter.css"),
+        "css_file": "typewriter.css",  # Relative path (in same dir as index.html)
         "bib_file": str(ASSETS_DIR / "refs.json"),
         "csl_file": str(ASSETS_DIR / "apa.csl"),
         "lua_filter": str(ASSETS_DIR / "md-to-html-links.lua"),
         "frag_dir": str(FRAG_DIR),
         "final_html": str(OUTPUT_DIR / "index.html"),
         "rss_file": str(OUTPUT_DIR / "rss.xml"),
-        "favicon": str(ASSETS_DIR / "favicon.ico"),
+        "favicon": "favicon.ico",  # Relative path (in same dir as index.html)
         "title": "Volūmen",
         "site_url": "https://notes.volumen.ca/",
         "rss_description": "Updates and notes from Volūmen",
@@ -378,6 +378,19 @@ def generate():
         rss.write("</channel>\n</rss>\n")
 
     logging.info(f"RSS feed generated → {CONFIG['rss_file']}")
+
+    # === Copy assets to output directory ===
+    assets_to_copy = [
+        (ASSETS_DIR / "typewriter.css", OUTPUT_DIR / "typewriter.css"),
+        (ASSETS_DIR / "favicon.ico", OUTPUT_DIR / "favicon.ico"),
+    ]
+
+    for src, dst in assets_to_copy:
+        if src.exists():
+            shutil.copy2(src, dst)
+            logging.info(f"Copied {src.name} → {dst}")
+        else:
+            logging.warning(f"Asset not found: {src}")
 
 
 # ----------------------------
