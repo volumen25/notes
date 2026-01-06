@@ -1,22 +1,69 @@
+# ----------------------------
 # OS-specific files
+# ----------------------------
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
 Thumbs.db
 Desktop.ini
 
-# Logs
+# ----------------------------
+# Logs and temporary files
+# ----------------------------
 *.log
 *.tmp
 *.bak
 
+# ----------------------------
 # Python
+# ----------------------------
 __pycache__/
 *.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
 .venv/
 .env
 
-
-# Ignore everything in .vscode
+# ----------------------------
+# Editor directories
+# ----------------------------
 .vscode/*
-
 # Allow shared workspace settings
 !.vscode/settings.json
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# ----------------------------
+# Generated content directories
+# ----------------------------
+# Temporary HTML fragments created during build
+ssg/fragments/
+
+# Copied markdown files from source (generated, not original)
+content/
+
+# ----------------------------
+# Build output
+# ----------------------------
+# Keep docs/ tracked for GitHub Pages deployment
+# docs/ is NOT ignored
+
+# ----------------------------
+# Testing (if added later)
+# ----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ----------------------------
+# uv specific
+# ----------------------------
+# Keep uv.lock tracked for reproducible builds
