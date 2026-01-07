@@ -15,15 +15,19 @@ This repository contains my notes written in Markdown, which are compiled into a
 
 Before you begin, ensure you have the following installed:
 
-- **Python 3.11+** (Python 3.14+ if using latest features)
+- **Python 3.14+**
 - **uv** - Python package manager ([installation guide](https://github.com/astral-sh/uv))
 - **Pandoc** - Document converter ([installation guide](https://pandoc.org/installing.html))
+
   ```bash
   # macOS (via Homebrew)
   brew install pandoc
   
   # Ubuntu/Debian
   sudo apt-get install pandoc
+  
+  # Fedora
+  sudo dnf install pandoc
   
   # Or download from https://pandoc.org/installing.html
   ```
@@ -40,8 +44,8 @@ notes/                          # Project root
 │   └── typewriter.css         # Site stylesheet
 ├── CNAME                       # Custom domain (for GitHub Pages)
 ├── content/                    # Markdown notes (generated from source)
-│   ├── 2018-01-01-colophon.md
 │   ├── 2022-07-15-Truth-vs-BS.md
+│   ├── colophon.md            # Optional colophon (appears at bottom)
 │   └── intro.md               # Optional intro text (appears first)
 ├── docs/                       # Generated output (GitHub Pages ready)
 │   ├── favicon.ico
@@ -60,12 +64,14 @@ notes/                          # Project root
 ## Setup Instructions
 
 1. **Clone the repository and initialize uv:**
+
    ```bash
    cd notes
    uv init
    ```
 
 2. **Install dependencies:**
+
    ```bash
    uv add "PyYAML>=6.0"
    uv add --dev black
@@ -76,13 +82,15 @@ notes/                          # Project root
    - Install dependencies defined in `pyproject.toml`
 
 3. **Configure source directory (if needed):**
-   
+
    The build script copies Markdown files from a source directory. By default, it looks for:
-   ```
+
+   ```txt
    ~/Documents/codeberg/content
    ```
-   
+
    Edit `ssg/build.py` line 84 to change this location:
+
    ```python
    SOURCE_DIR = Path.home() / "Documents/codeberg/content"  # Change this path
    ```
@@ -128,6 +136,7 @@ include = ["ssg*"]
 1. **Create a Markdown file** in your source directory (`~/Documents/codeberg/content` or your configured path)
 
 2. **Add YAML front matter** with required metadata:
+
    ```yaml
    ---
    title: Your Note Title
@@ -148,17 +157,21 @@ include = ["ssg*"]
 ### File Naming Convention
 
 While not strictly required (dates come from YAML frontmatter), the recommended pattern is:
-```
+
+```txt
 YYYY-MM-DD-descriptive-title.md
 ```
 
 Examples:
+
 - `2025-01-05-my-first-note.md`
 - `2024-12-15-year-end-review.md`
 
 ### Special Files
 
-- **`intro.md`**: Optional file that appears at the top of the generated page (before notes). It should not have YAML frontmatter.
+- **`intro.md`**: Optional file that appears at the top of the generated page (after the site title, before notes). It should not have YAML frontmatter.
+
+- **`colophon.md`**: Optional file that appears at the bottom of the generated page (after all notes, before the Index/ToC). It should not have YAML frontmatter. Use this for site information, credits, or technical details.
 
 ## Building the Site
 
@@ -169,11 +182,14 @@ uv run build
 ```
 
 This will:
+
 1. Copy Markdown files tagged with "volumen" from source to `content/`
-2. Convert each Markdown file to HTML using Pandoc
-3. Generate a single `docs/index.html` with all notes
-4. Create an RSS feed (`docs/rss.xml`) with the 20 most recent notes
-5. Copy assets (CSS, favicon) to `docs/`
+2. Process `intro.md` (if exists) for top of page
+3. Convert each regular Markdown file to HTML using Pandoc
+4. Process `colophon.md` (if exists) for bottom of page
+5. Generate a single `docs/index.html` with all content
+6. Create an RSS feed (`docs/rss.xml`) with the 20 most recent notes
+7. Copy assets (CSS, favicon) to `docs/`
 
 ### Development Workflow
 
@@ -215,8 +231,10 @@ python3 -m http.server 8000 --directory docs
    - File scope isolation
 
 3. **HTML Generation**: All processed notes are combined into a single `index.html` with:
+   - Optional intro section at the top (from `intro.md`)
    - Notes sorted by date (newest first)
-   - Automatic table of contents at the bottom
+   - Optional colophon section at the bottom (from `colophon.md`)
+   - Automatic table of contents at the very bottom
    - Custom CSS styling
 
 4. **RSS Feed**: The 20 most recent notes are included in `rss.xml` with descriptions automatically extracted from the second paragraph of each note
@@ -229,6 +247,7 @@ The build system supports citations using:
 - **apa.csl**: Citation Style Language file (APA format)
 
 Use citations in your Markdown like:
+
 ```markdown
 According to recent research [@smith2024], we can see that...
 ```
@@ -248,30 +267,36 @@ The `docs/` directory is configured for GitHub Pages:
 ### Custom Domain
 
 If you have a custom domain, create a `CNAME` file in the root:
-```
+
+```txt
 yourdomain.com
 ```
 
 ## Troubleshooting
 
 ### "pandoc: command not found"
+
 Install Pandoc using your package manager (see Prerequisites).
 
 ### "No Markdown files found in content directory"
+
 - Check that your source directory path is correct in `build.py`
 - Ensure your Markdown files have the "volumen" tag in their YAML frontmatter
 
 ### Notes not appearing on the site
+
 - Verify the file has YAML frontmatter with `tags: [volumen]` or `tags: - volumen`
 - Check that the file was copied to the `content/` directory
 - Run the build with increased logging to see errors
 
 ### RSS feed not updating
+
 - The RSS feed only includes the 20 most recent notes
 - Check that your notes have valid dates in YAML frontmatter
 - Clear your RSS reader's cache
 
 ### Build errors with citations
+
 - Ensure `assets/refs.json` exists and is valid JSON
 - Verify citation keys in your Markdown match entries in `refs.json`
 
