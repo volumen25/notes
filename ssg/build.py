@@ -96,7 +96,10 @@ def generate():
             rel_path = file.relative_to(SOURCE_DIR)
             dest_file = CONTENT_DIR / rel_path
             dest_file.parent.mkdir(parents=True, exist_ok=True)
-            if not dest_file.exists() or file.stat().st_mtime > dest_file.stat().st_mtime:
+            if (
+                not dest_file.exists()
+                or file.stat().st_mtime > dest_file.stat().st_mtime
+            ):
                 shutil.copy2(file, dest_file)
                 copied += 1
             else:
@@ -141,16 +144,20 @@ def generate():
         temp_md = FRAG_DIR / "intro.tmp.md"
         output_html = FRAG_DIR / "intro.html"
         try:
-            with open(CONFIG["intro_md"], "r", encoding="utf-8") as src, \
-                    open(temp_md, "w", encoding="utf-8") as dst:
+            with (
+                open(CONFIG["intro_md"], "r", encoding="utf-8") as src,
+                open(temp_md, "w", encoding="utf-8") as dst,
+            ):
                 dst.write(src.read())
 
             subprocess.run(
                 [
                     "pandoc",
                     str(temp_md),
-                    "-t", "html",
-                    "-o", str(output_html),
+                    "-t",
+                    "html",
+                    "-o",
+                    str(output_html),
                     "--syntax-highlighting=none",
                     "--file-scope",
                 ],
@@ -173,16 +180,20 @@ def generate():
         temp_md = FRAG_DIR / "colophon.tmp.md"
         output_html = FRAG_DIR / "colophon.html"
         try:
-            with open(CONFIG["colophon_md"], "r", encoding="utf-8") as src, \
-                    open(temp_md, "w", encoding="utf-8") as dst:
+            with (
+                open(CONFIG["colophon_md"], "r", encoding="utf-8") as src,
+                open(temp_md, "w", encoding="utf-8") as dst,
+            ):
                 dst.write(src.read())
 
             subprocess.run(
                 [
                     "pandoc",
                     str(temp_md),
-                    "-t", "html",
-                    "-o", str(output_html),
+                    "-t",
+                    "html",
+                    "-o",
+                    str(output_html),
                     "--syntax-highlighting=none",
                     "--file-scope",
                 ],
@@ -201,7 +212,8 @@ def generate():
 
     # === Collect Markdown files ===
     md_files = [
-        f for f in glob.glob(str(CONTENT_DIR / "*.md"))
+        f
+        for f in glob.glob(str(CONTENT_DIR / "*.md"))
         if not os.path.basename(f).startswith("README")
         and os.path.abspath(f) != os.path.abspath(CONFIG["intro_md"])
         and os.path.abspath(f) != os.path.abspath(CONFIG["colophon_md"])
@@ -234,7 +246,8 @@ def generate():
             try:
                 metadata, body = parts[1], parts[2]
                 metadata_lines = [
-                    line for line in metadata.splitlines()
+                    line
+                    for line in metadata.splitlines()
                     if not line.strip().startswith("subtitle:")
                 ]
                 metadata = yaml.safe_load("\n".join(metadata_lines)) or {}
@@ -268,20 +281,24 @@ def generate():
             anchor_counts[anchor] = 0
 
         # --- Run Pandoc ---
-        pandoc_input = f"# {title} {{#{anchor}}}\n{date_str}\n\n{body}\n\n::: {{#refs}}\n:::\n"
+        pandoc_input = (
+            f"# {title} {{#{anchor}}}\n{date_str}\n\n{body}\n\n::: {{#refs}}\n:::\n"
+        )
         try:
             result = subprocess.run(
                 [
                     "pandoc",
-                    "-f", "markdown",
-                    "-t", "html",
+                    "-f",
+                    "markdown",
+                    "-t",
+                    "html",
                     "--syntax-highlighting=none",
                     "--citeproc",
                     "--file-scope",
                     f"--bibliography={CONFIG['bib_file']}",
                     f"--csl={CONFIG['csl_file']}",
                     "--lua-filter",
-                    CONFIG['lua_filter'],
+                    CONFIG["lua_filter"],
                 ],
                 input=pandoc_input,
                 text=True,
@@ -304,7 +321,9 @@ def generate():
     # === Process all Markdown files in parallel ===
     fragment_meta_pairs = []
     max_filename_length = max((len(os.path.basename(f)) for f in md_files), default=0)
-    max_line_length = bar_length + len("[] 100.0% (XX/XX) processed ") + max_filename_length
+    max_line_length = (
+        bar_length + len("[] 100.0% (XX/XX) processed ") + max_filename_length
+    )
 
     with ThreadPoolExecutor(max_workers=os.cpu_count() or 4) as executor:
         futures = {executor.submit(process_file, f): f for f in md_files}
@@ -316,7 +335,9 @@ def generate():
             percent = completed / len(md_files) if md_files else 1
             filled = int(bar_length * percent)
             bar = "#" * filled + "-" * (bar_length - filled)
-            sys.stdout.write(f"\r[{bar}] {percent:>5.1%} ({completed}/{len(md_files)}) processed")
+            sys.stdout.write(
+                f"\r[{bar}] {percent:>5.1%} ({completed}/{len(md_files)}) processed"
+            )
             sys.stdout.flush()
 
     sys.stdout.write("\r" + " " * max_line_length + "\r")
@@ -327,7 +348,8 @@ def generate():
 
     # === Assemble index.html ===
     with open(CONFIG["final_html"], "w", encoding="utf-8") as index:
-        index.write(f"""<!DOCTYPE html>
+        index.write(
+            f"""<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -341,7 +363,8 @@ def generate():
 <body>
     <h1>{CONFIG['title']}</h1>
 {intro_html + '\n<hr>\n' if intro_html else ''}
-""")
+"""
+        )
 
         for frag_path, _ in fragment_meta_pairs:
             if os.path.exists(frag_path):
@@ -366,12 +389,18 @@ def generate():
     pub_dates_used = set()
     with open(CONFIG["rss_file"], "w", encoding="utf-8") as rss:
         rss.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
-        rss.write('<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n')
+        rss.write(
+            '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n<channel>\n'
+        )
         rss.write(f'<title>{CONFIG["title"]}</title>\n')
         rss.write(f'<link>{CONFIG["site_url"]}</link>\n')
         rss.write(f'<description>{CONFIG["rss_description"]}</description>\n')
-        rss.write(f"<lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>\n")
-        rss.write(f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n')
+        rss.write(
+            f"<lastBuildDate>{format_datetime(datetime.now(timezone.utc))}</lastBuildDate>\n"
+        )
+        rss.write(
+            f'<atom:link href="{CONFIG["site_url"]}rss.xml" rel="self" type="application/rss+xml" />\n'
+        )
 
         for _, meta in fragment_meta_pairs[:20]:
             title, anchor, date_obj, date_str, description = meta
@@ -397,14 +426,13 @@ def generate():
         (ASSETS_DIR / "typewriter.css", OUTPUT_DIR / "typewriter.css"),
         (ASSETS_DIR / "favicon.ico", OUTPUT_DIR / "favicon.ico"),
     ]
-    
+
     for src, dst in assets_to_copy:
         if src.exists():
             shutil.copy2(src, dst)
             logging.info(f"Copied {src.name} → {dst}")
         else:
             logging.warning(f"Asset not found: {src}")
-
 
 
 # ----------------------------
