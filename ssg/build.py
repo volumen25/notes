@@ -257,12 +257,20 @@ def generate():
                 if date_str:
                     try:
                         if isinstance(date_str, date):
+                            # Use noon UTC to ensure correct date display in all timezones
                             date_obj = datetime.combine(
-                                date_str, datetime.min.time(), tzinfo=timezone.utc
+                                date_str,
+                                datetime.min.time().replace(hour=12),
+                                tzinfo=timezone.utc,
                             )
                         else:
+                            # Parse date and set to noon UTC
                             date_obj = datetime.strptime(date_str, "%Y-%m-%d").replace(
-                                tzinfo=timezone.utc
+                                hour=12,
+                                minute=0,
+                                second=0,
+                                microsecond=0,
+                                tzinfo=timezone.utc,
                             )
                     except Exception:
                         pass
