@@ -54,8 +54,7 @@ notes/                          # Project root
 │   └── typewriter.css
 ├── ssg/                        # Build system
 │   ├── __init__.py
-│   ├── build.py               # Main build script
-│   └── fragments/             # Temporary HTML fragments (generated)
+│   └── build.py               # Main build script
 ├── pyproject.toml             # Project configuration
 ├── uv.lock                    # Dependency lock file
 └── README.md
@@ -89,7 +88,7 @@ notes/                          # Project root
    ~/Documents/codeberg/content
    ```
 
-   Edit `ssg/build.py` line 84 to change this location:
+   Edit `ssg/build.py` line 65 to change this location:
 
    ```python
    SOURCE_DIR = Path.home() / "Documents/codeberg/content"  # Change this path

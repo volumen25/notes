@@ -2,6 +2,8 @@
     "cSpell.words": [
         "behaviour",
         "Bruser",
+        "codeberg",
+        "frontmatter",
         "hachi",
         "hara",
         "Haruki",
@@ -16,14 +18,19 @@
         "pandoc",
         "penrose",
         "polya",
+        "pyproject",
+        "pyyaml",
         "rovelli",
         "rutherfurd",
+        "setuptools",
         "Shambhala",
         "Sonos",
         "taleb",
         "termism",
+        "venv",
         "Volūmen",
         "volūmina",
+        "yourdomain",
         "Zotero"
     ]
 }
