@@ -48,6 +48,7 @@ ssg/fragments/
 
 # Copied markdown files from source (generated, not original)
 content/
+fragments/
 
 # ----------------------------
 # Build output
