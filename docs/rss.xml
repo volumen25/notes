@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 05 Feb 2026 15:22:10 +0000</lastBuildDate>
+<lastBuildDate>Sat, 07 Feb 2026 15:44:20 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Now</title>
+<link>https://notes.volumen.ca/index.html#now</link>
+<guid>https://notes.volumen.ca/index.html#now</guid>
+<description>I am currently focused solely on transitioning from my current job to
+my new one. While it is not a huge task, it is taking a lot of mental
+energy. If I had had less time before the transfer, it would have been
+much easier, being a completionist making it more difficult than it
+should be.</description>
+<pubDate>Sat, 07 Feb 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Scenes From Above</title>
 <link>https://notes.volumen.ca/index.html#scenes-from-above</link>
@@ -206,16 +217,6 @@ with life without truly living it. The past is fixed, the future
 uncertain and often overwhelming. The mind wrestles with both, but the
 solution is...</description>
 <pubDate>Sat, 06 Sep 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Nuances</title>
-<link>https://notes.volumen.ca/index.html#nuances</link>
-<guid>https://notes.volumen.ca/index.html#nuances</guid>
-<description>Quiet your mind to hear the nuances in the notes. Slowing down and
-calming the mind unveils hidden harmonies, textures, and rhythms. While
-this is a learning exercise, it also yields a delightful surprise in the
-resultant sounds.</description>
-<pubDate>Fri, 05 Sep 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
