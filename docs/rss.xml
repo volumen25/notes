@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 14 Feb 2026 20:24:36 +0000</lastBuildDate>
+<lastBuildDate>Sun, 15 Feb 2026 06:20:29 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>On Bullshit</title>
+<link>https://notes.volumen.ca/index.html#on-bullshit</link>
+<guid>https://notes.volumen.ca/index.html#on-bullshit</guid>
+<description>Bullshit is a technical term, and Harry Frankfurt’s book (Frankfurt,
+2005) is probably the best reference for it. When someone lies,
+they knowingly misrepresent the truth. However, when someone bullshits,
+they don’t care about the truth; they simply say whatever is necessary
+to achieve their...</description>
+<pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Now</title>
 <link>https://notes.volumen.ca/index.html#now</link>
@@ -205,17 +216,6 @@ Drawing on Seneca’s observation that ”increases are of sluggish growth,
 but the way to ruin is rapid,” the book suggests that systems grow
 gradually but collapse swiftly due to...</description>
 <pubDate>Sun, 07 Sep 2025 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Imperfection</title>
-<link>https://notes.volumen.ca/index.html#imperfection</link>
-<guid>https://notes.volumen.ca/index.html#imperfection</guid>
-<description>I once came across this thought, though I can’t recall where: regrets
-belong to the past, and anxieties to the future. One cannot be at peace
-with life without truly living it. The past is fixed, the future
-uncertain and often overwhelming. The mind wrestles with both, but the
-solution is...</description>
-<pubDate>Sat, 06 Sep 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
