@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 15 Feb 2026 07:19:21 +0000</lastBuildDate>
+<lastBuildDate>Tue, 17 Feb 2026 05:57:52 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>On Stupidty</title>
+<link>https://notes.volumen.ca/index.html#on-stupidty</link>
+<guid>https://notes.volumen.ca/index.html#on-stupidty</guid>
+<description>The basic laws assert that, according to Cipolla (Cipolla,
+2019) : 1. Everyone inevitably underestimates the number of stupid
+individuals in circulation. 2. The probability of an individual being
+stupid is independent of any characteristic of that person. 3. A stupid
+person is one who causes...</description>
+<pubDate>Mon, 16 Feb 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>On Bullshit</title>
 <link>https://notes.volumen.ca/index.html#on-bullshit</link>
@@ -205,17 +216,6 @@ Released’ on Tuff Radio this morning. He’s released twelve albums, with
 three certified gold. Lund tours regularly in Canada, the US, and
 Australia, winning...</description>
 <pubDate>Sun, 07 Sep 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Seneca Effect</title>
-<link>https://notes.volumen.ca/index.html#seneca-effect</link>
-<guid>https://notes.volumen.ca/index.html#seneca-effect</guid>
-<description>The Seneca Effect (Bardi, 2017), as explained
-by Ugo Bardi, views complex systems through a systems-thinking lens.
-Drawing on Seneca’s observation that ”increases are of sluggish growth,
-but the way to ruin is rapid,” the book suggests that systems grow
-gradually but collapse swiftly due to...</description>
-<pubDate>Sun, 07 Sep 2025 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
