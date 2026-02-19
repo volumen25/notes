@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 17 Feb 2026 05:57:52 +0000</lastBuildDate>
+<lastBuildDate>Thu, 19 Feb 2026 02:01:20 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Pareto Principle</title>
+<link>https://notes.volumen.ca/index.html#pareto-principle</link>
+<guid>https://notes.volumen.ca/index.html#pareto-principle</guid>
+<description>The Pareto principle, also known as the “80:20 rule,” asserts that
+80% of outcomes stem from 20% of causes. Named after the Italian
+polymath Vilfredo Pareto, empirical observation shows that this 80:20
+distribution applies to a wide variety of situations, including natural
+phenomena and human...</description>
+<pubDate>Wed, 18 Feb 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>On Stupidty</title>
 <link>https://notes.volumen.ca/index.html#on-stupidty</link>
@@ -205,17 +216,6 @@ scattered fragments. The impact is profound. The initial effort feels
 heavy, the first page slow, and the first video awkward, but each effort
 lays...</description>
 <pubDate>Thu, 11 Sep 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Corb Lund</title>
-<link>https://notes.volumen.ca/index.html#corb-lund</link>
-<guid>https://notes.volumen.ca/index.html#corb-lund</guid>
-<description>Corb Lund, a Canadian country and western singer-songwriter from
-Taber, Alberta, performed a great rendition of Bob Dylan’s ‘I Shall Be
-Released’ on Tuff Radio this morning. He’s released twelve albums, with
-three certified gold. Lund tours regularly in Canada, the US, and
-Australia, winning...</description>
-<pubDate>Sun, 07 Sep 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
