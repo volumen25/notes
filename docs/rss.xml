@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 19 Feb 2026 08:49:17 +0000</lastBuildDate>
+<lastBuildDate>Fri, 27 Feb 2026 05:12:13 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Writing For Life</title>
+<link>https://notes.volumen.ca/index.html#writing-for-life</link>
+<guid>https://notes.volumen.ca/index.html#writing-for-life</guid>
+<description>Textbooks are usually written in a linear and sequential order
+designed for training and learning. Real life is entirely different; it
+requires you to apply your training to non-linear and unpredictable
+events and circumstances. This raises the question of whether the
+conventional approach to...</description>
+<pubDate>Thu, 26 Feb 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Dependencies</title>
 <link>https://notes.volumen.ca/index.html#dependencies</link>
@@ -208,14 +219,6 @@ challenges. The Stoics highlight life’s fragility. Modern thought
 provides clarity through mindfulness practices, philosophical inquiry,
 science revealing hidden...</description>
 <pubDate>Sat, 27 Sep 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Fake News</title>
-<link>https://notes.volumen.ca/index.html#fake-news</link>
-<guid>https://notes.volumen.ca/index.html#fake-news</guid>
-<description>The greatest worry about the idea of fake news isn’t actually that
-people believe false news - it’s that they stop believing real news. Phillips (2020)</description>
-<pubDate>Tue, 16 Sep 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
