@@ -7,13 +7,25 @@ import glob
 import subprocess
 import re
 import html
-import sys
 import logging
 import time
 from datetime import datetime, timezone, timedelta, date
 from email.utils import format_datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from html.parser import HTMLParser
+
+from rich.console import Console
+from rich.logging import RichHandler
+from rich.progress import (
+    Progress,
+    SpinnerColumn,
+    BarColumn,
+    TextColumn,
+    TimeElapsedColumn,
+    TaskProgressColumn,
+)
+
+console = Console()
 
 # ----------------------------
 # Base directories
@@ -35,22 +47,28 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 # Generate HTML and RSS
 # ----------------------------
 def generate():
-    logging.basicConfig(level=logging.INFO, format="%(message)s")
-    logging.info("Starting build process.")
+    logging.basicConfig(
+        level=logging.INFO,
+        format="%(message)s",
+        datefmt="[%X]",
+        handlers=[RichHandler(console=console, rich_tracebacks=True, show_path=False)],
+    )
+
+    console.rule("[bold green]BUILD STARTED")
 
     # === Configuration ===
     CONFIG = {
         "content_dir": str(CONTENT_DIR),
         "intro_md": str(CONTENT_DIR / "intro.md"),
         "colophon_md": str(CONTENT_DIR / "colophon.md"),
-        "css_file": "typewriter.css",  # Relative path (in same dir as index.html)
+        "css_file": "typewriter.css",
         "bib_file": str(ASSETS_DIR / "refs.json"),
         "csl_file": str(ASSETS_DIR / "apa.csl"),
         "lua_filter": str(ASSETS_DIR / "md-to-html-links.lua"),
         "frag_dir": str(FRAG_DIR),
         "final_html": str(OUTPUT_DIR / "index.html"),
         "rss_file": str(OUTPUT_DIR / "rss.xml"),
-        "favicon": "favicon.ico",  # Relative path (in same dir as index.html)
+        "favicon": "favicon.ico",
         "title": "Volūmen",
         "site_url": "https://notes.volumen.ca/",
         "rss_description": "Updates and notes from Volūmen",
@@ -105,7 +123,9 @@ def generate():
             else:
                 skipped += 1
 
-    logging.info(f"{copied} copied, {skipped} skipped from source directory.")
+    console.log(
+        f"[green]{copied}[/] copied, [dim]{skipped}[/] skipped from source directory."
+    )
 
     # === HTML Parser to extract text from 2nd <p> tag ===
     class TextExtractor(HTMLParser):
@@ -223,7 +243,6 @@ def generate():
         logging.warning("No Markdown files found in content directory.")
 
     anchor_counts = {}
-    bar_length = 30
 
     # === Function to process a single Markdown file ===
     def process_file(md_file):
@@ -257,14 +276,12 @@ def generate():
                 if date_str:
                     try:
                         if isinstance(date_str, date):
-                            # Use noon UTC to ensure correct date display in all timezones
                             date_obj = datetime.combine(
                                 date_str,
                                 datetime.min.time().replace(hour=12),
                                 tzinfo=timezone.utc,
                             )
                         else:
-                            # Parse date and set to noon UTC
                             date_obj = datetime.strptime(date_str, "%Y-%m-%d").replace(
                                 hour=12,
                                 minute=0,
@@ -328,28 +345,24 @@ def generate():
 
     # === Process all Markdown files in parallel ===
     fragment_meta_pairs = []
-    max_filename_length = max((len(os.path.basename(f)) for f in md_files), default=0)
-    max_line_length = (
-        bar_length + len("[] 100.0% (XX/XX) processed ") + max_filename_length
-    )
 
-    with ThreadPoolExecutor(max_workers=os.cpu_count() or 4) as executor:
-        futures = {executor.submit(process_file, f): f for f in md_files}
-        for completed, future in enumerate(as_completed(futures), start=1):
-            frag, meta = future.result()
-            if meta:
-                fragment_meta_pairs.append((frag, meta))
-
-            percent = completed / len(md_files) if md_files else 1
-            filled = int(bar_length * percent)
-            bar = "#" * filled + "-" * (bar_length - filled)
-            sys.stdout.write(
-                f"\r[{bar}] {percent:>5.1%} ({completed}/{len(md_files)}) processed"
-            )
-            sys.stdout.flush()
-
-    sys.stdout.write("\r" + " " * max_line_length + "\r")
-    sys.stdout.flush()
+    with Progress(
+        SpinnerColumn(),
+        TextColumn("[bold cyan]{task.description}"),
+        BarColumn(),
+        TaskProgressColumn(),
+        TextColumn("({task.completed}/{task.total})"),
+        TimeElapsedColumn(),
+        console=console,
+    ) as progress:
+        task = progress.add_task("Processing notes...", total=len(md_files))
+        with ThreadPoolExecutor(max_workers=os.cpu_count() or 4) as executor:
+            futures = {executor.submit(process_file, f): f for f in md_files}
+            for future in as_completed(futures):
+                frag, meta = future.result()
+                if meta:
+                    fragment_meta_pairs.append((frag, meta))
+                progress.advance(task)
 
     # === Sort fragments by newest first ===
     fragment_meta_pairs.sort(key=lambda x: x[1][2], reverse=True)
@@ -370,7 +383,7 @@ def generate():
 </head>
 <body>
     <h1>{CONFIG['title']}</h1>
-{intro_html + '\n<hr>\n' if intro_html else ''}
+{intro_html + chr(10) + '<hr>' + chr(10) if intro_html else ''}
 """
         )
 
@@ -381,7 +394,6 @@ def generate():
             else:
                 logging.warning(f"Fragment {frag_path} not found. Skipping.")
 
-        # === Add colophon before ToC ===
         if colophon_html:
             index.write(colophon_html + "\n<hr>\n")
 
@@ -391,7 +403,7 @@ def generate():
             index.write(f'<li><a href="#{anchor}">{html.escape(title)}</a></li>\n')
         index.write("</ul>\n</body>\n</html>\n")
 
-    logging.info(f"Page generated → {CONFIG['final_html']}")
+    console.log(f"[green]✓[/] Page generated → [cyan]{CONFIG['final_html']}[/]")
 
     # === Generate RSS feed ===
     pub_dates_used = set()
@@ -427,7 +439,7 @@ def generate():
 
         rss.write("</channel>\n</rss>\n")
 
-    logging.info(f"RSS feed generated → {CONFIG['rss_file']}")
+    console.log(f"[green]✓[/] RSS feed generated → [cyan]{CONFIG['rss_file']}[/]")
 
     # === Copy assets to output directory ===
     assets_to_copy = [
@@ -438,7 +450,7 @@ def generate():
     for src, dst in assets_to_copy:
         if src.exists():
             shutil.copy2(src, dst)
-            logging.info(f"Copied {src.name} → {dst}")
+            console.log(f"[green]✓[/] Copied [dim]{src.name}[/] → [cyan]{dst}[/]")
         else:
             logging.warning(f"Asset not found: {src}")
 
@@ -449,7 +461,9 @@ def generate():
 def main() -> None:
     start = time.time()
     generate()
-    logging.info(f"Total process completed in {time.time() - start:.2f}s")
+    elapsed = time.time() - start
+    console.rule()
+    console.print(f"[bold green]✓ BUILD COMPLETE[/] in [cyan]{elapsed:.2f}s[/]")
 
 
 if __name__ == "__main__":
