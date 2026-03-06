@@ -4,8 +4,16 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Wed, 04 Mar 2026 07:26:00 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Mar 2026 13:19:32 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Anton Chekhov</title>
+<link>https://notes.volumen.ca/index.html#anton-chekhov</link>
+<guid>https://notes.volumen.ca/index.html#anton-chekhov</guid>
+<description>Love, friendship, and respect don’t unite people as much as a shared
+hatred. — Anton Chekhov, Note-Book of Anton Chekhov (1921)</description>
+<pubDate>Fri, 06 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Self-control</title>
 <link>https://notes.volumen.ca/index.html#self-control</link>
@@ -208,17 +216,6 @@ appears in a section where the character Oshima is speaking to Kafka
 Tamura about talent, discipline, and what Murakami calls “the plateau of
 talent.”</description>
 <pubDate>Tue, 21 Oct 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Too Much of Everything</title>
-<link>https://notes.volumen.ca/index.html#too-much-of-everything</link>
-<guid>https://notes.volumen.ca/index.html#too-much-of-everything</guid>
-<description>The more plugins you have, the more distracted you become in your
-text editor, defeating the purpose of having it in the first place.
-Similarly, the more pedals you collect, the farther you drift from
-focusing on your playing. Ironically, the very tools meant to help you
-make music end up...</description>
-<pubDate>Mon, 20 Oct 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
