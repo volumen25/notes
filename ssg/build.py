@@ -432,7 +432,7 @@ def generate():
             rss.write("<item>\n")
             rss.write(f"<title>{html.escape(title)}</title>\n")
             rss.write(f"<link>{CONFIG['site_url']}index.html#{anchor}</link>\n")
-            rss.write(f"<guid>{CONFIG['site_url']}index.html#{anchor}</guid>\n")
+            rss.write(f'<guid isPermaLink="false">{anchor}</guid>\n')
             rss.write(f"<description>{html.escape(description)}</description>\n")
             rss.write(f"<pubDate>{format_datetime(pub_date)}</pubDate>\n")
             rss.write("</item>\n")

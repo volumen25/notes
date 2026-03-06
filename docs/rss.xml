@@ -4,12 +4,12 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 06 Mar 2026 13:55:15 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Mar 2026 14:21:45 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Negative Experiences</title>
 <link>https://notes.volumen.ca/index.html#negative-experiences</link>
-<guid>https://notes.volumen.ca/index.html#negative-experiences</guid>
+<guid isPermaLink="false">negative-experiences</guid>
 <description>Love, friendship, and respect do not unite people as much as a shared
 hatred. — Anton Chekhov, Note-Book of Anton Chekhov (1921)</description>
 <pubDate>Fri, 06 Mar 2026 12:00:00 +0000</pubDate>
@@ -17,7 +17,7 @@ hatred. — Anton Chekhov, Note-Book of Anton Chekhov (1921)</description>
 <item>
 <title>Self-control</title>
 <link>https://notes.volumen.ca/index.html#self-control</link>
-<guid>https://notes.volumen.ca/index.html#self-control</guid>
+<guid isPermaLink="false">self-control</guid>
 <description>Train your mind, and you can shape the world around you. The mind’s
 true power lies not in suppressing spontaneous, primal impulses, but in
 transforming them from driving forces into forces you can steer. Emotion
@@ -28,7 +28,7 @@ a tool....</description>
 <item>
 <title>Writing For Life</title>
 <link>https://notes.volumen.ca/index.html#writing-for-life</link>
-<guid>https://notes.volumen.ca/index.html#writing-for-life</guid>
+<guid isPermaLink="false">writing-for-life</guid>
 <description>Textbooks are usually written in a linear and sequential order
 designed for training and learning. Real life is entirely different; it
 requires you to apply your training to non-linear and unpredictable
@@ -39,7 +39,7 @@ conventional approach to...</description>
 <item>
 <title>Dependencies</title>
 <link>https://notes.volumen.ca/index.html#dependencies</link>
-<guid>https://notes.volumen.ca/index.html#dependencies</guid>
+<guid isPermaLink="false">dependencies</guid>
 <description>Sometimes we create unnecessary dependencies that quietly shape our
 workflow, causing delays, friction, and anxiety. Like premature
 optimization, adding structure before it’s needed can actively work
@@ -50,7 +50,7 @@ progress is possible, the...</description>
 <item>
 <title>Pareto Principle</title>
 <link>https://notes.volumen.ca/index.html#pareto-principle</link>
-<guid>https://notes.volumen.ca/index.html#pareto-principle</guid>
+<guid isPermaLink="false">pareto-principle</guid>
 <description>The Pareto Principle, also known as the “80:20 rule,” asserts that
 80% of outcomes stem from 20% of causes. Named after the Italian
 polymath Vilfredo Pareto, the principle is supported by empirical
@@ -61,7 +61,7 @@ variety of situations,...</description>
 <item>
 <title>On Stupidty</title>
 <link>https://notes.volumen.ca/index.html#on-stupidty</link>
-<guid>https://notes.volumen.ca/index.html#on-stupidty</guid>
+<guid isPermaLink="false">on-stupidty</guid>
 <description>The basic laws assert that, according to Cipolla (Cipolla,
 2019) : 1. Everyone inevitably underestimates the number of stupid
 individuals in circulation. 2. The probability of an individual being
@@ -72,7 +72,7 @@ person is one who causes...</description>
 <item>
 <title>On Bullshit</title>
 <link>https://notes.volumen.ca/index.html#on-bullshit</link>
-<guid>https://notes.volumen.ca/index.html#on-bullshit</guid>
+<guid isPermaLink="false">on-bullshit</guid>
 <description>Bullshit is a technical term, and Harry Frankfurt’s book (Frankfurt,
 2005) is probably the best reference for it. When someone lies,
 they knowingly misrepresent the truth. However, when someone bullshits,
@@ -83,7 +83,7 @@ to achieve their...</description>
 <item>
 <title>Now</title>
 <link>https://notes.volumen.ca/index.html#now</link>
-<guid>https://notes.volumen.ca/index.html#now</guid>
+<guid isPermaLink="false">now</guid>
 <description>I am currently focused solely on transitioning from my current job to
 my new one. While it is not a huge task, it is taking a lot of mental
 energy. If I had had less time before the transfer, it would have been
@@ -94,7 +94,7 @@ should be.</description>
 <item>
 <title>Scenes From Above</title>
 <link>https://notes.volumen.ca/index.html#scenes-from-above</link>
-<guid>https://notes.volumen.ca/index.html#scenes-from-above</guid>
+<guid isPermaLink="false">scenes-from-above</guid>
 <description>Julian Lage quietly released a new album, Scenes From Above, on
 January 23, 2026. The music is wonderful, and it’s especially special
 because it features another talented musician, the keyboardist John
@@ -105,7 +105,7 @@ Roeder and the...</description>
 <item>
 <title>My Way *and* the Highway</title>
 <link>https://notes.volumen.ca/index.html#my-way-and-the-highway</link>
-<guid>https://notes.volumen.ca/index.html#my-way-and-the-highway</guid>
+<guid isPermaLink="false">my-way-and-the-highway</guid>
 <description>Man makes tools. In turn, tools make a different man through his
 work. Neither the man nor the tool remains the same; they are forever
 transformed, locked in a reciprocal process of mutual becoming, thereby
@@ -115,7 +115,7 @@ perpetually evolving.</description>
 <item>
 <title>Ever So Slowly</title>
 <link>https://notes.volumen.ca/index.html#ever-so-slowly</link>
-<guid>https://notes.volumen.ca/index.html#ever-so-slowly</guid>
+<guid isPermaLink="false">ever-so-slowly</guid>
 <description>During one summer, I had the opportunity to review my guitar
 practices that I recorded since 2018 and a few earlier than that. I
 named the playlist Ever So Slowly, because it’s been such a
@@ -126,7 +126,7 @@ playlist also demonstrates the fact that...</description>
 <item>
 <title>Rick Rubin</title>
 <link>https://notes.volumen.ca/index.html#rick-rubin</link>
-<guid>https://notes.volumen.ca/index.html#rick-rubin</guid>
+<guid isPermaLink="false">rick-rubin</guid>
 <description>Rick Rubin is a remarkable man who has produced such notable artists
 as Johnny Cash and Jake Bugg. I recently came across The Way of Code (Anthropic,
 n.d.), in which he notes, “Each encounter I’ve had with Lao Tzu
@@ -137,7 +137,7 @@ reading. I...</description>
 <item>
 <title>2025</title>
 <link>https://notes.volumen.ca/index.html#2025</link>
-<guid>https://notes.volumen.ca/index.html#2025</guid>
+<guid isPermaLink="false">2025</guid>
 <description>Another year is about to conclude. It passed like we inhaled a breath
 of fresh air yesterday, and today we are exhaling it, a little tired but
 filled with hope and excitement. Looking back, the year has been,
@@ -148,7 +148,7 @@ satisfaction.</description>
 <item>
 <title>Emptiness</title>
 <link>https://notes.volumen.ca/index.html#emptiness</link>
-<guid>https://notes.volumen.ca/index.html#emptiness</guid>
+<guid isPermaLink="false">emptiness</guid>
 <description>Clay transforms into pottery through craft, but it’s the emptiness
 within that makes a pot truly useful. What’s absent can be just as
 significant as what’s present. This idea originates from the Tao Te
@@ -158,7 +158,7 @@ Ching, a foundational text of Taoism. (Tzu &amp; Needleman, 1989)</description>
 <item>
 <title>White Christmas</title>
 <link>https://notes.volumen.ca/index.html#white-christmas</link>
-<guid>https://notes.volumen.ca/index.html#white-christmas</guid>
+<guid isPermaLink="false">white-christmas</guid>
 <description>I started learning this song in December 2022, approaching it one
 phrase at a time and at a very gradual pace in the weeks leading up to
 Christmas. In retrospect, I might have chosen a particularly challenging
@@ -169,14 +169,14 @@ compelled to...</description>
 <item>
 <title>Notes</title>
 <link>https://notes.volumen.ca/index.html#notes</link>
-<guid>https://notes.volumen.ca/index.html#notes</guid>
+<guid isPermaLink="false">notes</guid>
 <description>No description available.</description>
 <pubDate>Thu, 27 Nov 2025 12:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Telecaster</title>
 <link>https://notes.volumen.ca/index.html#telecaster</link>
-<guid>https://notes.volumen.ca/index.html#telecaster</guid>
+<guid isPermaLink="false">telecaster</guid>
 <description>The rosewood fingerboard and the U-shaped maple neck immediately
 caught my eye. I recognized this fine instrument instantly; it was the
 same Telecaster we had seen during our visit to Tokyo last year. And
@@ -187,7 +187,7 @@ Flagship Store in...</description>
 <item>
 <title>Quiet Mornings</title>
 <link>https://notes.volumen.ca/index.html#quiet-mornings</link>
-<guid>https://notes.volumen.ca/index.html#quiet-mornings</guid>
+<guid isPermaLink="false">quiet-mornings</guid>
 <description>This morning, I experienced deep satisfaction in rediscovering the
 tastes, sounds, and sensations I can effortlessly perceive, which
 profoundly affect my mind. Many advocate practicing gratitude to achieve
@@ -198,7 +198,7 @@ these effects....</description>
 <item>
 <title>On Handwriting</title>
 <link>https://notes.volumen.ca/index.html#on-handwriting</link>
-<guid>https://notes.volumen.ca/index.html#on-handwriting</guid>
+<guid isPermaLink="false">on-handwriting</guid>
 <description>The act of using a good pen or pencil overrides the dissatisfaction
 one feels from bad-looking handwriting. I currently don’t like how my
 handwriting looks; imprecise lettering, frequent errors, and sometimes
@@ -209,7 +209,7 @@ suboptimal. That...</description>
 <item>
 <title>The Plateau of Talent</title>
 <link>https://notes.volumen.ca/index.html#the-plateau-of-talent</link>
-<guid>https://notes.volumen.ca/index.html#the-plateau-of-talent</guid>
+<guid isPermaLink="false">the-plateau-of-talent</guid>
 <description>From Haruki Murakami’s novel Kafka on the Shore, (Murakami,
 2006) translated into English by Philip Gabriel. The passage
 appears in a section where the character Oshima is speaking to Kafka
