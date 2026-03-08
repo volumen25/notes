@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+import argparse
 import os
 import shutil
 from pathlib import Path
@@ -41,6 +42,33 @@ FRAG_DIR = SSG_DIR / "fragments"  # temporary HTML fragments
 CONTENT_DIR.mkdir(parents=True, exist_ok=True)
 FRAG_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+# ----------------------------
+# Git commit and push
+# ----------------------------
+def git_commit(output_dir: Path, message: str = None) -> None:
+    if message is None:
+        message = f"build: regenerate site {datetime.now().strftime('%Y-%m-%d %H:%M')}"
+
+    try:
+        subprocess.run(["git", "add", str(output_dir)], check=True, capture_output=True)
+
+        status = subprocess.run(["git", "diff", "--cached", "--quiet"], capture_output=True)
+        if status.returncode == 0:
+            console.log("[dim]No changes to commit.[/]")
+            return
+
+        subprocess.run(["git", "commit", "-m", message], check=True, capture_output=True, text=True)
+        console.log(f"[green]✓[/] Git commit → [dim]{message}[/]")
+
+        subprocess.run(["git", "push"], check=True, capture_output=True, text=True)
+        console.log("[green]✓[/] Git push complete.")
+
+    except subprocess.CalledProcessError as e:
+        logging.warning(f"Git operation failed: {e.stderr.strip()}")
+    except FileNotFoundError:
+        logging.warning("git not found in PATH — skipping commit.")
 
 
 # ----------------------------
@@ -459,11 +487,17 @@ def generate():
 # Entry point
 # ----------------------------
 def main() -> None:
+    parser = argparse.ArgumentParser(description="Build the Volūmen site.")
+    parser.add_argument("-m", "--message", default=None, help="Git commit message")
+    args = parser.parse_args()
+
     start = time.time()
     generate()
     elapsed = time.time() - start
     console.rule()
     console.print(f"[bold green]✓ BUILD COMPLETE[/] in [cyan]{elapsed:.2f}s[/]")
+
+    git_commit(OUTPUT_DIR, message=args.message)
 
 
 if __name__ == "__main__":
