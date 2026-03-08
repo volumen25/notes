@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 08 Mar 2026 17:29:34 +0000</lastBuildDate>
+<lastBuildDate>Sun, 08 Mar 2026 17:41:08 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>La Favorita</title>
@@ -16,6 +16,17 @@ Then came this wonderful piece of music on the radio, La Favorite, the
 grand opera in four acts by Gaetano Donizetti, frequently also known by
 its Italian...</description>
 <pubDate>Sun, 08 Mar 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Daylight Saving Time</title>
+<link>https://notes.volumen.ca/index.html#daylight-saving-time</link>
+<guid isPermaLink="false">daylight-saving-time</guid>
+<description>British Columbia’s final time change has occurred today, March 8,
+2026. Premier David Eby announced on March 2nd that BC will permanently
+adopt daylight saving time, ending the twice-a-year clock changes. On
+November 1, 2026, clocks will remain the same, completing the transition
+to a year-round...</description>
+<pubDate>Sun, 08 Mar 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Negative Experiences</title>
@@ -205,17 +216,6 @@ profoundly affect my mind. Many advocate practicing gratitude to achieve
 such effects, yet prescriptive approaches may diminish the impact of
 these effects....</description>
 <pubDate>Thu, 30 Oct 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>On Handwriting</title>
-<link>https://notes.volumen.ca/index.html#on-handwriting</link>
-<guid isPermaLink="false">on-handwriting</guid>
-<description>The act of using a good pen or pencil overrides the dissatisfaction
-one feels from bad-looking handwriting. I currently don’t like how my
-handwriting looks; imprecise lettering, frequent errors, and sometimes
-crossing out words when I can’t erase them make the written page look
-suboptimal. That...</description>
-<pubDate>Wed, 29 Oct 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
