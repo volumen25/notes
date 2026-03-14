@@ -4,8 +4,17 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 13 Mar 2026 23:56:43 +0000</lastBuildDate>
+<lastBuildDate>Sat, 14 Mar 2026 00:15:10 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Procrustean Bed</title>
+<link>https://notes.volumen.ca/index.html#procrustean-bed</link>
+<guid isPermaLink="false">procrustean-bed</guid>
+<description>The Procrustean bed originates from the Greek myth of Procrustes, a
+giant innkeeper who stretched or amputated travellers’ legs so they
+would fit perfectly into his iron bed.</description>
+<pubDate>Fri, 13 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>La Favorita</title>
 <link>https://notes.volumen.ca/index.html#la-favorita</link>
@@ -208,17 +217,6 @@ same Telecaster we had seen during our visit to Tokyo last year. And
 now, here I was, holding it in my hands, this time at the Fender
 Flagship Store in...</description>
 <pubDate>Thu, 27 Nov 2025 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Quiet Mornings</title>
-<link>https://notes.volumen.ca/index.html#quiet-mornings</link>
-<guid isPermaLink="false">quiet-mornings</guid>
-<description>This morning, I experienced deep satisfaction in rediscovering the
-tastes, sounds, and sensations I can effortlessly perceive, which
-profoundly affect my mind. Many advocate practicing gratitude to achieve
-such effects, yet prescriptive approaches may diminish the impact of
-these effects....</description>
-<pubDate>Thu, 30 Oct 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
