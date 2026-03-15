@@ -4,8 +4,21 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
+<<<<<<< HEAD
 <lastBuildDate>Sun, 15 Mar 2026 06:41:32 +0000</lastBuildDate>
+=======
+<lastBuildDate>Sun, 15 Mar 2026 06:36:40 +0000</lastBuildDate>
+>>>>>>> dc7f1e7071a3e97a1f3073af59fed66e44ecfbee
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Stern</title>
+<link>https://notes.volumen.ca/index.html#stern</link>
+<guid isPermaLink="false">stern</guid>
+<description>Better to appear stern than to invite the contempt reserved for
+fools. It is no shame to be thought stern; it is shameful to be
+foolish.</description>
+<pubDate>Sat, 14 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Procrustean Bed</title>
 <link>https://notes.volumen.ca/index.html#procrustean-bed</link>
@@ -42,10 +55,10 @@ to a year-round...</description>
 <link>https://notes.volumen.ca/index.html#negative-experiences</link>
 <guid isPermaLink="false">negative-experiences</guid>
 <description>Love, friendship, and respect do not unite people as much as a shared
-hatred (Chekhov, n.d.). This
-observation is unsettling because a negative force like hatred can be
-more cohesive than a positive one. It suggests that what we oppose can
-define us more powerfully than what we support.</description>
+hatred ( chekhovNoteBookAntonChekhov? ).
+This observation is unsettling because a negative force like hatred can
+be more cohesive than a positive one. It suggests that what we oppose
+can define us more powerfully than what we...</description>
 <pubDate>Fri, 06 Mar 2026 12:00:00 +0000</pubDate>
 </item>
 <item>
@@ -167,17 +180,6 @@ n.d.), in which he notes, “Each encounter I’ve had with Lao Tzu
 has pointed to something new. Almost as if the book changes with every
 reading. I...</description>
 <pubDate>Sun, 04 Jan 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>2025</title>
-<link>https://notes.volumen.ca/index.html#2025</link>
-<guid isPermaLink="false">2025</guid>
-<description>Another year is about to conclude. It passed like we inhaled a breath
-of fresh air yesterday, and today we are exhaling it, a little tired but
-filled with hope and excitement. Looking back, the year has been,
-despite its tiring parts, also full of joyful periods, growth, and
-satisfaction.</description>
-<pubDate>Wed, 31 Dec 2025 12:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Emptiness</title>
