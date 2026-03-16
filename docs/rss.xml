@@ -4,8 +4,27 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 16 Mar 2026 06:43:45 +0000</lastBuildDate>
+<lastBuildDate>Mon, 16 Mar 2026 07:38:48 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Clarity</title>
+<link>https://notes.volumen.ca/index.html#clarity</link>
+<guid isPermaLink="false">clarity</guid>
+<description>Clarity is a virtue; doubt, a hindrance. Clarity compounds on itself
+— a virtuous cycle. Doubt does the same — a vicious one.</description>
+<pubDate>Mon, 16 Mar 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Assholes: A Theory</title>
+<link>https://notes.volumen.ca/index.html#assholes-a-theory</link>
+<guid isPermaLink="false">assholes-a-theory</guid>
+<description>The book (James, 2014) offers a
+philosophical typology of the asshole — not to insult, but to classify
+in the tradition of Aristotle and the biological sciences. A genuine
+asshole has three defining traits: it’s a stable character trait, the
+costs imposed on others are moderate (unlike a...</description>
+<pubDate>Mon, 16 Mar 2026 12:00:01 +0000</pubDate>
+</item>
 <item>
 <title>Stern</title>
 <link>https://notes.volumen.ca/index.html#stern</link>
@@ -197,24 +216,6 @@ within that makes a pot truly useful. What’s absent can be just as
 significant as what’s present. This idea originates from the Tao Te
 Ching, a foundational text of Taoism. (Tzu &amp; Needleman, 1989)</description>
 <pubDate>Thu, 25 Dec 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>White Christmas</title>
-<link>https://notes.volumen.ca/index.html#white-christmas</link>
-<guid isPermaLink="false">white-christmas</guid>
-<description>I started learning this song in December 2022, approaching it one
-phrase at a time and at a very gradual pace in the weeks leading up to
-Christmas. In retrospect, I might have chosen a particularly challenging
-arrangement, but after dedicating so much time and effort to it, I feel
-compelled to...</description>
-<pubDate>Wed, 24 Dec 2025 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Notes</title>
-<link>https://notes.volumen.ca/index.html#notes</link>
-<guid isPermaLink="false">notes</guid>
-<description>No description available.</description>
-<pubDate>Thu, 27 Nov 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
