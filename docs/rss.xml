@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 17 Mar 2026 13:52:12 +0000</lastBuildDate>
+<lastBuildDate>Tue, 17 Mar 2026 14:08:17 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Clarity</title>
@@ -13,6 +13,17 @@
 <description>Clarity is a virtue; doubt, a hindrance. Clarity compounds on itself
 — a virtuous cycle. Doubt does the same — a vicious one.</description>
 <pubDate>Tue, 17 Mar 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Uses</title>
+<link>https://notes.volumen.ca/index.html#uses</link>
+<guid isPermaLink="false">uses</guid>
+<description>When I seek guidance, I turn to books. Classical philosophy and
+strategy teach leadership and discipline, especially during workplace
+challenges. The Stoics highlight life’s fragility. Modern thought
+provides clarity through mindfulness practices, philosophical inquiry,
+science revealing hidden...</description>
+<pubDate>Tue, 17 Mar 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>On Handwriting</title>
@@ -206,17 +217,6 @@ n.d.), in which he notes, “Each encounter I’ve had with Lao Tzu
 has pointed to something new. Almost as if the book changes with every
 reading. I...</description>
 <pubDate>Sun, 04 Jan 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>2025</title>
-<link>https://notes.volumen.ca/index.html#2025</link>
-<guid isPermaLink="false">2025</guid>
-<description>Another year is about to conclude. It passed like we inhaled a breath
-of fresh air yesterday, and today we are exhaling it, a little tired but
-filled with hope and excitement. Looking back, the year has been,
-despite its tiring parts, also full of joyful periods, growth, and
-satisfaction.</description>
-<pubDate>Wed, 31 Dec 2025 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
