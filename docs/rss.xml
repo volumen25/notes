@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 17 Mar 2026 14:19:07 +0000</lastBuildDate>
+<lastBuildDate>Thu, 19 Mar 2026 03:12:19 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>John Coltrane</title>
+<link>https://notes.volumen.ca/index.html#john-coltrane</link>
+<guid isPermaLink="false">john-coltrane</guid>
+<description>Today I came to know that the 100th anniversary of John Coltrane’s
+birth is being celebrated in 2026 with “Coltrane 100,” a year-long
+global event. Impulse Records, hosted by Kareem Abdul-Jabbar on Sonos
+radio, plays a collection of pieces unknown to me along with all-time
+favourites to...</description>
+<pubDate>Wed, 18 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Clarity</title>
 <link>https://notes.volumen.ca/index.html#clarity</link>
@@ -206,17 +217,6 @@ named the playlist Ever So Slowly, because it’s been such a
 slow process for me to make progress on the guitar. That said, the
 playlist also demonstrates the fact that...</description>
 <pubDate>Sat, 10 Jan 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Rick Rubin</title>
-<link>https://notes.volumen.ca/index.html#rick-rubin</link>
-<guid isPermaLink="false">rick-rubin</guid>
-<description>Rick Rubin is a remarkable man who has produced such notable artists
-as Johnny Cash and Jake Bugg. I recently came across The Way of Code (Anthropic,
-n.d.), in which he notes, “Each encounter I’ve had with Lao Tzu
-has pointed to something new. Almost as if the book changes with every
-reading. I...</description>
-<pubDate>Sun, 04 Jan 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
