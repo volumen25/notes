@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 22 Mar 2026 18:33:03 +0000</lastBuildDate>
+<lastBuildDate>Sun, 29 Mar 2026 07:01:11 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Operator or Engineer</title>
+<link>https://notes.volumen.ca/index.html#operator-or-engineer</link>
+<guid isPermaLink="false">operator-or-engineer</guid>
+<description>Mathematics is one of the subjects that people do not sufficiently
+understand, not in the sense of grasping it to solve problems, but
+rather they do not understand the latent benefits of mathematics. That
+is, mathematics is the foundation of science and technology that enables
+us to fly...</description>
+<pubDate>Sat, 28 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Assholes: A Theory</title>
 <link>https://notes.volumen.ca/index.html#assholes-a-theory</link>
@@ -206,17 +217,6 @@ work. Neither the man nor the tool remains the same; they are forever
 transformed, locked in a reciprocal process of mutual becoming, thereby
 perpetually evolving.</description>
 <pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Ever So Slowly</title>
-<link>https://notes.volumen.ca/index.html#ever-so-slowly</link>
-<guid isPermaLink="false">ever-so-slowly</guid>
-<description>During one summer, I had the opportunity to review my guitar
-practices that I recorded since 2018 and a few earlier than that. I
-named the playlist Ever So Slowly, because it’s been such a
-slow process for me to make progress on the guitar. That said, the
-playlist also demonstrates the fact that...</description>
-<pubDate>Sat, 10 Jan 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
