@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 29 Mar 2026 07:01:11 +0000</lastBuildDate>
+<lastBuildDate>Mon, 30 Mar 2026 03:05:39 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Black Keys</title>
+<link>https://notes.volumen.ca/index.html#black-keys</link>
+<guid isPermaLink="false">black-keys</guid>
+<description>The duo, with the other three musicians, released four live
+recordings on YouTube six days ago. The pieces are raw and recorded
+loud. I quite like them, in particular You Got To Lose and She Does It
+Right.</description>
+<pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Operator or Engineer</title>
 <link>https://notes.volumen.ca/index.html#operator-or-engineer</link>
@@ -207,16 +217,6 @@ because it features another talented musician, the keyboardist John
 Medeski. We also get to enjoy his long-term bandmates, the bassist Jorge
 Roeder and the...</description>
 <pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>My Way *and* the Highway</title>
-<link>https://notes.volumen.ca/index.html#my-way-and-the-highway</link>
-<guid isPermaLink="false">my-way-and-the-highway</guid>
-<description>Man makes tools. In turn, tools make a different man through his
-work. Neither the man nor the tool remains the same; they are forever
-transformed, locked in a reciprocal process of mutual becoming, thereby
-perpetually evolving.</description>
-<pubDate>Sun, 11 Jan 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
