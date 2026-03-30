@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 30 Mar 2026 03:05:39 +0000</lastBuildDate>
+<lastBuildDate>Mon, 30 Mar 2026 03:31:59 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Itadakimasu</title>
+<link>https://notes.volumen.ca/index.html#itadakimasu</link>
+<guid isPermaLink="false">itadakimasu</guid>
+<description>The ratio of food preparation time to consumption time is often
+overlooked in table etiquette. Ideally, if it takes 30 minutes to
+prepare dinner, one should spend at least 45 minutes enjoying it,
+reflecting a 2:3 ratio where eating time should be about 150% of
+preparation time. Embracing mindful...</description>
+<pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Black Keys</title>
 <link>https://notes.volumen.ca/index.html#black-keys</link>
@@ -14,7 +25,7 @@
 recordings on YouTube six days ago. The pieces are raw and recorded
 loud. I quite like them, in particular You Got To Lose and She Does It
 Right.</description>
-<pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Operator or Engineer</title>
@@ -206,17 +217,6 @@ energy. If I had had less time before the transfer, it would have been
 much easier, being a completionist making it more difficult than it
 should be.</description>
 <pubDate>Sat, 07 Feb 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Scenes From Above</title>
-<link>https://notes.volumen.ca/index.html#scenes-from-above</link>
-<guid isPermaLink="false">scenes-from-above</guid>
-<description>Julian Lage quietly released a new album, Scenes From Above, on
-January 23, 2026. The music is wonderful, and it’s especially special
-because it features another talented musician, the keyboardist John
-Medeski. We also get to enjoy his long-term bandmates, the bassist Jorge
-Roeder and the...</description>
-<pubDate>Sun, 25 Jan 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
