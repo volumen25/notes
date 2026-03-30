@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 30 Mar 2026 03:31:59 +0000</lastBuildDate>
+<lastBuildDate>Mon, 30 Mar 2026 03:48:48 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Itadakimasu</title>
@@ -26,6 +26,17 @@ recordings on YouTube six days ago. The pieces are raw and recorded
 loud. I quite like them, in particular You Got To Lose and She Does It
 Right.</description>
 <pubDate>Sun, 29 Mar 2026 12:00:01 +0000</pubDate>
+</item>
+<item>
+<title>50s Mix</title>
+<link>https://notes.volumen.ca/index.html#50s-mix</link>
+<guid isPermaLink="false">50s-mix</guid>
+<description>Though I wasn’t born in the 1950s, I grew up listening to music from
+the 1970s or earlier. Recently, Spotify recommended a 1950s mix with
+artists like Bob Dylan, Jimmy Dean, Marty Robbins, Hank Williams, Patsy
+Cline, Les Paul &amp; Mary Ford, Kitty Wells, Jim Hall, Sandy Denny, and
+Sister Rosetta...</description>
+<pubDate>Sun, 29 Mar 2026 12:00:02 +0000</pubDate>
 </item>
 <item>
 <title>Operator or Engineer</title>
@@ -206,17 +217,6 @@ they knowingly misrepresent the truth. However, when someone bullshits,
 they don’t care about the truth; they simply say whatever is necessary
 to achieve their...</description>
 <pubDate>Sat, 14 Feb 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Now</title>
-<link>https://notes.volumen.ca/index.html#now</link>
-<guid isPermaLink="false">now</guid>
-<description>I am currently focused solely on transitioning from my current job to
-my new one. While it is not a huge task, it is taking a lot of mental
-energy. If I had had less time before the transfer, it would have been
-much easier, being a completionist making it more difficult than it
-should be.</description>
-<pubDate>Sat, 07 Feb 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
