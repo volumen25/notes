@@ -5,6 +5,8 @@
   --hr-color: #d0d0d0;
   --link-border: #888;
   --shadow-color: rgba(0, 0, 0, 0.15);
+  --mark-bg: #cce5ff;
+  --mark-color: #1a1a1a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -14,6 +16,8 @@
     --hr-color: #444;
     --link-border: #999;
     --shadow-color: rgba(255, 255, 255, 0.1);
+    --mark-bg: #1a3a5c;
+    --mark-color: #e8e6e1;
   }
 }
 
@@ -110,6 +114,13 @@ blockquote::before {
     position: absolute;
     left: 0;
     top: 0;
+}
+
+/* Highlight */
+mark {
+   background-color: var(--mark-bg);
+   color: var(--mark-color);
+   padding: 0 0.15em;
 }
 
 /* APA-style bibliography */
