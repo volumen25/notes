@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 04 Apr 2026 01:45:10 +0000</lastBuildDate>
+<lastBuildDate>Sat, 04 Apr 2026 17:10:10 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Mediocrity</title>
+<link>https://notes.volumen.ca/index.html#mediocrity</link>
+<guid isPermaLink="false">mediocrity</guid>
+<description>I’ve become overly cautious of mediocrity, paralyzed by its potential
+consequences. Having to explain simple ideas with concrete examples,
+while simultaneously being told that I’m too academic or
+perfectionistic, makes mediocrity seem almost impenetrable. It feels
+like there’s no hope of raising...</description>
+<pubDate>Sat, 04 Apr 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Certainty as Conceit</title>
 <link>https://notes.volumen.ca/index.html#certainty-as-conceit</link>
@@ -205,17 +216,6 @@ polymath Vilfredo Pareto, the principle is supported by empirical
 observation showing that this 80:20 distribution applies to a wide
 variety of situations,...</description>
 <pubDate>Wed, 18 Feb 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>On Stupidty</title>
-<link>https://notes.volumen.ca/index.html#on-stupidty</link>
-<guid isPermaLink="false">on-stupidty</guid>
-<description>The basic laws assert that, according to Cipolla (Cipolla,
-2019) : 1. Everyone inevitably underestimates the number of stupid
-individuals in circulation. 2. The probability of an individual being
-stupid is independent of any characteristic of that person. 3. A stupid
-person is one who causes...</description>
-<pubDate>Mon, 16 Feb 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
