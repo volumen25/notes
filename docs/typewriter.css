@@ -41,9 +41,8 @@ body {
 
 /* Global text effect */
 body, p, div, li, h1, h2, h3, blockquote {
-    letter-spacing: 0.08em;
-    text-shadow: 0.5px 0.5px 0 var(--shadow-color);
-    opacity: 0.97;
+    letter-spacing: 0.1em;
+    opacity: 0.93;
 }
 
 /* Headings: Typewriter-style */
