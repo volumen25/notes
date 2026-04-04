@@ -342,7 +342,7 @@ def generate():
                 [
                     "pandoc",
                     "-f",
-                    "markdown",
+                    "markdown+mark",
                     "-t",
                     "html",
                     "--syntax-highlighting=none",
