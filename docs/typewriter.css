@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+
 /* CSS Variables for theming */
 :root {
   --bg-color: #f4f1e9;
@@ -23,7 +25,8 @@
 
 /* Base body styling */
 body {
-    font-family: Courier, monospace;
+    /* font-family: Courier, monospace; */
+    font-family: "JetBrains Mono", Courier, monospace;
     font-size: 1.25em;
     max-width: 800px;
     margin: 0 auto;
