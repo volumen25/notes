@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 04 Apr 2026 17:11:19 +0000</lastBuildDate>
+<lastBuildDate>Sun, 05 Apr 2026 01:13:46 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Diacritics</title>
+<link>https://notes.volumen.ca/index.html#diacritics</link>
+<guid isPermaLink="false">diacritics</guid>
+<description>Diacritics are small marks added to letters that modify
+pronunciation, stress, or even the function of a word. For example, the
+acute accent (é) alters the pronunciation of “café.” Similarly, the
+cedilla (ç) softens the “c” sound in “façade.” In some languages,
+diacritics can completely change...</description>
+<pubDate>Sat, 04 Apr 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Mediocrity</title>
 <link>https://notes.volumen.ca/index.html#mediocrity</link>
@@ -15,7 +26,7 @@ consequences. Having to explain simple ideas with concrete examples,
 while simultaneously being told that I’m too academic or
 perfectionistic, makes mediocrity seem almost impenetrable. It feels
 like there’s no hope of raising...</description>
-<pubDate>Sat, 04 Apr 2026 12:00:00 +0000</pubDate>
+<pubDate>Sat, 04 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Certainty as Conceit</title>
@@ -205,17 +216,6 @@ optimization, adding structure before it’s needed can actively work
 against the work itself. The more conditions that must align before
 progress is possible, the...</description>
 <pubDate>Wed, 18 Feb 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Pareto Principle</title>
-<link>https://notes.volumen.ca/index.html#pareto-principle</link>
-<guid isPermaLink="false">pareto-principle</guid>
-<description>The Pareto Principle, also known as the “80:20 rule,” asserts that
-80% of outcomes stem from 20% of causes. Named after the Italian
-polymath Vilfredo Pareto, the principle is supported by empirical
-observation showing that this 80:20 distribution applies to a wide
-variety of situations,...</description>
-<pubDate>Wed, 18 Feb 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
