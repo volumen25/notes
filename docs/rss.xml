@@ -4,8 +4,27 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 05 Apr 2026 01:32:13 +0000</lastBuildDate>
+<lastBuildDate>Sun, 05 Apr 2026 19:51:39 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Mediocrity</title>
+<link>https://notes.volumen.ca/index.html#mediocrity</link>
+<guid isPermaLink="false">mediocrity</guid>
+<description>I’ve become overly cautious of mediocrity, paralyzed by its potential
+consequences. Having to explain simple ideas with concrete examples,
+while simultaneously being told that I’m too academic or
+perfectionistic, makes mediocrity seem almost impenetrable. It feels
+like there’s no hope of...</description>
+<pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Beautiful Strangers</title>
+<link>https://notes.volumen.ca/index.html#beautiful-strangers</link>
+<guid isPermaLink="false">beautiful-strangers</guid>
+<description>I’ve been obsessed with Kevin Morby’s “Beautiful Strangers.” It’s
+been on repeat, and I can’t get it out of my head.</description>
+<pubDate>Sun, 05 Apr 2026 12:00:01 +0000</pubDate>
+</item>
 <item>
 <title>Diacritics</title>
 <link>https://notes.volumen.ca/index.html#diacritics</link>
@@ -16,17 +35,6 @@ acute accent (é) alters the pronunciation of “café.” Similarly, the
 cedilla (ç) softens the “c” sound in “façade.” In some languages,
 diacritics can completely change...</description>
 <pubDate>Sat, 04 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Mediocrity</title>
-<link>https://notes.volumen.ca/index.html#mediocrity</link>
-<guid isPermaLink="false">mediocrity</guid>
-<description>I’ve become overly cautious of mediocrity, paralyzed by its potential
-consequences. Having to explain simple ideas with concrete examples,
-while simultaneously being told that I’m too academic or
-perfectionistic, makes mediocrity seem almost impenetrable. It feels
-like there’s no hope of raising...</description>
-<pubDate>Sat, 04 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Certainty as Conceit</title>
@@ -205,17 +213,6 @@ requires you to apply your training to non-linear and unpredictable
 events and circumstances. This raises the question of whether the
 conventional approach to...</description>
 <pubDate>Thu, 26 Feb 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Dependencies</title>
-<link>https://notes.volumen.ca/index.html#dependencies</link>
-<guid isPermaLink="false">dependencies</guid>
-<description>Sometimes we create unnecessary dependencies that quietly shape our
-workflow, causing delays, friction, and anxiety. Like premature
-optimization, adding structure before it’s needed can actively work
-against the work itself. The more conditions that must align before
-progress is possible, the...</description>
-<pubDate>Wed, 18 Feb 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
