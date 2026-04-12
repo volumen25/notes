@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 12 Apr 2026 17:20:09 +0000</lastBuildDate>
+<lastBuildDate>Sun, 12 Apr 2026 17:25:29 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Pareto Principle</title>
+<link>https://notes.volumen.ca/index.html#pareto-principle</link>
+<guid isPermaLink="false">pareto-principle</guid>
+<description>The Pareto Principle, also known as the “80:20 rule,” asserts that
+80% of outcomes stem from 20% of causes. Named after the Italian
+polymath Vilfredo Pareto, the principle is supported by empirical
+observation showing that this 80:20 distribution applies to a wide
+variety of situations,...</description>
+<pubDate>Sun, 12 Apr 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Hidden by Design</title>
 <link>https://notes.volumen.ca/index.html#hidden-by-design</link>
@@ -15,7 +26,7 @@ is a hidden quality in it that we can pursue. When that hidden-by-design
 quality is possessed by the products we make, they disappear into use.
 Let us consider friction as an example. Where it is not desired, the
 object should...</description>
-<pubDate>Sun, 12 Apr 2026 12:00:00 +0000</pubDate>
+<pubDate>Sun, 12 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>On True Practice</title>
@@ -26,6 +37,14 @@ practice needs great effort.</description>
 <pubDate>Tue, 07 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 <item>
+<title>Beautiful Strangers</title>
+<link>https://notes.volumen.ca/index.html#beautiful-strangers</link>
+<guid isPermaLink="false">beautiful-strangers</guid>
+<description>I’ve been obsessed with Kevin Morby’s “Beautiful Strangers.” It’s
+been on repeat, and I can’t get it out of my head.</description>
+<pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
 <title>Mediocrity</title>
 <link>https://notes.volumen.ca/index.html#mediocrity</link>
 <guid isPermaLink="false">mediocrity</guid>
@@ -34,14 +53,6 @@ consequences. Having to explain simple ideas with concrete examples,
 while simultaneously being told that I’m too academic or
 perfectionistic, makes mediocrity seem almost impenetrable. It feels
 like there’s no hope of...</description>
-<pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Beautiful Strangers</title>
-<link>https://notes.volumen.ca/index.html#beautiful-strangers</link>
-<guid isPermaLink="false">beautiful-strangers</guid>
-<description>I’ve been obsessed with Kevin Morby’s “Beautiful Strangers.” It’s
-been on repeat, and I can’t get it out of my head.</description>
 <pubDate>Sun, 05 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
@@ -199,17 +210,6 @@ adopt daylight saving time, ending the twice-a-year clock changes. On
 November 1, 2026, clocks will remain the same, completing the transition
 to a year-round...</description>
 <pubDate>Sun, 08 Mar 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Negative Experiences</title>
-<link>https://notes.volumen.ca/index.html#negative-experiences</link>
-<guid isPermaLink="false">negative-experiences</guid>
-<description>Love, friendship, and respect do not unite people as much as a shared
-hatred (Chekhov, n.d.). This
-observation is unsettling because a negative force like hatred can be
-more cohesive than a positive one. It suggests that what we oppose can
-define us more powerfully than what we support.</description>
-<pubDate>Fri, 06 Mar 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
