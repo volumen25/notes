@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 12 Apr 2026 17:28:11 +0000</lastBuildDate>
+<lastBuildDate>Sun, 12 Apr 2026 17:34:53 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Hidden by Design</title>
@@ -35,6 +35,17 @@ variety of situations,...</description>
 <description>To the beginner: practice without effort is not true practice; the
 practice needs great effort.</description>
 <pubDate>Tue, 07 Apr 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Problems vs Situations</title>
+<link>https://notes.volumen.ca/index.html#problems-vs-situations</link>
+<guid isPermaLink="false">problems-vs-situations</guid>
+<description>Every problem has a solution. If there’s no solution, then it’s not a
+problem, it’s a situation. It’s quite likely that the situation exists
+in your mind, that is, a thought forms the situation. Change it. Don’t
+trust your thoughts; they’re often manipulated by people through
+external events,...</description>
+<pubDate>Tue, 07 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Mediocrity</title>
@@ -199,17 +210,6 @@ Then came this wonderful piece of music on the radio, La Favorite, the
 grand opera in four acts by Gaetano Donizetti, frequently also known by
 its Italian...</description>
 <pubDate>Sun, 08 Mar 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Daylight Saving Time</title>
-<link>https://notes.volumen.ca/index.html#daylight-saving-time</link>
-<guid isPermaLink="false">daylight-saving-time</guid>
-<description>British Columbia’s final time change has occurred today, March 8,
-2026. Premier David Eby announced on March 2nd that BC will permanently
-adopt daylight saving time, ending the twice-a-year clock changes. On
-November 1, 2026, clocks will remain the same, completing the transition
-to a year-round...</description>
-<pubDate>Sun, 08 Mar 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
