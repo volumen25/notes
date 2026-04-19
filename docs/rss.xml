@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 19 Apr 2026 02:39:58 +0000</lastBuildDate>
+<lastBuildDate>Sun, 19 Apr 2026 02:42:31 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Hidden by Design</title>
@@ -46,6 +46,17 @@ external events,...</description>
 <description>To the beginner: practice without effort is not true practice; the
 practice needs great effort.</description>
 <pubDate>Tue, 07 Apr 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Iatrogenics</title>
+<link>https://notes.volumen.ca/index.html#iatrogenics</link>
+<guid isPermaLink="false">iatrogenics</guid>
+<description>Cause no harm. Iatrogenic: I first came across the term in Nassim
+Taleb’s Antifragile (Taleb, 2012).
+Iatrogenics has become a significant decision-making criterion for me.
+Even when the benefits of intervention may seem to outweigh the
+potential risks, always keep the harm you might cause in mind.</description>
+<pubDate>Tue, 07 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Mediocrity</title>
@@ -199,17 +210,6 @@ foolish.</description>
 giant innkeeper who stretched or amputated travellers’ legs so they
 would fit perfectly into his iron bed.</description>
 <pubDate>Fri, 13 Mar 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>La Favorita</title>
-<link>https://notes.volumen.ca/index.html#la-favorita</link>
-<guid isPermaLink="false">la-favorita</guid>
-<description>It’s been a wonderful morning. I took a nice walk outside, taking in
-the fresh breeze and enjoying the early spring weather, windy as it was.
-Then came this wonderful piece of music on the radio, La Favorite, the
-grand opera in four acts by Gaetano Donizetti, frequently also known by
-its Italian...</description>
-<pubDate>Sun, 08 Mar 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
