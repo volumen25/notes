@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 19 Apr 2026 02:45:36 +0000</lastBuildDate>
+<lastBuildDate>Sun, 19 Apr 2026 04:43:46 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Neither Raw Nor Refined</title>
+<link>https://notes.volumen.ca/index.html#neither-raw-nor-refined</link>
+<guid isPermaLink="false">neither-raw-nor-refined</guid>
+<description>Comparing a rough draft to a polished final text, we often miss the
+raw voice and thought process. This raw voice can help readers connect
+with the meaning on a deeper level. On the other hand, a refined final
+text distils thoughts into essential elements, which might make it
+harder for readers...</description>
+<pubDate>Sat, 18 Apr 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Hidden by Design</title>
 <link>https://notes.volumen.ca/index.html#hidden-by-design</link>
@@ -201,15 +212,6 @@ takes care of...</description>
 fools. It is no shame to be thought stern; it is shameful to be
 foolish.</description>
 <pubDate>Sun, 15 Mar 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Procrustean Bed</title>
-<link>https://notes.volumen.ca/index.html#procrustean-bed</link>
-<guid isPermaLink="false">procrustean-bed</guid>
-<description>The Procrustean bed originates from the Greek myth of Procrustes, a
-giant innkeeper who stretched or amputated travellers’ legs so they
-would fit perfectly into his iron bed.</description>
-<pubDate>Fri, 13 Mar 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
