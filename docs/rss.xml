@@ -4,8 +4,17 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 21 Apr 2026 04:44:46 +0000</lastBuildDate>
+<lastBuildDate>Fri, 24 Apr 2026 04:57:42 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Zazen Posture</title>
+<link>https://notes.volumen.ca/index.html#zazen-posture</link>
+<guid isPermaLink="false">zazen-posture</guid>
+<description>Sit upright with your spine long, head floating up, chin tucked, ears
+over shoulders. Relax the shoulders, breathe low into the belly. Don’t
+lean any direction, find the still centre.</description>
+<pubDate>Thu, 23 Apr 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Neither Raw Nor Refined</title>
 <link>https://notes.volumen.ca/index.html#neither-raw-nor-refined</link>
@@ -203,15 +212,6 @@ across the page. The motion becomes fluid, not forced. It feels strange
 at first, but once you stop consciously directing your hand, the writing
 takes care of...</description>
 <pubDate>Mon, 16 Mar 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Stern</title>
-<link>https://notes.volumen.ca/index.html#stern</link>
-<guid isPermaLink="false">stern</guid>
-<description>Better to appear stern than to invite the disrespect reserved for
-fools. It is no shame to be thought stern; it is shameful to be
-foolish.</description>
-<pubDate>Sun, 15 Mar 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
