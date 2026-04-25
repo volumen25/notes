@@ -108,7 +108,7 @@ def generate():
     }
 
     # === Copy .md files from source to content/ ===
-    SOURCE_DIR = Path.home() / "codeberg/content"
+    SOURCE_DIR = Path.home() / "obsidian/content"
     copied = 0
     skipped = 0
 
