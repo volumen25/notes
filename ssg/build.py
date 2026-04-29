@@ -490,7 +490,6 @@ def generate():
     # === Copy assets to output directory ===
     assets_to_copy = [
         (ASSETS_DIR / "typewriter.css", OUTPUT_DIR / "typewriter.css"),
-        (ASSETS_DIR / "favicon.ico", OUTPUT_DIR / "favicon.ico"),
     ]
 
     for src, dst in assets_to_copy:
