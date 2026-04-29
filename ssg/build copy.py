@@ -45,24 +45,6 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # ----------------------------
-# Git pull (sync before build)
-# ----------------------------
-def git_pull() -> None:
-    try:
-        result = subprocess.run(
-            ["git", "pull", "--rebase"],
-            check=True,
-            capture_output=True,
-            text=True,
-            cwd=BASE_DIR,
-        )
-        console.log(f"[green]✓[/] Git pull → [dim]{result.stdout.strip()}[/]")
-    except subprocess.CalledProcessError as e:
-        logging.warning(f"Git pull failed: {e.stderr.strip()}")
-        raise
-
-
-# ----------------------------
 # Git commit and push
 # ----------------------------
 def git_commit(output_dir: Path, message: str = None) -> None:
@@ -508,12 +490,6 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="Build the Volūmen site.")
     parser.add_argument("-m", "--message", default=None, help="Git commit message")
     args = parser.parse_args()
-
-    try:
-        git_pull()
-    except subprocess.CalledProcessError:
-        console.print("[bold red]✗ Sync failed — resolve conflicts before building.[/]")
-        return
 
     start = time.time()
     generate()
