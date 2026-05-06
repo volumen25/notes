@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 04 May 2026 05:44:07 +0000</lastBuildDate>
+<lastBuildDate>Wed, 06 May 2026 00:01:02 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Recursive Ideas</title>
+<link>https://notes.volumen.ca/index.html#recursive-ideas</link>
+<guid isPermaLink="false">recursive-ideas</guid>
+<description>I can’t help but notice a pattern: I seem to end up writing circular
+or recursive ideas. I think it’s a thinking habit, for better or worse.
+Recursive thinking is good at finding the hidden assumptions inside an
+idea, because it naturally follows a thought back to its own
+foundations. The risk...</description>
+<pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>The Absence of Headaches</title>
 <link>https://notes.volumen.ca/index.html#the-absence-of-headaches</link>
@@ -203,17 +214,6 @@ artists like Bob Dylan, Jimmy Dean, Marty Robbins, Hank Williams, Patsy
 Cline, Les Paul &amp; Mary Ford, Kitty Wells, Jim Hall, Sandy Denny, and
 Sister Rosetta...</description>
 <pubDate>Sun, 29 Mar 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Operator or Engineer</title>
-<link>https://notes.volumen.ca/index.html#operator-or-engineer</link>
-<guid isPermaLink="false">operator-or-engineer</guid>
-<description>Mathematics is one of the subjects that people do not sufficiently
-understand, not in the sense of grasping it to solve problems, but
-rather they do not understand the latent benefits of mathematics. That
-is, mathematics is the foundation of science and technology that enables
-us to fly...</description>
-<pubDate>Sat, 28 Mar 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
