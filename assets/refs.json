@@ -24,8 +24,9 @@
 		]
 	},
 	{
-		"id": "http://zotero.org/users/11849727/items/PRW399UD",
+		"id": "GutenbergorgFiles12494",
 		"type": "webpage",
+		"citation-key": "GutenbergorgFiles12494",
 		"title": "gutenberg.org/files/12494/12494-0.txt",
 		"URL": "https://www.gutenberg.org/files/12494/12494-0.txt",
 		"accessed": {
@@ -39,8 +40,9 @@
 		}
 	},
 	{
-		"id": "http://zotero.org/users/11849727/items/BDXZVT2N",
+		"id": "GutenbergorgFiles12494a",
 		"type": "webpage",
+		"citation-key": "GutenbergorgFiles12494a",
 		"title": "gutenberg.org/files/12494/12494-0.txt",
 		"URL": "https://www.gutenberg.org/files/12494/12494-0.txt",
 		"accessed": {
@@ -5481,6 +5483,88 @@
 					"2020",
 					6,
 					2
+				]
+			]
+		}
+	},
+	{
+		"id": "solbergThermalEngineering",
+		"type": "book",
+		"abstract": "Book by None",
+		"citation-key": "solbergThermalEngineering",
+		"ISBN": "978-0-471-81147-3",
+		"language": "English",
+		"number-of-pages": "649",
+		"publisher": "John Wiley & Sons Inc",
+		"source": "Amazon",
+		"title": "Thermal Engineering",
+		"author": [
+			{
+				"family": "Solberg",
+				"given": "H. L."
+			},
+			{
+				"family": "etc",
+				"given": ""
+			}
+		]
+	},
+	{
+		"id": "granetThermodynamicsHeatPower2015",
+		"type": "book",
+		"abstract": "Building on the last edition, (dedicated to exploring alternatives to coal- and oil-based energy conversion methods and published more than ten years ago), Thermodynamics and Heat Power, Eighth Edition updates the status of existing direct energy conversion methods as described in the previous work. Offering a systems approach to the analysis of energy conversion methods, this text focuses on the fundamentals involved in thermodynamics, and further explores concepts in the areas of ideal gas flow, engine analysis, air conditioning, and heat transfer. It examines energy, heat, and work in relation to thermodynamics, and also explores the properties of temperature and pressures. The book emphasizes practical mechanical systems, and incorporates problems at the end of the chapters to advance the application of the material.  What’s New in the Eighth Edition:An emphasis on a systems approach to problemsMore discussion of the types of heat and of entropyAdded explanations for understanding pound mass and the moleAnalysis of steady flow gas processes, replacing the compressible flow sectionThe concept of paddle work to illustrate how frictional effects can be analyzedA clearer discussion of the psychrometric chart and its usage in analyzing air conditioning systemsUpdates of the status of direct energy conversion systemsA description of how the cooling tower is utilized in high-rise buildingsPractical automotive engine analysisExpanded Brayton cycle analysis including intercooling, reheat, and regeneration and their effect on gas turbine efficiencyA description of fins and how they improve heat transfer ratesAdded illustrative problems and new homework problemsAvailability of a publisher’s website for fluid properties and other reference materialsProperties of the latest in commercial refrigerantsThis text presents an understanding of basic concepts on the subject of thermodynamics and is a definitive resource for undergraduate students in engineering programs, most specifically, students studying engineering technology.",
+		"citation-key": "granetThermodynamicsHeatPower2015",
+		"ISBN": "978-1-4822-3855-6",
+		"language": "English",
+		"number-of-pages": "856",
+		"publisher": "CRC Press",
+		"publisher-place": "Boca Raton, Fla.",
+		"source": "Amazon",
+		"title": "Thermodynamics and Heat Power",
+		"author": [
+			{
+				"family": "Granet",
+				"given": "Irving"
+			},
+			{
+				"family": "Bluestein",
+				"given": "Maurice"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2015"
+				]
+			]
+		}
+	},
+	{
+		"id": "wylenFundamentalsClassicalThermodynamics1986",
+		"type": "book",
+		"abstract": "A revision of the best-selling introduction to classical thermodynamics written for undergraduate engineering students. Developed from first principles, the text goes on to include a variety of modern applications. Combines English and SI units, provides excellent examples and homework problems, introduces a formal technique for organizing the analysis and solution of problems, and allows for flexibility in the amount of coverage of advanced topics.",
+		"citation-key": "wylenFundamentalsClassicalThermodynamics1986",
+		"ISBN": "978-0-471-86173-7",
+		"language": "English",
+		"number-of-pages": "749",
+		"publisher": "Wiley",
+		"publisher-place": "New York",
+		"source": "Amazon",
+		"title": "Fundamentals of Classical Thermodynamics",
+		"author": [
+			{
+				"family": "Wylen",
+				"given": "Gordon J. Van"
+			},
+			{
+				"family": "Sonntag",
+				"given": "Richard E."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1986"
 				]
 			]
 		}
