@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Wed, 06 May 2026 00:03:08 +0000</lastBuildDate>
+<lastBuildDate>Wed, 06 May 2026 00:05:39 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Recursive Ideas</title>
@@ -16,6 +16,16 @@ Recursive thinking is good at finding the hidden assumptions inside an
 idea, because it naturally follows a thought back to its own
 foundations. The risk...</description>
 <pubDate>Tue, 05 May 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Buoyancy</title>
+<link>https://notes.volumen.ca/index.html#buoyancy</link>
+<guid isPermaLink="false">buoyancy</guid>
+<description>Buoyancy is the property of a system to keep it afloat while
+supporting its contents. If the system becomes heavier than what it
+supports, the system and its contents will either collapse or become
+dysfunctional. Archimedes’ principle prevails in social contexts.</description>
+<pubDate>Mon, 04 May 2026 12:00:00 +0000</pubDate>
 </item>
 <item>
 <title>The Absence of Headaches</title>
@@ -203,17 +213,6 @@ recordings on YouTube six days ago. The pieces are raw and recorded
 loud. I quite like them, in particular You Got To Lose and She Does It
 Right.</description>
 <pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>50s Mix</title>
-<link>https://notes.volumen.ca/index.html#50s-mix</link>
-<guid isPermaLink="false">50s-mix</guid>
-<description>Though I wasn’t born in the 1950s, I grew up listening to music from
-the 1970s or earlier. Recently, Spotify recommended a 1950s mix with
-artists like Bob Dylan, Jimmy Dean, Marty Robbins, Hank Williams, Patsy
-Cline, Les Paul &amp; Mary Ford, Kitty Wells, Jim Hall, Sandy Denny, and
-Sister Rosetta...</description>
-<pubDate>Sun, 29 Mar 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
