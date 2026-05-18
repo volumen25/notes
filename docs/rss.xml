@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 18 May 2026 15:18:38 +0000</lastBuildDate>
+<lastBuildDate>Mon, 18 May 2026 17:03:01 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Messiness</title>
@@ -16,6 +16,17 @@ easily clean up the tracks and straighten it up going forward. Then even
 the clearest paths will branch out and no matter how clean a path,
 something will...</description>
 <pubDate>Mon, 18 May 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Hakuro Nishiki</title>
+<link>https://notes.volumen.ca/index.html#hakuro-nishiki</link>
+<guid isPermaLink="false">hakuro-nishiki</guid>
+<description>Hakuro Nishiki is a variegated willow. Even someone who sees it
+without reading its label could guess it is a Japanese tree. With its
+soft and delicate form and the colour that can represent the sakura
+season, the tree in its pot caught our attention immediately. Now we
+wonder how it looks in...</description>
+<pubDate>Mon, 18 May 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Uses</title>
@@ -204,17 +215,6 @@ like there’s no hope of...</description>
 <description>I’ve been obsessed with Kevin Morby’s “Beautiful Strangers.” It’s
 been on repeat, and I can’t get it out of my head.</description>
 <pubDate>Sun, 05 Apr 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Diacritics</title>
-<link>https://notes.volumen.ca/index.html#diacritics</link>
-<guid isPermaLink="false">diacritics</guid>
-<description>Diacritics are small marks added to letters that modify
-pronunciation, stress, or even the function of a word. For example, the
-acute accent (é) alters the pronunciation of “café.” Similarly, the
-cedilla (ç) softens the “c” sound in “façade.” In some languages,
-diacritics can completely change...</description>
-<pubDate>Sat, 04 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
