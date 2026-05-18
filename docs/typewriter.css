@@ -2,6 +2,7 @@
 
 /* CSS Variables for theming */
 :root {
+  /* --bg-color: #f4f1e9; */
   --bg-color: rgb(255, 252, 240);
   --text-color: #1a1a1a;
   --hr-color: #d0d0d0;

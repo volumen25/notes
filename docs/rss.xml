@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 12 May 2026 04:24:36 +0000</lastBuildDate>
+<lastBuildDate>Mon, 18 May 2026 15:18:38 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Messiness</title>
+<link>https://notes.volumen.ca/index.html#messiness</link>
+<guid isPermaLink="false">messiness</guid>
+<description>Life is messy, the work we do, the personal projects we undertake,
+hobbies, simply put, a day from dawn to dusk is messy. No undo button to
+easily clean up the tracks and straighten it up going forward. Then even
+the clearest paths will branch out and no matter how clean a path,
+something will...</description>
+<pubDate>Mon, 18 May 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Uses</title>
 <link>https://notes.volumen.ca/index.html#uses</link>
@@ -204,16 +215,6 @@ acute accent (é) alters the pronunciation of “café.” Similarly, the
 cedilla (ç) softens the “c” sound in “façade.” In some languages,
 diacritics can completely change...</description>
 <pubDate>Sat, 04 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Certainty as Conceit</title>
-<link>https://notes.volumen.ca/index.html#certainty-as-conceit</link>
-<guid isPermaLink="false">certainty-as-conceit</guid>
-<description>Intellectual honesty about uncertainty is a virtue, not a flaw. A
-sure and certain tone and posture in discourse is a conceit.
-Authoritative speech might be hiding the truth, or at the very least,
-insecurity. Conviction is the mask. Beneath it, cowardice.</description>
-<pubDate>Thu, 02 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
