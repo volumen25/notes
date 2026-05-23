@@ -4,7 +4,7 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 23 May 2026 14:46:18 +0000</lastBuildDate>
+<lastBuildDate>Sat, 23 May 2026 23:18:38 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
 <item>
 <title>Back to Linux</title>
@@ -16,6 +16,15 @@ functional, and Windows on the ThinkPad T14 for office at work. It’s
 been nearly two decades since I last did anything on Linux, and I was
 delighted to find...</description>
 <pubDate>Sat, 23 May 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Modern Interpretation of Ikigai</title>
+<link>https://notes.volumen.ca/index.html#modern-interpretation-of-ikigai</link>
+<guid isPermaLink="false">modern-interpretation-of-ikigai</guid>
+<description>Ikigai, a concept from Okinawa, is believed to support the longevity
+and well-being of its people, who have one of the highest concentrations
+of centenarians in the world.</description>
+<pubDate>Sat, 23 May 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Messiness</title>
@@ -207,17 +216,6 @@ Iatrogenics has become a significant decision-making criterion for me.
 Even when the benefits of intervention may seem to outweigh the
 potential risks, always keep the harm you might cause in mind.</description>
 <pubDate>Tue, 07 Apr 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Mediocrity</title>
-<link>https://notes.volumen.ca/index.html#mediocrity</link>
-<guid isPermaLink="false">mediocrity</guid>
-<description>I’ve become overly cautious of mediocrity, paralyzed by its potential
-consequences. Having to explain simple ideas with concrete examples,
-while simultaneously being told that I’m too academic or
-perfectionistic, makes mediocrity seem almost impenetrable. It feels
-like there’s no hope of...</description>
-<pubDate>Sun, 05 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
