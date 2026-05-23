@@ -2517,14 +2517,12 @@
 			{
 				"family": "Miralles",
 				"given": "Francesc"
-			},
+			}
+		],
+		"translator": [
 			{
 				"family": "Cleary",
 				"given": "Heather"
-			},
-			{
-				"family": "García",
-				"given": "Héctor"
 			}
 		],
 		"issued": {
@@ -5565,6 +5563,33 @@
 			"date-parts": [
 				[
 					"1986"
+				]
+			]
+		}
+	},
+	{
+		"id": "boltonInstrumentationControlSystems2021",
+		"type": "book",
+		"citation-key": "boltonInstrumentationControlSystems2021",
+		"edition": "Third edition",
+		"ISBN": "978-0-12-823471-6",
+		"language": "English",
+		"note": "section: xiii, 370 pages : illustrations ; 28 cm",
+		"number-of-pages": "xiii, 370",
+		"publisher": "Newnes is an imprint of Elsevier",
+		"publisher-place": "Oxford, United Kingdom",
+		"source": "WorldCat Discovery Service",
+		"title": "Instrumentation and control systems",
+		"author": [
+			{
+				"family": "Bolton",
+				"given": "W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
 				]
 			]
 		}
