@@ -4,8 +4,28 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 23 May 2026 23:55:13 +0000</lastBuildDate>
+<lastBuildDate>Sat, 30 May 2026 04:54:02 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Dissolving Into Sound</title>
+<link>https://notes.volumen.ca/index.html#dissolving-into-sound</link>
+<guid isPermaLink="false">dissolving-into-sound</guid>
+<description>Listening to Julian Lage’s latest video on his YouTube channel, I
+came to realize a subtle quality: He and his quartet are in a meditative
+state. It doesn’t look like they are performing, nor are they working.
+Thus, listening to them draws you into that restorative state in which
+you strip off...</description>
+<pubDate>Fri, 29 May 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Ikigai: Origins and Modern Interpretation</title>
+<link>https://notes.volumen.ca/index.html#ikigai-origins-and-modern-interpretation</link>
+<guid isPermaLink="false">ikigai-origins-and-modern-interpretation</guid>
+<description>Ikigai, a concept from Okinawa, is believed to support the longevity
+and well-being of its people, who have one of the highest concentrations
+of centenarians in the world.</description>
+<pubDate>Sun, 24 May 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Back to Linux</title>
 <link>https://notes.volumen.ca/index.html#back-to-linux</link>
@@ -16,15 +36,6 @@ functional, and Windows on the ThinkPad T14 for office at work. It’s
 been nearly two decades since I last did anything on Linux, and I was
 delighted to find...</description>
 <pubDate>Sat, 23 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Ikigai: Origins and Modern Interpretation</title>
-<link>https://notes.volumen.ca/index.html#ikigai-origins-and-modern-interpretation</link>
-<guid isPermaLink="false">ikigai-origins-and-modern-interpretation</guid>
-<description>Ikigai, a concept from Okinawa, is believed to support the longevity
-and well-being of its people, who have one of the highest concentrations
-of centenarians in the world.</description>
-<pubDate>Sat, 23 May 2026 12:00:01 +0000</pubDate>
 </item>
 <item>
 <title>Messiness</title>
@@ -205,17 +216,6 @@ external events,...</description>
 <description>To the beginner: practice without effort is not true practice; the
 practice needs great effort.</description>
 <pubDate>Tue, 07 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Iatrogenics</title>
-<link>https://notes.volumen.ca/index.html#iatrogenics</link>
-<guid isPermaLink="false">iatrogenics</guid>
-<description>Cause no harm. Iatrogenic: I first came across the term in Nassim
-Taleb’s Antifragile (Taleb, 2012).
-Iatrogenics has become a significant decision-making criterion for me.
-Even when the benefits of intervention may seem to outweigh the
-potential risks, always keep the harm you might cause in mind.</description>
-<pubDate>Tue, 07 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
