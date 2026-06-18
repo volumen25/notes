@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 14 Jun 2026 21:49:10 +0000</lastBuildDate>
+<lastBuildDate>Thu, 18 Jun 2026 07:47:17 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Posture and Presence</title>
+<link>https://notes.volumen.ca/index.html#posture-and-presence</link>
+<guid isPermaLink="false">posture-and-presence</guid>
+<description>Observe the inner stillness of Yehudi Menuhin, one of the great
+violinists of the 20th century. Notice the majestic steadiness of his
+posture and his simple, gentle movements, each gesture commanding an
+exquisite wave of sound.</description>
+<pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Back to Linux</title>
 <link>https://notes.volumen.ca/index.html#back-to-linux</link>
@@ -208,14 +218,6 @@ in your mind, that is, a thought forms the situation. Change it. Don’t
 trust your thoughts; they’re often manipulated by people through
 external events,...</description>
 <pubDate>Sat, 11 Apr 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>On True Practice</title>
-<link>https://notes.volumen.ca/index.html#on-true-practice</link>
-<guid isPermaLink="false">on-true-practice</guid>
-<description>To the beginner: practice without effort is not true practice; the
-practice needs great effort.</description>
-<pubDate>Tue, 07 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
