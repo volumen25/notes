@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 23 Jun 2026 06:51:00 +0000</lastBuildDate>
+<lastBuildDate>Thu, 25 Jun 2026 01:56:30 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>On Compounding</title>
+<link>https://notes.volumen.ca/index.html#on-compounding</link>
+<guid isPermaLink="false">on-compounding</guid>
+<description>Compounding effects have implications that are easy to underestimate;
+for example, a good habit will compound, thereby improving one’s daily
+life, sustaining itself as an internal cycle. A lateral outcome is the
+diffusion of compounding, as acquired benefits spread to other aspects
+of life:...</description>
+<pubDate>Wed, 24 Jun 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Posture and Presence</title>
 <link>https://notes.volumen.ca/index.html#posture-and-presence</link>
@@ -207,17 +218,6 @@ polymath Vilfredo Pareto, the principle is supported by empirical
 observation showing that this 80:20 distribution applies to a wide
 variety of situations,...</description>
 <pubDate>Sat, 11 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Problems vs Situations</title>
-<link>https://notes.volumen.ca/index.html#problems-vs-situations</link>
-<guid isPermaLink="false">problems-vs-situations</guid>
-<description>Every problem has a solution. If there’s no solution, then it’s not a
-problem, it’s a situation. It’s quite likely that the situation exists
-in your mind, that is, a thought forms the situation. Change it. Don’t
-trust your thoughts; they’re often manipulated by people through
-external events,...</description>
-<pubDate>Sat, 11 Apr 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
