@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 25 Jun 2026 01:56:30 +0000</lastBuildDate>
+<lastBuildDate>Sat, 27 Jun 2026 04:41:11 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>No Grand Plan, Just Steady State</title>
+<link>https://notes.volumen.ca/index.html#no-grand-plan-just-steady-state</link>
+<guid isPermaLink="false">no-grand-plan-just-steady-state</guid>
+<description>I have thought about and diagnosed the mechanisms of weight gain and
+found that they are largely conditioned loops and the continuation of
+eating past satisfaction. I have made a simple and realistic plan that
+involves pre-portioning and gradual reduction of meal sizes.</description>
+<pubDate>Fri, 26 Jun 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>On Compounding</title>
 <link>https://notes.volumen.ca/index.html#on-compounding</link>
@@ -207,17 +217,6 @@ with the meaning on a deeper level. On the other hand, a refined final
 text distils thoughts into essential elements, which might make it
 harder for readers...</description>
 <pubDate>Sat, 18 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Pareto Principle</title>
-<link>https://notes.volumen.ca/index.html#pareto-principle</link>
-<guid isPermaLink="false">pareto-principle</guid>
-<description>The Pareto Principle, also known as the “80:20 rule,” asserts that
-80% of outcomes stem from 20% of causes. Named after the Italian
-polymath Vilfredo Pareto, the principle is supported by empirical
-observation showing that this 80:20 distribution applies to a wide
-variety of situations,...</description>
-<pubDate>Sat, 11 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
