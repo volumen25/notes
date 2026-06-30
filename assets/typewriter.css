@@ -137,3 +137,9 @@ mark {
     text-indent: -2em;
     padding-left: 2em;
 }
+
+/* Audio player */
+audio {
+    display: block;
+    margin: 2em auto;
+}
