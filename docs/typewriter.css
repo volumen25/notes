@@ -5,6 +5,7 @@
   /* --bg-color: #f4f1e9; */
   --bg-color: rgb(255, 252, 240);
   --text-color: #1a1a1a;
+  --text-color-alt: #767676;
   --hr-color: #d0d0d0;
   --link-border: #888;
   --shadow-color: rgba(0, 0, 0, 0.15);
@@ -16,6 +17,7 @@
   :root {
     --bg-color: #1a1a1a;
     --text-color: #e8e6e1;
+    --text-color-alt: #999;
     --hr-color: #444;
     --link-border: #999;
     --shadow-color: rgba(255, 255, 255, 0.1);
@@ -85,9 +87,13 @@ li {
 
 /* Links */
 a {
-    color: inherit;
+    color: var(--text-color-alt);
     text-decoration: none;
-    border-bottom: 1px dashed var(--link-border);
+    transition: color 100ms linear;
+}
+
+a:hover {
+    color: var(--text-color);
 }
 
 /* Horizontal rules */
@@ -142,4 +148,5 @@ mark {
 audio {
     display: block;
     margin: 2em auto;
+    filter: grayscale(1) opacity(0.55);
 }
