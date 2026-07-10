@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 10 Jul 2026 05:53:54 +0000</lastBuildDate>
+<lastBuildDate>Fri, 10 Jul 2026 06:48:40 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>The Unix Philosophy of Everyday Life</title>
+<link>https://notes.volumen.ca/index.html#the-unix-philosophy-of-everyday-life</link>
+<guid isPermaLink="false">the-unix-philosophy-of-everyday-life</guid>
+<description>The Unix philosophy holds that a program should do one thing well,
+stay simple, and avoid unnecessary complexity. The same logic extends
+beyond computer programs. It applies just as well to organizing time,
+schoolwork, or everyday life. The problem is always the same: left
+unattended, simple...</description>
+<pubDate>Thu, 09 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Retirement Rehearsal</title>
 <link>https://notes.volumen.ca/index.html#retirement-rehearsal</link>
@@ -206,17 +217,6 @@ accomplish. However, when we focus on...</description>
 over shoulders. Relax the shoulders, breathe low into the belly. Don’t
 lean any direction, find the still centre.</description>
 <pubDate>Fri, 24 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Hidden by Design</title>
-<link>https://notes.volumen.ca/index.html#hidden-by-design</link>
-<guid isPermaLink="false">hidden-by-design</guid>
-<description>Taking it for granted is something we try not to do; however, there
-is a hidden quality in it that we can pursue. When that hidden-by-design
-quality is possessed by the products we make, they disappear into use.
-Let us consider friction as an example. Where it is not desired, the
-object should...</description>
-<pubDate>Thu, 23 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
