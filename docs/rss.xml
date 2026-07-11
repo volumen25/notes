@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 11 Jul 2026 07:05:59 +0000</lastBuildDate>
+<lastBuildDate>Sat, 11 Jul 2026 20:44:38 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Chesterfield Avenue</title>
+<link>https://notes.volumen.ca/index.html#chesterfield-avenue</link>
+<guid isPermaLink="false">chesterfield-avenue</guid>
+<description>An early morning walk down Chesterfield Avenue, in the chilled air
+and along the uncrowded sidewalk, helped me find a signal in the
+everyday noise. Earliest memories from childhood came back to me as I
+discovered thought and attempted to control thinking at will. A thought,
+as a stream of...</description>
+<pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>The Unix Philosophy of Everyday Life</title>
 <link>https://notes.volumen.ca/index.html#the-unix-philosophy-of-everyday-life</link>
@@ -208,15 +219,6 @@ sensible people understand this, as they’ve also realized that
 bureaucratic exercises often overshadow the actual work we need to
 accomplish. However, when we focus on...</description>
 <pubDate>Mon, 27 Apr 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Zazen Posture</title>
-<link>https://notes.volumen.ca/index.html#zazen-posture</link>
-<guid isPermaLink="false">zazen-posture</guid>
-<description>Sit upright with your spine long, head floating up, chin tucked, ears
-over shoulders. Relax the shoulders, breathe low into the belly. Don’t
-lean any direction, find the still centre.</description>
-<pubDate>Fri, 24 Apr 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
