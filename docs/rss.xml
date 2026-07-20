@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Wed, 15 Jul 2026 06:32:30 +0000</lastBuildDate>
+<lastBuildDate>Mon, 20 Jul 2026 16:59:44 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>The Unix Philosophy of Everyday Life</title>
+<link>https://notes.volumen.ca/index.html#the-unix-philosophy-of-everyday-life</link>
+<guid isPermaLink="false">the-unix-philosophy-of-everyday-life</guid>
+<description>The Unix philosophy holds that a program should do one thing well,
+stay simple, and avoid unnecessary complexity. The same logic extends
+beyond computer programs. It applies just as well to organizing time,
+schoolwork, or everyday life. The problem is always the same: left
+unattended, simple...</description>
+<pubDate>Mon, 20 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>The Tale of Kaho</title>
 <link>https://notes.volumen.ca/index.html#the-tale-of-kaho</link>
@@ -38,17 +49,6 @@ everyday noise. Earliest memories from childhood came back to me as I
 discovered thought and attempted to control thinking at will. A thought,
 as a stream of...</description>
 <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>The Unix Philosophy of Everyday Life</title>
-<link>https://notes.volumen.ca/index.html#the-unix-philosophy-of-everyday-life</link>
-<guid isPermaLink="false">the-unix-philosophy-of-everyday-life</guid>
-<description>The Unix philosophy holds that a program should do one thing well,
-stay simple, and avoid unnecessary complexity. The same logic extends
-beyond computer programs. It applies just as well to organizing time,
-schoolwork, or everyday life. The problem is always the same: left
-unattended, simple...</description>
-<pubDate>Thu, 09 Jul 2026 12:00:00 +0000</pubDate>
 </item>
 <item>
 <title>Retirement Rehearsal</title>
