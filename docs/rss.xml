@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 20 Jul 2026 16:59:44 +0000</lastBuildDate>
+<lastBuildDate>Thu, 23 Jul 2026 00:09:39 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Honne and Tatemae</title>
+<link>https://notes.volumen.ca/index.html#honne-and-tatemae</link>
+<guid isPermaLink="false">honne-and-tatemae</guid>
+<description>Honne and tatemae aren’t simply truth versus lie. They’re both real,
+but at different levels. Tatemae is socially acceptable, while honne is
+the unfiltered truth that emerges when you trust someone. Neither is
+fake.</description>
+<pubDate>Wed, 22 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>The Unix Philosophy of Everyday Life</title>
 <link>https://notes.volumen.ca/index.html#the-unix-philosophy-of-everyday-life</link>
@@ -208,17 +218,6 @@ absence of music; it is part of the composition. Rests give rhythm and
 timing their shape. Miles Davis is widely credited with saying, “It’s
 not the notes...</description>
 <pubDate>Sun, 03 May 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Anxiety</title>
-<link>https://notes.volumen.ca/index.html#anxiety</link>
-<guid isPermaLink="false">anxiety</guid>
-<description>What smoking is to the lungs, anxiety is to the soul; thus, chronic
-anxiety is a form of cancer, a slow death. Control anxiety induced by
-external factors, and you have tackled one of the challenges of modern
-life. Anxiety that your mind evokes is the most challenging, though.
-Only the...</description>
-<pubDate>Sat, 02 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
