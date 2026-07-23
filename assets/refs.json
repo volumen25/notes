@@ -5593,5 +5593,35 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "kondoLetterJapanNo12025",
+		"type": "book",
+		"abstract": "The brand new book from bestselling author Marie Kondo explores her cultural roots and reveals the aspects of Japanese culture that are intrinsic to her world-famous tidying method. The six chapters in this book - Cherish, Perfect, Consider, Harmonise, Purify, and Savour - represent guiding principles by which Marie leads her life every day. They also define the values that flow through the arts, rituals, and sensibilities of Japan.We discover why appreciating the beauty of sakura, cherry blossom, allows for a moment to deeply experience a season through a single entity (Cherish). In the traditional tea ceremony, we see the importance of kiwameru, the Japanese word for achieving mastery or perfection (Perfect). In umami, we taste how something simple and delicious can nourish the heart (Savour). We explore why the things left unsaid, ma, are just as important as the words we say (Harmonise).The beautiful hardback edition, which will includes foiling on the cover and illustrated pages, will make the perfect gift.",
+		"citation-key": "kondoLetterJapanNo12025",
+		"ISBN": "978-1-78512-514-0",
+		"language": "English",
+		"publisher": "Leap",
+		"publisher-place": "London",
+		"source": "Amazon",
+		"title": "Letter From Japan",
+		"title-short": "Letter From Japan",
+		"author": [
+			{
+				"family": "Kondo",
+				"given": "Marie"
+			},
+			{
+				"family": "Iida",
+				"given": "Marie"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025"
+				]
+			]
+		}
 	}
 ]
