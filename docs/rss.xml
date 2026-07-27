@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 27 Jul 2026 02:22:14 +0000</lastBuildDate>
+<lastBuildDate>Mon, 27 Jul 2026 23:17:56 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>The Wrong Problem</title>
+<link>https://notes.volumen.ca/index.html#the-wrong-problem</link>
+<guid isPermaLink="false">the-wrong-problem</guid>
+<description>Most people don’t understand how computers work or know how to
+harness computing to solve problems, which limits their personal use.
+Computers are mainly communication tools to them since the advent of
+social media platforms and mobile computing devices, but generative AI
+has the power to change...</description>
+<pubDate>Mon, 27 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Guitar Recording Setup</title>
 <link>https://notes.volumen.ca/index.html#guitar-recording-setup</link>
@@ -206,16 +217,6 @@ supporting its contents. If the system becomes heavier than what it
 supports, the system and its contents will either collapse or become
 dysfunctional. Archimedes’ principle prevails in social contexts.</description>
 <pubDate>Mon, 04 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>The Absence of Headaches</title>
-<link>https://notes.volumen.ca/index.html#the-absence-of-headaches</link>
-<guid isPermaLink="false">the-absence-of-headaches</guid>
-<description>The absence of something that reveals the value of the opposite, that
-is, the presence of the opposite that brings a profound finding and that
-is not easily understood if it were not for this discovery. What follows
-explains this recursive thought.</description>
-<pubDate>Sun, 03 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
