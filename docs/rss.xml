@@ -4,8 +4,17 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 23 Jul 2026 15:16:57 +0000</lastBuildDate>
+<lastBuildDate>Mon, 27 Jul 2026 01:36:55 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Guitar Recording Setup</title>
+<link>https://notes.volumen.ca/index.html#guitar-recording-setup</link>
+<guid isPermaLink="false">guitar-recording-setup</guid>
+<description>My guitar recording philosophy has evolved toward minimal, purposeful
+gear: tone comes from the fingers, pick, guitar, and amp, while digital
+effects complement rather than replace the core sound.</description>
+<pubDate>Sun, 26 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Honne and Tatemae</title>
 <link>https://notes.volumen.ca/index.html#honne-and-tatemae</link>
@@ -207,17 +216,6 @@ is, the presence of the opposite that brings a profound finding and that
 is not easily understood if it were not for this discovery. What follows
 explains this recursive thought.</description>
 <pubDate>Sun, 03 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>What Absence Reveals</title>
-<link>https://notes.volumen.ca/index.html#what-absence-reveals</link>
-<guid isPermaLink="false">what-absence-reveals</guid>
-<description>Hidden properties of absence reveal meaning. Silence in music and
-negative space in drawing operate similarly. In music, a rest is not the
-absence of music; it is part of the composition. Rests give rhythm and
-timing their shape. Miles Davis is widely credited with saying, “It’s
-not the notes...</description>
-<pubDate>Sun, 03 May 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
