@@ -4,8 +4,28 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Tue, 28 Jul 2026 01:09:43 +0000</lastBuildDate>
+<lastBuildDate>Tue, 28 Jul 2026 01:10:51 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>The Wrong Problem</title>
+<link>https://notes.volumen.ca/index.html#the-wrong-problem</link>
+<guid isPermaLink="false">the-wrong-problem</guid>
+<description>Most people don’t understand how computers work or know how to
+harness computing to solve problems, which limits their personal use.
+Computers are mainly communication tools to them since the advent of
+social media platforms and mobile computing devices, but generative AI
+has the power to change...</description>
+<pubDate>Mon, 27 Jul 2026 12:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Guitar Recording Setup</title>
+<link>https://notes.volumen.ca/index.html#guitar-recording-setup</link>
+<guid isPermaLink="false">guitar-recording-setup</guid>
+<description>My guitar recording philosophy has evolved toward minimal, purposeful
+gear: tone comes from the fingers, pick, guitar, and amp, while digital
+effects complement rather than replace the core sound.</description>
+<pubDate>Sun, 26 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Honne and Tatemae</title>
 <link>https://notes.volumen.ca/index.html#honne-and-tatemae</link>
@@ -197,27 +217,6 @@ supporting its contents. If the system becomes heavier than what it
 supports, the system and its contents will either collapse or become
 dysfunctional. Archimedes’ principle prevails in social contexts.</description>
 <pubDate>Mon, 04 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>The Absence of Headaches</title>
-<link>https://notes.volumen.ca/index.html#the-absence-of-headaches</link>
-<guid isPermaLink="false">the-absence-of-headaches</guid>
-<description>The absence of something that reveals the value of the opposite, that
-is, the presence of the opposite that brings a profound finding and that
-is not easily understood if it were not for this discovery. What follows
-explains this recursive thought.</description>
-<pubDate>Sun, 03 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>What Absence Reveals</title>
-<link>https://notes.volumen.ca/index.html#what-absence-reveals</link>
-<guid isPermaLink="false">what-absence-reveals</guid>
-<description>Hidden properties of absence reveal meaning. Silence in music and
-negative space in drawing operate similarly. In music, a rest is not the
-absence of music; it is part of the composition. Rests give rhythm and
-timing their shape. Miles Davis is widely credited with saying, “It’s
-not the notes...</description>
-<pubDate>Sun, 03 May 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
