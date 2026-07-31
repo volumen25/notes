@@ -4,8 +4,17 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 30 Jul 2026 06:46:28 +0000</lastBuildDate>
+<lastBuildDate>Fri, 31 Jul 2026 06:20:20 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Newspeak</title>
+<link>https://notes.volumen.ca/index.html#newspeak</link>
+<guid isPermaLink="false">newspeak</guid>
+<description>Newspeak language used by politicians and government officials that
+is intentionally difficult to understand or does not mean what it seems
+to mean and is therefore likely to confuse or deceive people. Source</description>
+<pubDate>Thu, 30 Jul 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>The Wrong Problem</title>
 <link>https://notes.volumen.ca/index.html#the-wrong-problem</link>
@@ -207,16 +216,6 @@ Recursive thinking is good at finding the hidden assumptions inside an
 idea, because it naturally follows a thought back to its own
 foundations. The risk...</description>
 <pubDate>Fri, 08 May 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Buoyancy</title>
-<link>https://notes.volumen.ca/index.html#buoyancy</link>
-<guid isPermaLink="false">buoyancy</guid>
-<description>Buoyancy is the property of a system to keep it afloat while
-supporting its contents. If the system becomes heavier than what it
-supports, the system and its contents will either collapse or become
-dysfunctional. Archimedes’ principle prevails in social contexts.</description>
-<pubDate>Mon, 04 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
