@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sat, 01 Aug 2026 19:47:30 +0000</lastBuildDate>
+<lastBuildDate>Mon, 03 Aug 2026 19:07:30 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>On Repeat</title>
+<link>https://notes.volumen.ca/index.html#on-repeat</link>
+<guid isPermaLink="false">on-repeat</guid>
+<description>I cannot get enough of these tunes recently: Blues in the Night
+(Dinah Washington), See See Rider (Ernestine Anderson), T’Ain’t Nobody’s
+Biz-Ness (Dinah Washington), and You’d Be So Nice to Come Home to (Helen
+Merrill). They’ve been on repeat for more than a month.</description>
+<pubDate>Mon, 03 Aug 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Newspeak</title>
 <link>https://notes.volumen.ca/index.html#newspeak</link>
@@ -207,17 +217,6 @@ one’s life for work; it is a gas that expands to occupy all the space it
 is given. Thus compress work and do not allow it to compress you by
 setting your...</description>
 <pubDate>Fri, 08 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Recursive Ideas</title>
-<link>https://notes.volumen.ca/index.html#recursive-ideas</link>
-<guid isPermaLink="false">recursive-ideas</guid>
-<description>I can’t help but notice a pattern: I seem to end up writing circular
-or recursive ideas. I think it’s a thinking habit, for better or worse.
-Recursive thinking is good at finding the hidden assumptions inside an
-idea, because it naturally follows a thought back to its own
-foundations. The risk...</description>
-<pubDate>Fri, 08 May 2026 12:00:01 +0000</pubDate>
 </item>
 </channel>
 </rss>
