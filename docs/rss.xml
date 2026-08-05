@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 03 Aug 2026 19:27:48 +0000</lastBuildDate>
+<lastBuildDate>Wed, 05 Aug 2026 04:27:16 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Boxes We Keep</title>
+<link>https://notes.volumen.ca/index.html#boxes-we-keep</link>
+<guid isPermaLink="false">boxes-we-keep</guid>
+<description>Early mornings have a special gift for me. The break of dawn
+illuminates the invisible in what should be obvious: I can see that
+daily life is full of maintenance work. While that work is necessary, it
+often feels more like fixing things than living a simple, healthy,
+content baseline life. Yet...</description>
+<pubDate>Tue, 04 Aug 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>On Repeat</title>
 <link>https://notes.volumen.ca/index.html#on-repeat</link>
@@ -206,17 +217,6 @@ challenges. The Stoics highlight life’s fragility. Modern thought
 provides clarity through mindfulness practices, philosophical inquiry,
 science revealing hidden...</description>
 <pubDate>Mon, 11 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Compress Work, Not Life</title>
-<link>https://notes.volumen.ca/index.html#compress-work-not-life</link>
-<guid isPermaLink="false">compress-work-not-life</guid>
-<description>Parkinson’s law asserts that work expands to fill the time available
-for its completion. It also applies to how much space is allowed in
-one’s life for work; it is a gas that expands to occupy all the space it
-is given. Thus compress work and do not allow it to compress you by
-setting your...</description>
-<pubDate>Fri, 08 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
