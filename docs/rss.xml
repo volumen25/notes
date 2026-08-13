@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 07 Aug 2026 23:56:05 +0000</lastBuildDate>
+<lastBuildDate>Thu, 13 Aug 2026 23:51:39 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>The Pattern</title>
+<link>https://notes.volumen.ca/index.html#the-pattern</link>
+<guid isPermaLink="false">the-pattern</guid>
+<description>Work life has stabilized. I do the things I used to do prior to 2018.
+This seems to be a cycle. One mistake I don’t want to repeat is becoming
+too focused on work. No grand plan, no strong drive, no passion. Only
+simple days, a plain work life, the repetition of small things with
+discipline, the...</description>
+<pubDate>Thu, 13 Aug 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Boxes We Keep</title>
 <link>https://notes.volumen.ca/index.html#boxes-we-keep</link>
@@ -206,17 +217,6 @@ soft and delicate form and the colour that can represent the sakura
 season, the tree in its pot caught our attention immediately. Now we
 wonder how it looks in...</description>
 <pubDate>Mon, 18 May 2026 12:00:01 +0000</pubDate>
-</item>
-<item>
-<title>Uses</title>
-<link>https://notes.volumen.ca/index.html#uses</link>
-<guid isPermaLink="false">uses</guid>
-<description>When I seek guidance, I turn to books. Classical philosophy and
-strategy teach leadership and discipline, especially during workplace
-challenges. The Stoics highlight life’s fragility. Modern thought
-provides clarity through mindfulness practices, philosophical inquiry,
-science revealing hidden...</description>
-<pubDate>Mon, 11 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
