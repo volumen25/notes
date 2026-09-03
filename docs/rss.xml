@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Mon, 31 Aug 2026 03:36:58 +0000</lastBuildDate>
+<lastBuildDate>Thu, 03 Sep 2026 01:47:43 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Structure and Flow</title>
+<link>https://notes.volumen.ca/index.html#structure-and-flow</link>
+<guid isPermaLink="false">structure-and-flow</guid>
+<description>Structure and form are desired attributes, but too much of them is a
+hindrance. Learn to turn this attribute on and off, sometimes working
+like a well-built bridge, other times like water flowing under it. The
+secret is to know when to switch.</description>
+<pubDate>Wed, 02 Sep 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>DaVinci Resolve Workflow</title>
 <link>https://notes.volumen.ca/index.html#davinci-resolve-workflow</link>
@@ -207,15 +217,6 @@ are in a meditative state. It doesn’t look like they are performing, nor
 are they working. Thus, listening to them draws you into that
 restorative state in which you strip off the...</description>
 <pubDate>Fri, 29 May 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Ikigai: Origins and Modern Interpretation</title>
-<link>https://notes.volumen.ca/index.html#ikigai-origins-and-modern-interpretation</link>
-<guid isPermaLink="false">ikigai-origins-and-modern-interpretation</guid>
-<description>Ikigai, a concept from Okinawa, is believed to support the longevity
-and well-being of its people, who have one of the highest concentrations
-of centenarians in the world.</description>
-<pubDate>Sun, 24 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
