@@ -4,8 +4,19 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Thu, 03 Sep 2026 01:49:32 +0000</lastBuildDate>
+<lastBuildDate>Fri, 04 Sep 2026 03:52:34 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Cruft</title>
+<link>https://notes.volumen.ca/index.html#cruft</link>
+<guid isPermaLink="false">cruft</guid>
+<description>It is nice to start anew because computer OSes accumulate cruft. I
+prefer to do this with my home systems once every 3 to 4 years: erase
+the hard drive, install the current OS from scratch, restoring only what
+I need from a Time Machine backup. At the end of the next cycle, the
+hardware refresh...</description>
+<pubDate>Thu, 03 Sep 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Structure and Flow</title>
 <link>https://notes.volumen.ca/index.html#structure-and-flow</link>
@@ -206,17 +217,6 @@ functional, and Windows on the ThinkPad T14 for office at work. It’s
 been nearly two decades since I last did anything on Linux, and I was
 delighted to find out about...</description>
 <pubDate>Sun, 14 Jun 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Dissolving Into Sound</title>
-<link>https://notes.volumen.ca/index.html#dissolving-into-sound</link>
-<guid isPermaLink="false">dissolving-into-sound</guid>
-<description>Listening to Julian Lage’s video on his
-YouTube channel, I came to realize a subtle quality: he and his quartet
-are in a meditative state. It doesn’t look like they are performing, nor
-are they working. Thus, listening to them draws you into that
-restorative state in which you strip off the...</description>
-<pubDate>Fri, 29 May 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
