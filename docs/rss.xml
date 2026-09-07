@@ -4,8 +4,16 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Fri, 04 Sep 2026 04:10:54 +0000</lastBuildDate>
+<lastBuildDate>Mon, 07 Sep 2026 19:06:11 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Pritesh Walia</title>
+<link>https://notes.volumen.ca/index.html#pritesh-walia</link>
+<guid isPermaLink="false">pritesh-walia</guid>
+<description>I stumbled upon Pritesh Walia completely by chance. He is a skilled
+jazz guitarist with a warm, melodic tone.</description>
+<pubDate>Mon, 07 Sep 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Cruft</title>
 <link>https://notes.volumen.ca/index.html#cruft</link>
@@ -206,17 +214,6 @@ violinists of the 20th century. Notice the majestic steadiness of his
 posture and his simple, gentle movements, each gesture commanding an
 exquisite wave of sound.</description>
 <pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Back to Linux</title>
-<link>https://notes.volumen.ca/index.html#back-to-linux</link>
-<guid isPermaLink="false">back-to-linux</guid>
-<description>I have set up a ThinkPad T540p laptop with MX Linux and am getting
-comfortable with my OS triad: macOS as my primary OS, MX Linux
-functional, and Windows on the ThinkPad T14 for office at work. It’s
-been nearly two decades since I last did anything on Linux, and I was
-delighted to find out about...</description>
-<pubDate>Sun, 14 Jun 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
