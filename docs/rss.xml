@@ -4,8 +4,18 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Wed, 07 Oct 2026 18:53:30 +0000</lastBuildDate>
+<lastBuildDate>Wed, 07 Oct 2026 19:16:40 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Calligraphy on Guitar</title>
+<link>https://notes.volumen.ca/index.html#calligraphy-on-guitar</link>
+<guid isPermaLink="false">calligraphy-on-guitar</guid>
+<description>Music from the perspective of calligraphy: perform songs on the
+guitar as if writing them out in calligraphic style. First, employ
+triads and their inversions, use rests, maintain the emotional cadence,
+and play with a relaxed picking hand and a swift fretting hand.</description>
+<pubDate>Wed, 07 Oct 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Pritesh Walia</title>
 <link>https://notes.volumen.ca/index.html#pritesh-walia</link>
@@ -207,16 +217,6 @@ life, sustaining itself as an internal cycle. A lateral outcome is the
 diffusion of compounding, as acquired benefits spread to other aspects
 of life:...</description>
 <pubDate>Wed, 24 Jun 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Posture and Presence</title>
-<link>https://notes.volumen.ca/index.html#posture-and-presence</link>
-<guid isPermaLink="false">posture-and-presence</guid>
-<description>Observe the inner stillness of Yehudi Menuhin, one of the great
-violinists of the 20th century. Notice the majestic steadiness of his
-posture and his simple, gentle movements, each gesture commanding an
-exquisite wave of sound.</description>
-<pubDate>Thu, 18 Jun 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
