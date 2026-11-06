@@ -5623,5 +5623,93 @@
 				]
 			]
 		}
+	},
+	{
+		"id": "weedonInstrumentationProcessControl2019",
+		"type": "book",
+		"citation-key": "weedonInstrumentationProcessControl2019",
+		"edition": "Seventh edition",
+		"ISBN": "978-0-8269-3446-8",
+		"language": "English",
+		"note": "section: 708 pages : illustrations (chiefly color) ; 28 cm",
+		"number-of-pages": "708",
+		"publisher": "American Technical Publishers",
+		"publisher-place": "Orland Park, Illinois",
+		"source": "WorldCat Discovery Service",
+		"title": "Instrumentation and process control",
+		"author": [
+			{
+				"family": "Weedon",
+				"given": "Thomas A."
+			},
+			{
+				"family": "Kirk",
+				"given": "Philip"
+			},
+			{
+				"family": "Kirk",
+				"given": "Franklyn W."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2019"
+				]
+			]
+		}
+	},
+	{
+		"id": "abramsonGaslighting2025",
+		"type": "book",
+		"abstract": "A philosopher examines the complicated phenomenon of gaslighting“Gaslighting is suddenly in everyone's vocabulary. It's written about, talked about, tweeted about, even sung about (in “Gaslighting by The Chicks). It's become shorthand for being manipulated by someone who insists that up is down, hot is cold, dark is light—someone who isn't just lying about such things, but trying to drive you crazy. The term has its origins in a 1944 film in which a husband does exactly that to his wife, his crazy-making efforts symbolized by the rise and fall of the gaslights in their home. In this timely and provocative book, Kate Abramson examines gaslighting from a philosophical perspective, investigating it as a distinctive moral phenomenon.Gaslighting, Abramson writes, is best understood as a form of interpersonal interaction, a particular way of fundamentally undermining someone. The gaslighter, Abramson argues, aims to make his target experience herself as incapable of reasoning, perceiving, or reacting in ways that would allow her to form appropriate beliefs, perceptions, or emotions in the first place. He seeks not only to induce in her this unmoored sense of herself but also to make it a reality. Using examples and analysis, Abramson gives an account of gaslighting and its immorality, and argues that such a discussion can help us understand other aspects of social life—from racism and sexism to the structure of interpersonal trust.",
+		"citation-key": "abramsonGaslighting2025",
+		"ISBN": "978-0-691-24940-7",
+		"language": "English",
+		"number-of-pages": "232",
+		"publisher": "Princeton University Press",
+		"publisher-place": "Princeton (New Jersey) Oxford",
+		"source": "Amazon",
+		"title": "On Gaslighting",
+		"author": [
+			{
+				"family": "Abramson",
+				"given": "Kate"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2025"
+				]
+			]
+		}
+	},
+	{
+		"id": "hirschmanRhetoricReactionPerversity1991",
+		"type": "book",
+		"abstract": "With engaging wit and subtle irony, Albert Hirschman maps the diffuse and treacherous world of reactionary rhetoric in which conservative public figures, thinkers, and polemicists have been arguing against progressive agendas and reforms for the past two hundred years.Hirschman draws his examples from three successive waves of reactive thought that arose in response to the liberal ideas of the French Revolution and the Declaration of the Rights of Man, to democratization and the drive toward universal suffrage in the nineteenth century, and to the welfare state in our own century. In each case he identifies three principal arguments invariably used: (1) the perversity thesis, whereby any action to improve some feature of the political, social, or economic order is alleged to result in the exact opposite of what was intended; (2) the futility thesis, which predicts that attempts at social transformation will produce no effects whatever―will simply be incapable of making a dent in the status quo; (3) the jeopardy thesis, holding that the cost of the proposed reform is unacceptable because it will endanger previous hard-won accomplishments. He illustrates these propositions by citing writers across the centuries from Alexis de Tocqueville to George Stigler, Herbert Spencer to Jay Forrester, Edmund Burke to Charles Murray. Finally, in a lightning turnabout, he shows that progressives are frequently apt to employ closely related rhetorical postures, which are as biased as their reactionary counterparts. For those who aspire to the genuine dialogue that characterizes a truly democratic society, Hirschman points out that both types of rhetoric function, in effect, as contraptions designed to make debate impossible. In the process, his book makes an original contribution to democratic thought.The Rhetoric of Reaction is a delightful handbook for all discussions of public affairs, the welfare state, and the history of social, economic, and political thought, whether conducted by ordinary citizens or academics.",
+		"citation-key": "hirschmanRhetoricReactionPerversity1991",
+		"ISBN": "978-0-674-76867-3",
+		"language": "English",
+		"number-of-pages": "224",
+		"publisher": "Belknap Press: An Imprint of Harvard University Press",
+		"publisher-place": "Cambridge, Mass",
+		"source": "Amazon",
+		"title": "The Rhetoric of Reaction: Perversity, Futility, Jeopardy",
+		"title-short": "The Rhetoric of Reaction",
+		"author": [
+			{
+				"family": "Hirschman",
+				"given": "Albert O."
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1991"
+				]
+			]
+		}
 	}
 ]
