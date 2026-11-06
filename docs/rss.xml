@@ -4,8 +4,17 @@
 <title>Volūmen</title>
 <link>https://notes.volumen.ca/</link>
 <description>Updates and notes from Volūmen</description>
-<lastBuildDate>Sun, 01 Nov 2026 08:49:57 +0000</lastBuildDate>
+<lastBuildDate>Fri, 06 Nov 2026 02:41:16 +0000</lastBuildDate>
 <atom:link href="https://notes.volumen.ca/rss.xml" rel="self" type="application/rss+xml" />
+<item>
+<title>Books</title>
+<link>https://notes.volumen.ca/index.html#books</link>
+<guid isPermaLink="false">books</guid>
+<description>I am reading On Gaslighting by Abramson (2025) and The
+Rhetoric of Reaction by Hirschman
+(1991)</description>
+<pubDate>Thu, 05 Nov 2026 12:00:00 +0000</pubDate>
+</item>
 <item>
 <title>Why AI Won&#x27;t Replace Your Writing Voice</title>
 <link>https://notes.volumen.ca/index.html#why-ai-wont-replace-your-writing-voice</link>
@@ -206,17 +215,6 @@ everyday noise. Earliest memories from childhood came back to me as I
 discovered thought and attempted to control thinking at will. A thought,
 as a stream of...</description>
 <pubDate>Sat, 11 Jul 2026 12:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Retirement Rehearsal</title>
-<link>https://notes.volumen.ca/index.html#retirement-rehearsal</link>
-<guid isPermaLink="false">retirement-rehearsal</guid>
-<description>I took a brief walk this morning, on our 4th wedding anniversary,
-also the first day of my vacation, a period I like to call retirement
-rehearsal. It was a wonderful walk; the cool air filled me with calmness
-and a light joy. I moved down Chesterfield Avenue like a cloud gliding
-across the sky....</description>
-<pubDate>Mon, 29 Jun 2026 12:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
